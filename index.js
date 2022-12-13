@@ -6,7 +6,6 @@ async function getData() {
     let res = await fetch(BaseUrl);
     let data = await res.json(res);
     console.log(data);
-    console.log(data);
   } catch (error) {
     console.log(error);
   }
