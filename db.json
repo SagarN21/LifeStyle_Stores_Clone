@@ -1,0 +1,8 @@
+{
+  "Products": [
+    { "title": "Some Dummy Product", "price": "$100", "description": "lorem" },
+    { "title": "Some Dummy Product", "price": "$100", "description": "lorem" },
+    { "title": "Some Dummy Product", "price": "$100", "description": "lorem" },
+    { "title": "Some Dummy Product", "price": "$100", "description": "lorem" }
+  ]
+}
