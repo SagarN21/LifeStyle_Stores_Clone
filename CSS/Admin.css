@@ -1,0 +1,82 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Open Sans", sans-serif;
+}
+#fetchbutton {
+  position: absolute;
+  top: 10px;
+  right: 50px;
+}
+#tophead {
+  display: flex;
+  justify-content: center;
+}
+#tophead > img {
+  width: 150px;
+  height: auto;
+}
+.Admins-Portal {
+  font-size: 100px;
+  font-weight: bolder;
+  display: grid;
+  place-items: center;
+}
+form > * {
+  margin: 2px;
+  padding: 2px;
+}
+input {
+  width: 90%;
+  padding: 10px;
+}
+.add-products-outer {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  width: 90%;
+  margin: auto;
+  padding: 20px;
+}
+.products-list {
+  position: relative;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+input[type="submit"] {
+  width: 30%;
+  position: absolute;
+  right: 10px;
+  bottom: 0px;
+  margin: 20px;
+  border-radius: 5px;
+  border: 0px;
+  padding: 15px 20px;
+  color: white;
+  font-size: 20px;
+  background-color: rgb(0, 148, 253);
+}
+input[type="submit"]:hover {
+  cursor: pointer;
+  background-color: rgb(0, 81, 255);
+  color: rgb(255, 255, 255);
+  transform: scale(1.005);
+  z-index: 1.1;
+}
+select {
+  cursor: pointer;
+  font-size: 20px;
+}
+
+form {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2px;
+  padding: 15px;
+}
+/*! ----------------------------Small Screen Sizes -------------------------------- */
+@media all and (min-width: 320px) and (max-width: 809px) {
+  /*-------------------------- Universals-------------------------- */
+  form {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  /* -------------------------Page Specifcs------------------------- */
+}

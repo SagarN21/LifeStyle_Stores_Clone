@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Experiment</title>
+    <link rel="stylesheet" href="CSS/experiment.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!----------------------------------------------- Header ----------------------------------------------->
+    <header></header>
+    <!----------------------------------------------- Main Body ----------------------------------------------->
+    <main>
+      <section>
+        <center>
+          <h1>
+            🛍️ Which Product Databse To Fetch?
+            <select name="Select Database" id="select">
+              <option
+                value="https://63984241fe03352a94ca27c3.mockapi.io/lifestyleApi/womensTopWear"
+              >
+                Womens Top
+              </option>
+              <option
+                value="https://63984241fe03352a94ca27c3.mockapi.io/lifestyleApi/WomensEthnicWear"
+              >
+                Women Ethnic
+              </option>
+              <option
+                value="https://63984241fe03352a94ca27c3.mockapi.io/lifestyleApi/MensFormals"
+              >
+                Mens Formals
+              </option>
+              <option
+                value="https://63984241fe03352a94ca27c3.mockapi.io/lifestyleApi/MensCasuals"
+              >
+                Mens Casuals
+              </option>
+              <option
+                value="https://63987962044fa481d69ed8cc.mockapi.io/stylezilla/KidsWear"
+              >
+                KidsWear
+              </option>
+              <option
+                value="https://63987962044fa481d69ed8cc.mockapi.io/stylezilla/BeautyProducts"
+              >
+                Beauty Products
+              </option>
+              <option
+                value="https://63987962044fa481d69ed8cc.mockapi.io/stylezilla/Shoes"
+              >
+                Shoes
+              </option>
+              <option
+                value="https://63987962044fa481d69ed8cc.mockapi.io/stylezilla/Bags"
+              >
+                Bags
+              </option>
+            </select>
+          </h1>
+          <a href="Admin.html"><button>Admins Page</button></a>
+          <button id="fetchproducts">Fetch Products</button>
+        </center>
+        <div class="container">
+          <!-- ? Append Data Here -->
+        </div>
+      </section>
+    </main>
+    <!----------------------------------------------- Footer ----------------------------------------------->
+    <footer></footer>
+  </body>
+</html>
+<script src="experiment.js"></script>

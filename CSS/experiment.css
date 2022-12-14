@@ -1,0 +1,62 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Open Sans", sans-serif;
+}
+div {
+  /* border: 1px solid black; */
+}
+select {
+  cursor: pointer;
+  font-size: 20px;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+.container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+  width: 90%;
+  margin: auto;
+  height: auto;
+}
+.container div {
+  position: relative;
+  height: 600px;
+  padding: 10px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.cardbutton {
+  position: absolute;
+  width: 40%;
+  font-size: 18px;
+  padding: 5px;
+  margin: 3px;
+}
+#removeproduct {
+  bottom: 10px;
+  right: 10px;
+  background-color: rgb(211, 36, 56);
+}
+#viewproduct {
+  bottom: 10px;
+  left: 20px;
+  background-color: rgb(44, 128, 246);
+}
+button {
+  cursor: pointer;
+  padding: 10px;
+  margin: 5px;
+  border: 0px;
+  color: white;
+  border-radius: 5px;
+  background-color: rgb(13, 185, 13);
+}
+button:hover {
+  color: black;
+}
+.container div img {
+  width: 100%;
+}

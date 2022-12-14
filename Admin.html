@@ -7,8 +7,9 @@ alter data on db.json -->
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="" />
+    <title>StyleZilla-Admin</title>
+    <link rel="stylesheet" href="CSS/Admin.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   </head>
   <body>
     <!----------------------------------------------- Header ----------------------------------------------->
@@ -16,11 +17,77 @@ alter data on db.json -->
       <!-- ? Nav Bar will come here  -->
     </header>
     <!----------------------------------------------- Main Body ----------------------------------------------->
+    <a href="Experiment.html" id="fetchbutton"><h1>Fetching Page</h1></a>
     <main>
-      <section></section>
+      <div id="tophead">
+        <h1 class="Admins-Portal">Admin's Portal</h1>
+        <img src="StyleZilla-Images/Bags.png" alt="">
+        
+      </div>
+      
+      <section class="Adding Producs">
+       
+        <div class="add-products-outer">
+          <h1>🛍️ Add New Products to <select name="Select Database" id="select">
+            <option value="https://63984241fe03352a94ca27c3.mockapi.io/lifestyleApi/womensTopWear">Womens Top</option>
+            <option value="https://63984241fe03352a94ca27c3.mockapi.io/lifestyleApi/WomensEthnicWear">Women Ethnic</option>
+            <option value="https://63984241fe03352a94ca27c3.mockapi.io/lifestyleApi/MensFormals">Mens Formals </option>
+            <option value="https://63984241fe03352a94ca27c3.mockapi.io/lifestyleApi/MensCasuals">Mens Casuals</option>
+            <option value="https://63987962044fa481d69ed8cc.mockapi.io/stylezilla/KidsWear">KidsWear</option>
+            <option value="https://63987962044fa481d69ed8cc.mockapi.io/stylezilla/BeautyProducts">Beauty Products</option>
+            <option value="https://63987962044fa481d69ed8cc.mockapi.io/stylezilla/Shoes">Shoes</option>
+            <option value="https://63987962044fa481d69ed8cc.mockapi.io/stylezilla/Bags">Bags</option>
+        </select>
+       </h1>
+        
+          <div class="products-list">
+            <form autocomplete="on" id="AddProduct">
+              
+              <label> Product Title<br>
+                <input id="title" type="text" placeholder="Enter Product Title" required/>
+                </label>
+                <label> Product Description<br>
+                <input id="description" type="text" placeholder="Enter Product Description" required/>
+                </label>
+                <label> Product Price<br>
+                <input id="price" type="number" placeholder="Enter Product Price" required />
+                </label>
+                <label> Product Discount<br>
+                <input id="discountPercentage" type="number" placeholder="Enter Product DiscountPercentage" required />
+                </label>
+                <label> Product Rating<br>
+                <input id="rating" type="number" min="0" step="0.1" placeholder="Enter Product Rating" required />
+                </label>
+                <label> Product Stock<br>
+                <input id="stock" type="number" placeholder="Enter Product Stock" required />
+                </label>
+                <label> Product Brand<br>
+                <input id="brand" type="text" placeholder="Enter Product Brand" required/>
+                </label>
+                <label> Product Category<br>
+                <input id="category" type="text" placeholder="Enter Product Category" required/>
+                </label>
+                <label> Product Thumbnail<br>
+                <input id="thumbnail" type="text" placeholder="Enter ThumbnailURL" required />
+                </label>
+                <label> Product Image 1<br>
+                <input id="images" type="text" placeholder="Enter ImageUrl" required />
+                </label>
+                <label> Product Image 2<br>
+                  <input id="images" type="text" placeholder="Enter ImageUrl" required />
+                  </label>
+              <input type="submit" value="Add Product"/>
+            </not prettier>
+             
+            </form>
+          </div>
+        </div>
+      </section>
     </main>
     <!----------------------------------------------- Footer ----------------------------------------------->
     <footer></footer>
   </body>
 </html>
-<script src=""></script>
+<script src="Admin.js"></script>
+
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
