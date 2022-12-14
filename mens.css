@@ -1,0 +1,113 @@
+*{
+    font-family: sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+#container{
+    /* border: 1px solid red; */
+    width: 97%;
+    margin: auto;
+}
+#container>img{
+    width: 100%;
+    margin: 20px 0px;
+}
+#button{
+    text-align: center;
+}
+#button>button{
+    color: orange;
+    background-color: white;
+    border: 1px solid blue;
+    height: 50px;
+    width: 290px;
+    margin: 30px;
+}
+#button>button:hover{
+    border: 1px solid orange;
+}
+h2{
+    margin-top: 25px;
+}
+hr{
+    width: 50px;
+    background-color: orange;
+    border: 2px solid orange ;
+    margin: 5px 0px 15px 0px;
+}
+#buyFree{
+    display: flex;
+    justify-content: space-between;
+}
+#buyFree>img{
+    width: 16%;
+    margin: 10px 0px;
+}
+#brandImage{
+    display: flex;
+    justify-content: space-between;
+}
+#brandImage>img{
+    width: 16%;
+    margin: 10px 0px;
+    border-radius: 15px;
+}
+#winterClothes{
+    display: flex;
+    justify-content: space-between;
+}
+#winterClothes>img{
+    width: 16%;
+    margin: 10px 0px;
+}
+#bigBrandsProducts , #categoryProducts, #trandingBrands{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+#bigBrandsProducts>img , #categoryProducts>img, #trandingBrands>img{
+    width: 16%;
+    margin: 10px 0px;
+    border-radius: 15px;
+}
+#TopPicks, #winterTrends, #mostlovedstyle, #highlights, #trendsclothes, #activeWardrobe{
+    display: flex;
+    justify-content: space-between;
+}
+#TopPicks>img, #winterTrends>img, #mostlovedstyle>img, #highlights>img, #trendsclothes>img, #activeWardrobe>img{
+    width: 33.3%;
+    margin: 10px 0px;
+}
+#dealCorner{
+    display: flex;
+    justify-content: space-between;
+}
+#dealCorner>img{
+    width: 19%;
+    height: 300px;
+    margin: 10px 0px;
+}
+#mostLovedBrands, #essentials{
+    display: flex;
+    justify-content: space-between;
+}
+#mostLovedBrands>img, #essentials{
+    width: 50%;
+    margin: 10px 0px;
+}
+#watch{
+    width: 750px;
+    display: flex;
+    justify-content: space-between;
+}
+#watch>img{
+    width: 230px;
+    height: 300px;
+}
+#shopByDepartment{
+    display: flex;
+    justify-content: space-between;
+}
+#shopByDepartment>img{
+    width: 33%;
+}
