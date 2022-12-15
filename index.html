@@ -1,47 +1,373 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>StyleZilla</title>
-   <link rel="stylesheet" href="./index.css">
-   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StyleZilla</title>
+  <link rel="stylesheet" href="./index.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
-<body>
-     <div id="top_bar">
-        <div id="left_top">
-       <h5>🚚   Free Shiping</h5>
-        <h5>🏬   Click &  Collect</h5>
-        <h5>🏬 Return to store</h5>
-        </div>
-        <div id="right_top">
-        <h5>Download Our App</h5>
-        <h5>Store Locator</h5>
-        <h5>Help</h5>
-        </div>
-     </div>
 
-    <div id="nav_bar">
-      <a href="">  <img src="./Be Younik (1).png" alt="" id="logo"></a>
-       <a href=""> <h4>Women</h4></a>
-       <a href=""> <h4>Men</h4></a>
-       <a href=""> <h4>Kids</h4></a>
-       <a href=""> <h4>Shoes&Bags</h4></a>
-        <a href=""><h4>Beauty</h4></a>
-        <input type="text" placeholder="🔍  What are you looking for ?">
-       <a href=""> <h4>More</h4></a>
-        <a href=""><h4>SignUp/SignIn</h4></a>
-        <a href="">  <h4>Wishlist</h4></a>
-        <a href=""><h4>Cart</h4></a>
+<body>
+  <div id="top_bar">
+    <div id="left_top">
+      <h5>🚚 Free Shiping</h5>
+      <h5>🏬 Click & Collect</h5>
+      <h5>🏬 Return to store</h5>
     </div>
-    
+    <div id="right_top">
+      <h5>Download Our App</h5>
+      <h5>Store Locator</h5>
+      <h5>Help</h5>
+    </div>
+  </div>
+
+
+  <div id="nav_bar">
+   <div id="side_menu">
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="#">Womens</a>
+      <a href="#">Mens</a>
+      <a href="#">Kids</a>
+      <a href="#">Shoes&Bag</a>
+      <a href="#">SignIn/SignUp</a>
+      <a href="#">Cart</a>
+
+      
+    </div>
+    <div id="main">
+      
+      <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+    </div>
+   </div>
+
+    <a href=""> <img src="./images/StyleZillaWIthoutBackground.png" alt="" id="logo"></a>
+    <a href="" id="women_list_head">
+      <h4>Women</h4>
+    </a>
+    <a href="" id="men_list_head">
+      <h4>Men</h4>
+    </a>
+    <a href="" id="kids_head">
+      <h4>Kids</h4>
+    </a>
+    <a href="" id="shoes_bag_head">
+      <h4>Shoes&Bags</h4>
+    </a>
+    <a href="" id="beauty_head">
+      <h4>Beauty</h4>
+    </a>
+    <input type="text" placeholder="🔍  What are you looking for ?">
+    <a href="" id="more_head">
+      <h4>More</h4>
+    </a>
+    <a href="" id="login_head">
+      <h4>SignUp/SignIn</h4>
+    </a>
+    <a href="" id="wish_head">
+      <h4>Wishlist</h4>
+    </a>
+    <a href="" id="cart_head">
+      <h4>Cart</h4>
+    </a>
+  </div>
+
+
+  <!-- drop down list -->
+
+  <!-- women list -->
+  <div id="women_list">
+    <div>
+      <a href="">Ethnic & Fusion Wear</a><br>
+      <a href="">Kurtas & Kurtis</a><br>
+      <a href="">Kurta Sets</a><br>
+      <a href="">Ethnic Dresses</a><br>
+      <a href="">Tops & Tunics</a><br>
+      <a href="">Leggings & Churidars</a><br>
+      <a href="">Pants & Palazzos</a><br>
+      <a href="">Skirts</a><br>
+      <a href="">Dupattas & Stoles</a><br>
+    </div>
+    <div>
+      <a href="">Western Wear</a><br>
+      <a href="">Dresses & Jumpsuits</a><br>
+      <a href="">Jeans & Jeggings</a><br>
+      <a href="">Shorts & Skirts</a><br>
+      <a href="">Trousers</a><br>
+      <a href="">Jackets & Shrugs</a><br>
+
+    </div>
+    <div>
+      <a href="">Lingerie/Sleepwear</a><br>
+      <a href="">Bras</a><br>
+      <a href="">Briefs/Panties</a><br>
+      <a href="">Cami & Slips</a><br>
+      <a href="">Shapewear</a><br>
+      <a href="">Nightwear</a><br>
+    </div>
+    <div>
+      <a href="">SportsWear</a><br>
+      <a href="">Tops & Tees</a><br>
+      <a href="">Sports Bra</a><br>
+      <a href="">Leggings</a><br>
+      <a href="">Joggers & Tracks</a><br>
+      <a href="">Sweatshirts & Jackets</a><br>
+    </div>
+    <div>
+      <a href="">Top Brands</a><br>
+      <a href="">Melange</a><br>
+      <a href="">Ginger</a><br>
+      <a href="">Code</a><br>
+      <a href="">Fame Forever</a><br>
+      <a href="">Kappa</a><br>
+      <a href="">Kappa</a><br>
+      <a href=""></a><br>
+    </div>
+    <div id="womin_list_last">
+      <a href="">Winter wear</a><br>
+      <a href="">Beauty</a><br>
+      <a href="">Footwear/Bags</a><br>
+      <a href="">Watches</a><br>
+      <a href="">Jewellery</a><br>
+      <a href="">Fragrances</a><br>
+    </div>
+  </div>
+  <!-- mens list -->
+  <div id="mens_list">
+    <div>
+      <a href="">Topwear</a><br>
+      <a href="">Casual Shirts</a><br>
+      <a href="">Formal Shirts</a><br>
+      <a href="">Polos</a><br>
+      <a href="">T-Shirts</a><br>
+      <a href="">Jackets</a><br>
+      <a href="">Hoodies & Sweatshirts</a><br>
+
+    </div>
+    <div>
+      <a href="">Bottomwear</a><br>
+      <a href="">Casual Trousers</a><br>
+      <a href="">Formal Trousers</a><br>
+      <a href="">Jeans</a><br>
+
+      <a href="">Track Pants</a><br>
+      <a href="">Shorts & 3/4ths</a><br>
+    </div>
+    <div>
+      <a href="">Activewear</a><br>
+      <a href="">Poloss</a><br>
+      <a href="">Sports T-Shirts</a><br>
+      <a href="">Track Pants</a><br>
+      <a href="">Sports shoes</a><br>
+    </div>
+
+    <div>
+      <a href="">Ethnic</a><br>
+      <a href="">Kurtas</a><br>
+      <a href="">Waistcoats</a><br>
+      <a href="">Pyjamas</a><br>
+      <a href="">shoes</a><br>
+    </div>
+
+    <div>
+      <a href="">Winterwear</a><br>
+      <a href="">Hoodies & Sweatshirts</a><br>
+      <a href="">Waistcoats</a><br>
+      <a href="">Sweaters & Cardigans</a><br>
+      <a href="">Jackets</a><br>
+    </div>
+    <div>
+      <a href="">Innerwear</a><br>
+      <a href="">Boxers</a><br>
+      <a href="">Briefs</a><br>
+      <a href="">Vests</a><br>
+      <a href="">Loungewear</a><br>
+    </div>
+    <div>
+      <a href="">Top Brands</a><br>
+      <a href="">US Polo</a><br>
+      <a href="">Fahrenheit</a><br>
+      <a href="">United Color of Benetton</a><br>
+      <a href="">Jack & Jones/a><br>
+        <a href="">Celio</a><br>
+        <a href="">FameForever</a><br>
+    </div>
+  </div>
+  <!-- kids -->
+  <div id="kids_list">
+    <div>
+      <a href="">Boys</a><br>
+      <a href="">T-Shirts/Polos</a><br>
+      <a href="">Shirts</a><br>
+      <a href="">Jeans</a><br>
+      <a href="">Shorts</a><br>
+      <a href="">Trackpants & Joggers</a><br>
+      <a href="">Sweatshirts & hoodies</a><br>
+      <a href="">Pants</a><br>
+      <a href="">Clothing Sets</a><br>
+    </div>
+    <div>
+      <a href="">Girls</a><br>
+      <a href="">Tops & Tees</a><br>
+      <a href="">Dresses/Jumpsuits</a><br>
+      <a href="">Clothing Sets</a><br>
+      <a href="">Jeans</a><br>
+      <a href="">Knit Bottoms</a><br>
+      <a href="">Innerwear</a><br>
+      <a href="">Shorts & Skirts</a><br>
+      <a href="">TrackPants/Joggers</a><br>
+    </div>
+
+    <div>
+      <a href="">Top Brands</a><br>
+      <a href="">Fame forever</a><br>
+      <a href="">Juniors</a><br>
+      <a href="">Melange</a><br>
+      <a href="">Bossini</a><br>
+      <a href="">Mini Klub</a><br>
+      <a href="">Allen Solly</a><br>
+      <a href="">United Colors Of Benetton</a><br>
+      <a href="">Lee Cooper Juniors</a><br>
+      <a href="">Pepe Jeans</a><br>
+      <a href="">U.S. Polo Assn.</a><br>
+      <a href="">Peppermint</a><br>
+    </div>
+    <div>
+      <a href="">Age Store</a><br>
+      <a href="">0-2yrs</a><br>
+      <a href="">2-4yrs</a><br>
+      <a href="">4-6yrs</a><br>
+      <a href="">6-9yrs</a><br>
+      <a href="">9-12yrs</a><br>
+      <a href="">12-15yrs</a><br>
+      <a href="">15-17yrs</a><br>
+
+    </div>
+  </div>
+  <!-- shoes & bag list -->
+  <div id="shoes_bag_list">
+    <div>
+      <a href="">Women</a><br>
+      <a href="">Ballerinas</a><br>
+      <a href="">Flip flops & Sliders</a><br>
+      <a href="">Flat Sandals</a><br>
+      <a href="">Flat Casual Shoes</a><br>
+      <a href="">Heel Sandals</a><br>
+      <a href="">Heel Shoesy</a><br>
+
+      <a href="">Peppermint</a><br>
+    </div>
+    <div>
+      <a href="">Men</a><br>
+      <a href="">Loafers & Moccasin</a><br>
+      <a href="">Slip-Ons</a><br>
+      <a href="">Lace up</a><br>
+      <a href="">Flat Casual Shoes</a><br>
+      <a href="">Sports Shoes</a><br>
+      <a href="">Boots</a><br>
+
+      <a href="">Floaters & Sandals</a><br>
+    </div>
+    <div>
+      <a href="">Boys</a><br>
+      <a href="">Loafers & Moccasin</a><br>
+      <a href="">Slip-Ons</a><br>
+      <a href="">Lace up</a><br>
+      <a href="">Flat Casual Shoes</a><br>
+      <a href="">Sports Shoes</a><br>
+      <a href="">Boots</a><br>
+
+      <a href="">Floaters & Sandals</a><br>
+    </div>
+    <div>
+      <a href="">Girls</a><br>
+      <a href="">Ballerinas</a><br>
+      <a href="">Flip flops & Sliders</a><br>
+      <a href="">Flat Sandals</a><br>
+      <a href="">Flat Casual Shoes</a><br>
+      <a href="">Heel Sandals</a><br>
+      <a href="">Heel Shoesy</a><br>
+
+      <a href="">Peppermint</a><br>
+    </div>
+    <div>
+      <a href="">Price Store</a><br>
+      <a href="">Men Footwear under 999</a><br>
+      <a href="">Women Footwear under 799</a><br>
+      <a href="">Women Bags under 699</a><br>
+      <a href="">Boys Footwear Under 599</a><br>
+      <a href="">Girls Footwear Under 599</a><br>
+      <a href="">Men Footwear under 99</a><br>
+
+      <a href="">Boys Footwear Under 199</a><br>
+    </div>
+  </div>
+  <!-- beauty -->
+  <div id="beauty_list">
+    <div>
+      <a href="">Lips</a><br>
+      <a href="">Lipstick</a><br>
+      <a href="">Liquid Lipstick</a><br>
+      <a href="">Lip Crayon</a><br>
+      <a href="">Lip Gloss</a><br>
+      <a href="">Lip Liner</a><br>
+      <a href="">Lip Balm</a><br>
+
+      <a href="">Lip Stain</a><br>
+    </div>
+
+    <div>
+      <a href="">Face</a><br>
+      <a href="">Face Primer</a><br>
+      <a href="">Concealer</a><br>
+      <a href="">Foundation</a><br>
+      <a href="">Compact Powder</a><br>
+      <a href="">Blush & Highlighter</a><br>
+      <a href="">BB & CC Cream</a><br>
+
+      <a href="">Makeup Remover</a><br>
+    </div>
+    <div>
+      <a href="">Skin Care</a><br>
+      <a href="">Moisturizer</a><br>
+      <a href="">Sunscreen</a><br>
+      <a href="">Face Wash</a><br>
+      <a href="">Masks</a><br>
+      <a href="">Serum</a><br>
+      <a href="">BEye Cream</a><br>
+
+      <a href="">Hand Carer</a><br>
+    </div>
+    <div>
+      <a href="">Men Grooming</a><br>
+      <a href="">Moisturizer</a><br>
+      <a href="">Sunscreen</a><br>
+      <a href="">Face Wash</a><br>
+      <a href="">Masks</a><br>
+      <a href="">Serum</a><br>
+      <a href="">BEye Cream</a><br>
+
+      <a href="">Hand Carer</a><br>
+    </div>
+
+  </div>
+ <!-- login signup popup
+ <div id="pop_up">
+  <div>
+    <p>For Richer expirence</p>
+    <a href="">SignIn/SignUp</a>
+  </div>
+ </div> -->
+ 
   <!-- banner  -->
   <div class="container" id="banner">
- 
-    <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="2000">
+
+    <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="3000">
       <!-- Indicators -->
       <ol class="carousel-indicators">
         <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -49,36 +375,46 @@
         <li data-target="#myCarousel" data-slide-to="2"></li>
         <li data-target="#myCarousel" data-slide-to="3"></li>
       </ol>
-  
+
       <!-- Wrapper for slides -->
       <div class="carousel-inner" role="listbox">
         <div class="item active">
-          <img src="https://lmsin.net/cdn-cgi/image/w=1232,q=70,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/LS-Uber-HP-Desktop-HeroBanner6-08Dec2022.gif" alt="Chania" width="460" height="345">
+          <img
+            src="https://lmsin.net/cdn-cgi/image/w=1232,q=70,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/LS-Uber-HP-Desktop-HeroBanner6-08Dec2022.gif"
+            alt="Chania" width="460" height="345">
         </div>
-  
+
         <div class="item">
-          <img src="https://lmsin.net/cdn-cgi/image/w=1232,q=70,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/LS-Uber-HP-Desktop-HeroBanner1-12Dec2022A.gif" alt="Chania" width="460" height="345">
+          <img
+            src="https://lmsin.net/cdn-cgi/image/w=1232,q=70,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/LS-Uber-HP-Desktop-HeroBanner1-12Dec2022A.gif"
+            alt="Chania" width="460" height="345">
         </div>
-      
+
         <div class="item">
-          <img src="https://lmsin.net/cdn-cgi/image/w=1232,q=70,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/LS-Uber-HP-Desktop-HeroBanner4-05Dec2022.jpg" alt="Flower" width="460" height="345">
+          <img
+            src="https://lmsin.net/cdn-cgi/image/w=1232,q=70,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/LS-Uber-HP-Desktop-HeroBanner4-05Dec2022.jpg"
+            alt="Flower" width="460" height="345">
         </div>
-  
+
         <div class="item">
-          <img src="https://lmsin.net/cdn-cgi/image/w=1232,q=70,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/LS-Uber-HP-Desktop-HeroBanner2-05Dec2022.jpg" alt="Flower" width="460" height="345">
+          <img
+            src="https://lmsin.net/cdn-cgi/image/w=1232,q=70,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/LS-Uber-HP-Desktop-HeroBanner2-05Dec2022.jpg"
+            alt="Flower" width="460" height="345">
         </div>
         <div class="item">
-          <img src="https://lmsin.net/cdn-cgi/image/w=1232,q=70,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/LS-Uber-HP-Desktop-HeroBanner5-05Dec2022.jpg" alt="Flower" width="460" height="345">
+          <img
+            src="https://lmsin.net/cdn-cgi/image/w=1232,q=70,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/LS-Uber-HP-Desktop-HeroBanner5-05Dec2022.jpg"
+            alt="Flower" width="460" height="345">
         </div>
       </div>
-  
+
       <!-- Left and right controls -->
       <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="glyphicon glyphicon-chevron-left" ></span>
         <span class="sr-only">Previous</span>
       </a>
       <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="glyphicon glyphicon-chevron-right"></span>
         <span class="sr-only">Next</span>
       </a>
     </div>
@@ -86,326 +422,393 @@
 </body>
 
 <div class="off_section">
-    <a href=""><img src="https://lmsin.net/cdn-cgi/image/w=1232,q=70,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/Uber-HP-Desktop-PromoStrip2-08Dec2022.jpg" alt="" srcset=""></a>
+  <a href=""><img
+      src="https://lmsin.net/cdn-cgi/image/w=1232,q=70,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/Uber-HP-Desktop-PromoStrip2-08Dec2022.jpg"
+      alt="" srcset=""></a>
 </div>
 
 <!-- our benifit -->
 <div id="our_benifit">
-    <h2>Our Benefits</h2>
-    <hr>
-    <div>
-        <img src="https://lmsin.net/cdn-cgi/image/w=410,q=70,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/LS-DesktopUberHP-OurBenefit1-02Dec2022.jpg" alt="">
-        <img src="https://lmsin.net/cdn-cgi/image/w=410,q=70,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/LS-DesktopUberHP-OurBenefit2-13Oct2022.jpg" alt="">
-        <img src="https://lmsin.net/cdn-cgi/image/w=410,q=70,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/LS-DesktopUberHP-OurBenefit3-13Oct2022.jpg" alt="">
-    </div>
-    </div>
+  <h2>Our Benefits</h2>
+  <hr>
+  <div>
+    <img
+      src="https://lmsin.net/cdn-cgi/image/w=410,q=70,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/LS-DesktopUberHP-OurBenefit1-02Dec2022.jpg"
+      alt="">
+    <img
+      src="https://lmsin.net/cdn-cgi/image/w=410,q=70,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/LS-DesktopUberHP-OurBenefit2-13Oct2022.jpg"
+      alt="">
+    <img
+      src="https://lmsin.net/cdn-cgi/image/w=410,q=70,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/LS-DesktopUberHP-OurBenefit3-13Oct2022.jpg"
+      alt="">
+  </div>
+</div>
 <!-- Unmissable Offers -->
-    <div id="unmissable">
-        <h2>Unmissable Offers</h2>
-       <div>
-        <img src="./images/1.jpg" alt="">
-       <img src="./images/2.jpg" alt="">
-       <img src="./images/3.jpg" alt="">
-       <img src="./images/4.jpg" alt="">
-       </div>
+<div id="unmissable">
+  <h2>Unmissable Offers</h2>
+  <div>
+    <img src="./images/1.jpg" alt="">
+    <img src="./images/2.jpg" alt="">
+    <img src="./images/3.jpg" alt="">
+    <img src="./images/4.jpg" alt="">
+  </div>
+</div>
+<div class="offer"><img
+    src="https://lmsin.net/cdn-cgi/image/w=1232,q=70,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/Uber-HP-Desktop-PromoStrip3-06Dec2022.gif"
+    alt=""></div>
+
+<!-- Winterwear Store -->
+
+<div id="Winterwear">
+  <h2> Winterwear Store</h2>
+  <div>
+    <img src="./images/5.jpg" alt="">
+    <img src="./images/6.jpg" alt="">
+    <img src="./images/7.jpg" alt="">
+    <img src="./images/8.jpg" alt="">
+  </div>
+</div>
+
+<!-- Trending Offers -->
+<div id="trending">
+  <h2>Trending Offers</h2>
+  <div>
+    <img src="./images/9.jpg" alt="">
+    <img src="./images/10.jpg" alt="">
+    <img src="./images/11.jpg" alt="">
+    <img src="./images/13.jpg" alt="">
+    <img src="./images/13.jpg" alt="">
+    <img src="./images/14.jpg" alt="">
+    <img src="./images/15.jpg" alt="">
+    <img src="./images/16.jpg" alt="">
+  </div>
+</div>
+
+<!-- Watches -->
+
+<div id="watces">
+  <h2>Watches</h2>
+  <div>
+    <img src="./images/Watch.gif" alt="">
+  </div>
+</div>
+
+<!-- top category -->
+<div id="top-category1">
+  <h2>Top Categories</h2>
+  <div id="top-category">
+
+    <div id="top_btn">
+      <button id="womens_top_btn">Women</button>
+      <button id="mens_top_btn">Mens</button>
+      <button id="kids_top_btn">Kids</button>
+      <button id="shoes_top_btn">Shoes&Bag</button>
+      <button id="beauty_top_btn">Beauty</button>
     </div>
-    <div class="offer"><img src="https://lmsin.net/cdn-cgi/image/w=1232,q=70,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/Uber-HP-Desktop-PromoStrip3-06Dec2022.gif" alt=""></div>
-   
-    <!-- Winterwear Store -->
-   
-    <div id="Winterwear">
-    <h2> Winterwear Store</h2>
-    <div>
-        <img src="./images/5.jpg" alt="">
-        <img src="./images/6.jpg" alt="">
-        <img src="./images/7.jpg" alt="">
-        <img src="./images/8.jpg" alt="">
+    <div id="womens_in_top_category">
+      <img
+        src="https://rukminim1.flixcart.com/image/612/612/kovsvbk0/top/x/q/d/l-ss21an316ty45-and-original-imag38u52qgztajh.jpeg?q=70"
+        alt="">
+      <img
+        src="https://rukminim1.flixcart.com/image/612/612/kovsvbk0/dress/r/6/u/m-ss21an112drkt-and-original-imag38zpexfw7yjv.jpeg?q=70"
+        alt="">
+      <img
+        src="https://rukminim1.flixcart.com/image/612/612/l2rwzgw0/dress/m/1/7/s-ss22as122drcey-and-original-imagefn8t8s3yxrp.jpeg?q=70"
+        alt="">
+      <img
+        src="https://rukminim1.flixcart.com/image/612/612/xif0q/dress/h/c/h/xxl-fw22ag058drx109-and-original-imaghyqbgsxaghef.jpeg?q=70"
+        alt="">
     </div>
+    <div id="mens_in_top_category">
+      <img
+        src="https://rukminim1.flixcart.com/image/612/612/xif0q/t-shirt/5/4/q/l-cv-ts86-vero-lie-original-imafvvaykahhkhhw-bb.jpeg?q=70"
+        alt="">
+      <img
+        src="https://rukminim1.flixcart.com/image/612/612/xif0q/shirt/e/t/q/xxl-latest-zara-ramraj-human-being-unique-stylish-high-quality-original-imagewgwq3xe33v5-bb.jpeg?q=70"
+        alt="">
+      <img
+        src="https://rukminim1.flixcart.com/image/612/612/xif0q/shirt/f/4/4/l-crc-den-01-carbonn-blue-original-imafv2gp2f8vyhdh-bb.jpeg?q=70"
+        alt="">
+      <img
+        src="https://rukminim1.flixcart.com/image/612/612/l52sivk0/shirt/3/z/f/xl-cl-twill-shd-carbonn-cloth-original-imagftd5axgsw3gd.jpeg?q=70"
+        alt="">
     </div>
 
-    <!-- Trending Offers -->
-    <div id="trending">
-        <h2>Trending Offers</h2>
-        <div>
-            <img src="./images/9.jpg" alt="">
-            <img src="./images/10.jpg" alt="">
-            <img src="./images/11.jpg" alt="">
-            <img src="./images/13.jpg" alt="">
-            <img src="./images/13.jpg" alt="">
-            <img src="./images/14.jpg" alt="">
-            <img src="./images/15.jpg" alt="">
-            <img src="./images/16.jpg" alt="">
-        </div>
+    <div id="kids_in_top_category">
+      <img
+        src="https://rukminim1.flixcart.com/image/612/612/xif0q/kids-t-shirt/y/b/b/13-14-years-fst553-paris-orange-force-original-imagjudhkeqzmwa4.jpeg?q=70"
+        alt="" srcset="">
+      <img
+        src="https://rukminim1.flixcart.com/image/612/612/kzpw2vk0/kids-t-shirt/f/2/e/3-4-years-lucii20001-lucii-original-imagbzff9zb9mefe.jpeg?q=70"
+        alt="">
+      <img
+        src="https://rukminim1.flixcart.com/image/612/612/kvgzyq80/kids-t-shirt/8/r/l/11-12-years-fkt44-prnk-yl-force-original-imag8cwejmxxzgfg.jpeg?q=70"
+        alt="">
+      <img
+        src="https://rukminim1.flixcart.com/image/612/612/xif0q/kids-t-shirt/7/u/b/6-7-years-round-neck-force-original-imagjhehnyu4qh5t.jpeg?q=70"
+        alt="">
     </div>
+    <div id="shoes_in_top_category">
+      <img src="https://rukminim1.flixcart.com/image/612/612/xif0q/shoe/c/v/r/-original-imagg5xwdgc7cpgf.jpeg?q=70"
+        alt="">
+      <img src="https://rukminim1.flixcart.com/image/612/612/xif0q/shoe/o/y/v/-original-imagh7zzmgsdxyhp.jpeg?q=70"
+        alt="">
+      <img
+        src="https://rukminim1.flixcart.com/image/612/612/l51d30w0/shoe/z/w/c/10-mrj1914-10-aadi-white-black-red-original-imagft9k9hydnfjp.jpeg?q=70"
+        alt="">
 
-    <!-- Watches -->
-
-    <div id="watces">
-        <h2>Watches</h2>
-        <div>
-            <img src="./images/Watch.gif" alt="">
-        </div>
     </div>
+    <div id="beauty_in_top_category">
+      <img
+        src="https://rukminim1.flixcart.com/image/612/612/kyhlfgw0/combo-kit/9/z/f/rosedale-artificial-nail-glue-3in1-eyeliner-mascara-eyebrow-original-imagapycbarfnmy6.jpeg?q=70"
+        alt="">
+      <img
+        src="https://rukminim1.flixcart.com/image/612/612/ks99aq80/combo-kit/o/x/g/creamy-matte-long-lasting-moisturizing-lipstick-2color-shimmer-original-imag5vdsk75ymgps.jpeg?q=70"
+        alt="">
 
-    <!-- top category -->
-   <div id="top-category1">
-    <h2>Top Categories</h2>
-    <div id="top-category">
-       
-        <div id="top_btn">
-            <button id="womens_top_btn">Women</button>
-            <button id="mens_top_btn">Mens</button>
-            <button id="kids_top_btn">Kids</button>
-            <button id="shoes_top_btn">Shoes&Bag</button>
-            <button id="beauty_top_btn">Beauty</button>
-        </div>
-        <div id="womens_in_top_category">
-            <img src="https://rukminim1.flixcart.com/image/612/612/kovsvbk0/top/x/q/d/l-ss21an316ty45-and-original-imag38u52qgztajh.jpeg?q=70" alt="">
-             <img src="https://rukminim1.flixcart.com/image/612/612/kovsvbk0/dress/r/6/u/m-ss21an112drkt-and-original-imag38zpexfw7yjv.jpeg?q=70" alt="">
-             <img src="https://rukminim1.flixcart.com/image/612/612/l2rwzgw0/dress/m/1/7/s-ss22as122drcey-and-original-imagefn8t8s3yxrp.jpeg?q=70" alt="">
-             <img src="https://rukminim1.flixcart.com/image/612/612/xif0q/dress/h/c/h/xxl-fw22ag058drx109-and-original-imaghyqbgsxaghef.jpeg?q=70" alt="">
-        </div>
-        <div id="mens_in_top_category">
-            <img src="https://rukminim1.flixcart.com/image/612/612/xif0q/t-shirt/5/4/q/l-cv-ts86-vero-lie-original-imafvvaykahhkhhw-bb.jpeg?q=70" alt="">
-            <img src="https://rukminim1.flixcart.com/image/612/612/xif0q/shirt/e/t/q/xxl-latest-zara-ramraj-human-being-unique-stylish-high-quality-original-imagewgwq3xe33v5-bb.jpeg?q=70" alt="">
-            <img src="https://rukminim1.flixcart.com/image/612/612/xif0q/shirt/f/4/4/l-crc-den-01-carbonn-blue-original-imafv2gp2f8vyhdh-bb.jpeg?q=70" alt="">
-            <img src="https://rukminim1.flixcart.com/image/612/612/l52sivk0/shirt/3/z/f/xl-cl-twill-shd-carbonn-cloth-original-imagftd5axgsw3gd.jpeg?q=70" alt="">
-        </div>
-
-        <div id="kids_in_top_category">
-            <img src="https://rukminim1.flixcart.com/image/612/612/xif0q/kids-t-shirt/y/b/b/13-14-years-fst553-paris-orange-force-original-imagjudhkeqzmwa4.jpeg?q=70" alt="" srcset="">
-            <img src="https://rukminim1.flixcart.com/image/612/612/kzpw2vk0/kids-t-shirt/f/2/e/3-4-years-lucii20001-lucii-original-imagbzff9zb9mefe.jpeg?q=70" alt="">
-            <img src="https://rukminim1.flixcart.com/image/612/612/kvgzyq80/kids-t-shirt/8/r/l/11-12-years-fkt44-prnk-yl-force-original-imag8cwejmxxzgfg.jpeg?q=70" alt="">
-            <img src="https://rukminim1.flixcart.com/image/612/612/xif0q/kids-t-shirt/7/u/b/6-7-years-round-neck-force-original-imagjhehnyu4qh5t.jpeg?q=70" alt="">
-        </div>
-        <div id="shoes_in_top_category"> 
-        <img src="https://rukminim1.flixcart.com/image/612/612/xif0q/shoe/c/v/r/-original-imagg5xwdgc7cpgf.jpeg?q=70" alt="">
-        <img src="https://rukminim1.flixcart.com/image/612/612/xif0q/shoe/o/y/v/-original-imagh7zzmgsdxyhp.jpeg?q=70" alt="">
-        <img src="https://rukminim1.flixcart.com/image/612/612/l51d30w0/shoe/z/w/c/10-mrj1914-10-aadi-white-black-red-original-imagft9k9hydnfjp.jpeg?q=70" alt="">
-        
-        </div>
-        <div id="beauty_in_top_category">
-    <img src="https://rukminim1.flixcart.com/image/612/612/kyhlfgw0/combo-kit/9/z/f/rosedale-artificial-nail-glue-3in1-eyeliner-mascara-eyebrow-original-imagapycbarfnmy6.jpeg?q=70" alt="">
-    <img src="https://rukminim1.flixcart.com/image/612/612/ks99aq80/combo-kit/o/x/g/creamy-matte-long-lasting-moisturizing-lipstick-2color-shimmer-original-imag5vdsk75ymgps.jpeg?q=70" alt="">
-    
-        </div>
     </div>
-   </div>
+  </div>
+</div>
 <!-- Top Deals In -->
-   <div id="top_deal">
-     <h2>Top Deals In</h2>
-     <div>
-      <img src="https://lmsin.net/cdn-cgi/image/w=616,q=70,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/LS-UberHp-Top-Deals-Desk-Beauty-Banner1-29Nov22.jpg" alt="">
-      <img src="https://lmsin.net/cdn-cgi/image/w=616,q=70,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/LS-UberHp-Top-Deals-Desk-Women-Banner1-29Nov22.jpg" alt="">
-      <img src="https://lmsin.net/cdn-cgi/image/w=616,q=70,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/LS-UberHp-Top-Deals-Desk-Men-Banner1-29Nov22.jpg" alt="">
-      <img src="https://lmsin.net/cdn-cgi/image/w=616,q=70,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/LS-UberHp-Top-Deals-Desk-Kids-Banner2-29Nov22.jpg" alt="">
+<div id="top_deal">
+  <h2>Top Deals In</h2>
+  <div>
+    <img
+      src="https://lmsin.net/cdn-cgi/image/w=616,q=70,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/LS-UberHp-Top-Deals-Desk-Beauty-Banner1-29Nov22.jpg"
+      alt="">
+    <img
+      src="https://lmsin.net/cdn-cgi/image/w=616,q=70,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/LS-UberHp-Top-Deals-Desk-Women-Banner1-29Nov22.jpg"
+      alt="">
+    <img
+      src="https://lmsin.net/cdn-cgi/image/w=616,q=70,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/LS-UberHp-Top-Deals-Desk-Men-Banner1-29Nov22.jpg"
+      alt="">
+    <img
+      src="https://lmsin.net/cdn-cgi/image/w=616,q=70,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/LS-UberHp-Top-Deals-Desk-Kids-Banner2-29Nov22.jpg"
+      alt="">
 
-     </div>
-   </div>
-   <!-- Big Brands Big Discounts -->
-   <div id="top_brands_discount">
-    <h2>Big Brands Big Discounts</h2>
-    <div>
-      <img src="./images/C13.jpg" alt="">
-      <img src="./images/C14.jpg" alt="">
-      <img src="./images/C15.jpg" alt="">
-      <img src="./images/C16.jpg" alt="">
-      <img src="./images/C17.jpg" alt="">
-      <img src="./images/C18.jpg" alt="">
-    </div>
-    <div>
-      <img src="./images/C19.jpg" alt="">
-      <img src="./images/C20.jpg" alt="">
-      <img src="./images/C21.jpg" alt="">
-      <img src="./images/C22.jpg" alt="">
-      <img src="./images/C23.jpg" alt="">
-      <img src="./images/C24.jpg" alt="">
-    </div>
-   </div>
+  </div>
+</div>
+<!-- Big Brands Big Discounts -->
+<div id="top_brands_discount">
+  <h2>Big Brands Big Discounts</h2>
+  <div>
+    <img src="./images/C13.jpg" alt="">
+    <img src="./images/C14.jpg" alt="">
+    <img src="./images/C15.jpg" alt="">
+    <img src="./images/C16.jpg" alt="">
+    <img src="./images/C17.jpg" alt="">
+    <img src="./images/C18.jpg" alt="">
+  </div>
+  <div>
+    <img src="./images/C19.jpg" alt="">
+    <img src="./images/C20.jpg" alt="">
+    <img src="./images/C21.jpg" alt="">
+    <img src="./images/C22.jpg" alt="">
+    <img src="./images/C23.jpg" alt="">
+    <img src="./images/C24.jpg" alt="">
+  </div>
+</div>
 
-   <!-- Season's Hottest Picks -->
-   <div id="season_hotest_pic">
-    <h2>Season's Hottest Picks</h2>
-    <div>
-      <img src="https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000012067444-Purple-Lilac-1000012067444_01-2100.jpg" alt="">
-       <img src="https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000011965733-Blue-Blue-1000011965733_01-2100.jpg" alt="">
-       <img src="https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000011010636-Yellow-Yellow-1000011010636_02-2100.jpg" alt="">
-       <img src="https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000011177566-Yellow-Yellow-1000011177566_01-2100.jpg" alt="">
-      </div>
-      <div>
-        <img src="https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000011580251-Red-Red-1000011580251_01-2100.jpg" alt="">
-        <img src="https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000012180758-Black-Black-1000012180758_01-2100.jpg" alt="">
-        <img src="https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000011416074_02-2100.jpg" alt="">
-       <img src="https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010809107-Multicolour-1000010809107_02-2100.jpg" alt="">
-      </div>
-   </div>
+<!-- Season's Hottest Picks -->
+<div id="season_hotest_pic">
+  <h2>Season's Hottest Picks</h2>
+  <div>
+    <img
+      src="https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000012067444-Purple-Lilac-1000012067444_01-2100.jpg"
+      alt="">
+    <img
+      src="https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000011965733-Blue-Blue-1000011965733_01-2100.jpg"
+      alt="">
+    <img
+      src="https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000011010636-Yellow-Yellow-1000011010636_02-2100.jpg"
+      alt="">
+    <img
+      src="https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000011177566-Yellow-Yellow-1000011177566_01-2100.jpg"
+      alt="">
+  </div>
+  <div>
+    <img
+      src="https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000011580251-Red-Red-1000011580251_01-2100.jpg"
+      alt="">
+    <img
+      src="https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000012180758-Black-Black-1000012180758_01-2100.jpg"
+      alt="">
+    <img
+      src="https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000011416074_02-2100.jpg"
+      alt="">
+    <img
+      src="https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010809107-Multicolour-1000010809107_02-2100.jpg"
+      alt="">
+  </div>
+</div>
 
-   <!-- Brands We Love -->
-   <div id="top_brands_we_love">
-    <h2>Brands We Love</h2>
-    <div>
-      <img src="./images/C1.jpg" alt="">
-      <img src="./images/C2.jpg" alt="">
-      <img src="./images/C3.jpg" alt="">
-      <img src="./images/C4.jpg" alt="">
-      <img src="./images/C5.jpg" alt="">
-      <img src="./images/C6.jpg" alt="">
-    </div>
-    <div>
-      <img src="./images/C7.jpg" alt="">
-      <img src="./images/C8.jpg" alt="">
-      <img src="./images/C9.jpg" alt="">
-      <img src="./images/C10.jpg" alt="">
-      <img src="./images/C11.jpg" alt="">
-      <img src="./images/C12.jpg" alt="">
-      
-    </div>
-   </div>
-   <!-- Value Picks -->
-   <div id="value_pics">
-    <h2>Value Picks</h2>
-    <div>
-      <img src="./images/B1.jpg" alt="">
-      <img src="./images/B2.jpg" alt="">
-      <img src="./images/B3.jpg" alt="">
-      <img src="./images/B4.jpg" alt="">
-    </div>
-    <div>
-      <img src="./images/B5.jpg" alt="">
-      <img src="./images/B6.jpg" alt="">
-      <img src="./images/B7.jpg" alt="">
-      <img src="./images/B8.jpg" alt="">
-    </div>
-   </div>
+<!-- Brands We Love -->
+<div id="top_brands_we_love">
+  <h2>Brands We Love</h2>
+  <div>
+    <img src="./images/C1.jpg" alt="">
+    <img src="./images/C2.jpg" alt="">
+    <img src="./images/C3.jpg" alt="">
+    <img src="./images/C4.jpg" alt="">
+    <img src="./images/C5.jpg" alt="">
+    <img src="./images/C6.jpg" alt="">
+  </div>
+  <div>
+    <img src="./images/C7.jpg" alt="">
+    <img src="./images/C8.jpg" alt="">
+    <img src="./images/C9.jpg" alt="">
+    <img src="./images/C10.jpg" alt="">
+    <img src="./images/C11.jpg" alt="">
+    <img src="./images/C12.jpg" alt="">
 
-   <!-- subscribe section -->
-   <div id="subscribe">
-     <div id="email_subs">
-      <h1>Subscribe to our awesome emails.</h1>
-      <p>Get our latest offers and news straight in your inbox.</p>
-      <input type="email" placeholder="Please Enter Your Email Address">
-      <button>SUBSCRIBE</button>
-     </div>
-     <div id="play_store">
-      <h1>Download our apps</h1>
-      <p>Shop our products and offers on-the-go.</p>
-      <button> Download on the App Store</button>
-      <button>Get It On Google Play</button>
-     </div>
-   </div>
+  </div>
+</div>
+<!-- Value Picks -->
+<div id="value_pics">
+  <h2>Value Picks</h2>
+  <div>
+    <img src="./images/B1.jpg" alt="">
+    <img src="./images/B2.jpg" alt="">
+    <img src="./images/B3.jpg" alt="">
+    <img src="./images/B4.jpg" alt="">
+  </div>
+  <div>
+    <img src="./images/B5.jpg" alt="">
+    <img src="./images/B6.jpg" alt="">
+    <img src="./images/B7.jpg" alt="">
+    <img src="./images/B8.jpg" alt="">
+  </div>
+</div>
 
-   <!--Footer  -->
-   <div id="footer">
-    <div>
-      <h5>Womens</h5>
-      <a href="">Tops</a><br>
-      <a href="">Ethnicwear</a><br>
-      <a href="">Bottoms</a><br>
-      <a href="">Dresses & Jumpsuits</a><br>
-      <a href="">Winterwear</a><br>
-      <a href="">Lingerie</a><br>
-      <a href="">Nightwear</a><br>
-      <a href="">Sportswear</a><br>
-      <a href="">Beauty</a><br>
-      <a href="">Watches & Sunglasses</a><br>
-    </div>
-    <div>
-      <h5>Mens</h5>
-      <a href="">Tops</a><br>
-      <a href="">Ethnicwear</a><br>
-      <a href="">Bottoms</a><br>
-      <a href="">Sportswear</a><br>
-      <a href="">Winterwear</a><br>
-      <a href="">Innerwear</a><br>
-      <a href="">Grooming</a><br>
-      <a href="">Sportswear</a><br>
-    
-      <a href="">Watches & Sunglasses</a><br>
-    </div>
-    <div>
-      <h5>Kids</h5>
-      <a href="">Girls Clothing</a><br>
-      <a href="">Boys Clothing</a><br>
-      <a href="">Infants Girls</a><br>
-      <a href="">Infants Boys</a><br>
-      <a href="">Winterwear</a><br>
-      <a href="">Add ons</a><br>
-      <a href="">The Teen Shop</a><br>
-      
-    </div>
-    <div>
-      <h5>Shops&Bags</h5>
-      <a href="">Girls</a><br>
-      <a href="">Boys</a><br>
-      <a href="">Women</a><br>
-      <a href="">Mens</a><br>
-      <a href="">Women Accessories</a><br>
-      <a href="">Men Accessories</a><br>
-      <a href="">Essential</a><br>
-    </div>
-    <div>
-      <h5>Beauty</h5>
-      <a href="">Makeup Eyes</a><br>
-      <a href="">Makeup Face</a><br>
-      <a href="">Makeup Nails</a><br>
-      <a href="">Mens</a><br>
-      <a href="">Perfumes</a><br>
-     
-    </div>
-    <div>
-      <h5>Explore</h5>
-      <a href="">Online Offers</a><br>
-      <a href="">Store Offers</a><br>
-      <a href="">Online Gift Card</a><br>
-      <a href="">Store Gift Card</a><br>
-      <a href="">Stores Nearby</a><br>
-      <a href="">EDGE Membership</a><br>
-      <a href="">Shop on WhatsApp</a><br>
-      <a href="">Fashion VLOG</a><br>
-      <a href="">Join CIRCLEMAG</a><br>
-      <a href="">SBI Offers</a><br>
-      <a href="">Homecentre</a><br>
-    </div>
-    <div>
-      <h5>About Us</h5>
-      <a href="">About us</a><br>
-      <a href="">Careers</a><br>
-      <a href="">Take a Tour</a><br>
-      <a href="">Blog</a><br>
-      <a href="">Store Locator</a><br>
-      <a href="">Landmark Cares</a><br>
-     
-    </div>
-    <div>
-      <h5>Help</h5>
-      <a href="">Contact us</a><br>
-      <a href="">Shipping</a><br>
-      <a href="">Returns Process</a><br>
-      <a href="">Returns Policy</a><br>
-      <a href="">Help Centre</a><br>
-     
-    </div>
-   </div>
-   <!-- contact option -->
-   <div id="contact">
-    <div>
-      <p>You can talk to us</p>
-       <p>📞1800-123-1555</p>
-    </div>
-    <div>
-      <p>Help center</p>
-       <p>📧 stylezilla.info@mail.com</p>
-    </div>
-    <div>
-      <p>Write to us</p>
-      <p>🗃️ help.stylezilla.com</p>
-    </div>
-    <div>
-      <img src="https://cdn-icons-png.flaticon.com/128/3488/3488299.png" alt="">
-      <img src="https://cdn-icons-png.flaticon.com/128/733/733558.png" alt="">
-      <img src="https://cdn-icons-png.flaticon.com/128/2504/2504947.png" alt="">
-    </div>
-   </div>
+<!-- subscribe section -->
+<div id="subscribe">
+  <div id="email_subs">
+    <h1>Subscribe to our awesome emails.</h1>
+    <p>Get our latest offers and news straight in your inbox.</p>
+    <input type="email" placeholder="Please Enter Your Email Address">
+    <button>SUBSCRIBE</button>
+  </div>
+  <div id="play_store">
+    <h1>Download our apps</h1>
+    <p>Shop our products and offers on-the-go.</p>
+    <button> Download on the App Store</button>
+    <button>Get It On Google Play</button>
+  </div>
+</div>
+
+<!--Footer  -->
+<div id="footer">
+  <div>
+    <h5>Womens</h5>
+    <a href="">Tops</a><br>
+    <a href="">Ethnicwear</a><br>
+    <a href="">Bottoms</a><br>
+    <a href="">Dresses & Jumpsuits</a><br>
+    <a href="">Winterwear</a><br>
+    <a href="">Lingerie</a><br>
+    <a href="">Nightwear</a><br>
+    <a href="">Sportswear</a><br>
+    <a href="">Beauty</a><br>
+    <a href="">Watches & Sunglasses</a><br>
+  </div>
+  <div>
+    <h5>Mens</h5>
+    <a href="">Tops</a><br>
+    <a href="">Ethnicwear</a><br>
+    <a href="">Bottoms</a><br>
+    <a href="">Sportswear</a><br>
+    <a href="">Winterwear</a><br>
+    <a href="">Innerwear</a><br>
+    <a href="">Grooming</a><br>
+    <a href="">Sportswear</a><br>
+
+    <a href="">Watches & Sunglasses</a><br>
+  </div>
+  <div>
+    <h5>Kids</h5>
+    <a href="">Girls Clothing</a><br>
+    <a href="">Boys Clothing</a><br>
+    <a href="">Infants Girls</a><br>
+    <a href="">Infants Boys</a><br>
+    <a href="">Winterwear</a><br>
+    <a href="">Add ons</a><br>
+    <a href="">The Teen Shop</a><br>
+
+  </div>
+  <div>
+    <h5>Shops&Bags</h5>
+    <a href="">Girls</a><br>
+    <a href="">Boys</a><br>
+    <a href="">Women</a><br>
+    <a href="">Mens</a><br>
+    <a href="">Women Accessories</a><br>
+    <a href="">Men Accessories</a><br>
+    <a href="">Essential</a><br>
+  </div>
+  <div>
+    <h5>Beauty</h5>
+    <a href="">Makeup Eyes</a><br>
+    <a href="">Makeup Face</a><br>
+    <a href="">Makeup Nails</a><br>
+    <a href="">Mens</a><br>
+    <a href="">Perfumes</a><br>
+
+  </div>
+  <div>
+    <h5>Explore</h5>
+    <a href="">Online Offers</a><br>
+    <a href="">Store Offers</a><br>
+    <a href="">Online Gift Card</a><br>
+    <a href="">Store Gift Card</a><br>
+    <a href="">Stores Nearby</a><br>
+    <a href="">EDGE Membership</a><br>
+    <a href="">Shop on WhatsApp</a><br>
+    <a href="">Fashion VLOG</a><br>
+    <a href="">Join CIRCLEMAG</a><br>
+    <a href="">SBI Offers</a><br>
+    <a href="">Homecentre</a><br>
+  </div>
+  <div>
+    <h5>About Us</h5>
+    <a href="">About us</a><br>
+    <a href="">Careers</a><br>
+    <a href="">Take a Tour</a><br>
+    <a href="">Blog</a><br>
+    <a href="">Store Locator</a><br>
+    <a href="">Landmark Cares</a><br>
+
+  </div>
+  <div>
+    <h5>Help</h5>
+    <a href="">Contact us</a><br>
+    <a href="">Shipping</a><br>
+    <a href="">Returns Process</a><br>
+    <a href="">Returns Policy</a><br>
+    <a href="">Help Centre</a><br>
+
+  </div>
+</div>
+<!-- contact option -->
+<div id="contact">
+
+  <div>
+    <p>You can talk to us</p>
+    <p>📞1800-123-1555</p>
+  </div>
+  <div>
+    <p>Help center</p>
+    <p>📧 stylezilla.info@mail.com</p>
+  </div>
+  <div>
+    <p>Write to us</p>
+    <p>🗃️ help.stylezilla.com</p>
+  </div>
+  <div>
+    <img src="https://cdn-icons-png.flaticon.com/128/3488/3488299.png" alt="">
+    <img src="https://cdn-icons-png.flaticon.com/128/733/733558.png" alt="">
+    <img src="https://cdn-icons-png.flaticon.com/128/2504/2504947.png" alt="">
+  </div>
+</div>
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 </html>
 <script src="./index.js"></script>
- 

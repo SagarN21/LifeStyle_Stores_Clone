@@ -83,3 +83,214 @@ womens.style.background = "aliceblue"
 
 womens.style.background = "aliceblue"
  })
+
+// drop down list
+
+
+ let wonmen_list_render = document.querySelector("#women_list_head")
+ wonmen_list_render.addEventListener("mouseover" , (e)=>{
+  //  e.preventDefault()
+   let women_list = document.querySelector("#women_list")
+   women_list.style.display = "block"
+   women_list.style.display = "flex"
+
+   
+   let men_list = document.querySelector("#mens_list")
+   men_list.style.display = "none"
+   let kids_list = document.querySelector("#kids_list")
+   kids_list.style.display="none"
+   let beauty_list = document.querySelector("#beauty_list")
+   beauty_list.style.display ="none"
+   let shoes_bag_list = document.querySelector("#shoes_bag_list")
+   shoes_bag_list.style.display = "none"
+
+ })
+ 
+ wonmen_list_render.addEventListener("mouseenter" , ()=>{
+   let women_list = document.querySelector("#women_list")
+   women_list.style.display = "none"
+   let men_list = document.querySelector("#mens_list")
+   men_list.style.display = "none"
+   let kids_list = document.querySelector("#kids_list")
+   kids_list.style.display="none"
+   let beauty_list = document.querySelector("#beauty_list")
+   beauty_list.style.display ="none"
+   let shoes_bag_list = document.querySelector("#shoes_bag_list")
+   shoes_bag_list.style.display = "none"
+
+ })
+
+ 
+ 
+ let men_list_render = document.querySelector("#men_list_head")
+ men_list_render.addEventListener("mouseover" , (e)=>{
+  //  e.preventDefault()
+   let men_list = document.querySelector("#mens_list")
+   men_list.style.display = "block"
+   men_list.style.display = "flex"
+   let women_list = document.querySelector("#women_list")
+   women_list.style.display = "none"
+ 
+   let kids_list = document.querySelector("#kids_list")
+   kids_list.style.display="none"
+   let beauty_list = document.querySelector("#beauty_list")
+   beauty_list.style.display ="none"
+   let shoes_bag_list = document.querySelector("#shoes_bag_list")
+   shoes_bag_list.style.display = "none"
+
+ })
+ men_list_render.addEventListener("mouseenter" , ()=>{
+   let women_list = document.querySelector("#women_list")
+   women_list.style.display = "none"
+   let men_list = document.querySelector("#mens_list")
+   men_list.style.display = "none"
+   let kids_list = document.querySelector("#kids_list")
+   kids_list.style.display="none"
+   let beauty_list = document.querySelector("#beauty_list")
+   beauty_list.style.display ="none"
+   let shoes_bag_list = document.querySelector("#shoes_bag_list")
+   shoes_bag_list.style.display = "none"
+
+
+ })
+
+ 
+ 
+ let kid_list_render = document.querySelector("#kids_head")
+  kid_list_render.addEventListener("mouseover" , (e)=>{
+  //  e.preventDefault()
+   let kids_list = document.querySelector("#kids_list")
+   kids_list.style.display = "block"
+   kids_list.style.display = "flex"
+
+   let women_list = document.querySelector("#women_list")
+   women_list.style.display = "none"
+   let men_list = document.querySelector("#mens_list")
+   men_list.style.display = "none"
+   
+   let beauty_list = document.querySelector("#beauty_list")
+   beauty_list.style.display ="none"
+   let shoes_bag_list = document.querySelector("#shoes_bag_list")
+   shoes_bag_list.style.display = "none"
+
+  })
+
+  kid_list_render.addEventListener("mouseenter" , ()=>{
+   let women_list = document.querySelector("#women_list")
+   women_list.style.display = "none"
+   let men_list = document.querySelector("#mens_list")
+   men_list.style.display = "none"
+   let kids_list = document.querySelector("#kids_list")
+   kids_list.style.display="none"
+   let beauty_list = document.querySelector("#beauty_list")
+   beauty_list.style.display ="none"
+   let shoes_bag_list = document.querySelector("#shoes_bag_list")
+   shoes_bag_list.style.display = "none"
+
+
+  })
+
+  let shoes_list_render = document.querySelector("#shoes_bag_head")
+  shoes_list_render.addEventListener("mouseover" , (e)=>{
+  //  e.preventDefault()
+   let shoes_bag_list = document.querySelector("#shoes_bag_list")
+   shoes_bag_list.style.display = "block"
+   shoes_bag_list.style.display = "flex"
+
+   let women_list = document.querySelector("#women_list")
+   women_list.style.display = "none"
+   let men_list = document.querySelector("#mens_list")
+   men_list.style.display = "none"
+   let kids_list = document.querySelector("#kids_list")
+   kids_list.style.display="none"
+   let beauty_list = document.querySelector("#beauty_list")
+   beauty_list.style.display ="none"
+ 
+  })
+  shoes_list_render.addEventListener("mouseenter" , ()=>{
+   let shoes_bag_list = document.querySelector("#shoes_bag_list")
+   shoes_bag_list.style.display = "none"
+
+   let kids_list = document.querySelector("#kids_list")
+   kids_list.style.display="none"
+   let men_list = document.querySelector("#mens_list")
+   men_list.style.display = "none"
+
+   let women_list = document.querySelector("#women_list")
+   women_list.style.display = "none"
+   let beauty_list = document.querySelector("#beauty_list")
+   beauty_list.style.display ="none"
+
+
+  })
+
+
+  let beauty_list_render = document.querySelector("#beauty_head")
+    beauty_list_render.addEventListener("mouseover" ,(el) =>{
+    //  el.preventDefault();
+   let beauty_list = document.querySelector("#beauty_list")
+   beauty_list.style.display ="block"
+   beauty_list.style.display= "flex"
+
+   let women_list = document.querySelector("#women_list")
+   women_list.style.display = "none"
+   let men_list = document.querySelector("#mens_list")
+   men_list.style.display = "none"
+   let kids_list = document.querySelector("#kids_list")
+   kids_list.style.display="none"
+  
+   let shoes_bag_list = document.querySelector("#shoes_bag_list")
+   shoes_bag_list.style.display = "none"
+
+
+  })
+  beauty_list_render.addEventListener("mouseenter" ,  ()=>{
+   let beauty_list = document.querySelector("#beauty_list")
+   beauty_list.style.display ="none"
+
+   let shoes_bag_list = document.querySelector("#shoes_bag_list")
+   shoes_bag_list.style.display = "none"
+
+   let kids_list = document.querySelector("#kids_list")
+   kids_list.style.display="none"
+   let men_list = document.querySelector("#mens_list")
+   men_list.style.display = "none"
+
+   let women_list = document.querySelector("#women_list")
+   women_list.style.display = "none"
+
+  }) 
+
+  // let pop_up =document.querySelector("#pop_up")
+  // setInterval(() => {
+  //   pop_up.style.display="none"
+  // }, 2000);
+
+  let mybutton = document.getElementById("myBtn");
+
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
