@@ -1,7 +1,21 @@
+/*! ----------------------------Small Screen Sizes -------------------------------- */
+@media all and (min-width: 320px) and (max-width: 809px) {
+  /*-------------------------- Universals-------------------------- */
+  form {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  /* -------------------------Page Specifcs------------------------- */
+}
+
 * {
   margin: 0px;
   padding: 0px;
   font-family: "Open Sans", sans-serif;
+}
+#loader {
+  display: none;
+  position: fixed;
+  width: 50px;
 }
 #fetchbutton {
   position: absolute;
@@ -22,7 +36,7 @@
   display: grid;
   place-items: center;
 }
-form > * {
+.addDataform > * {
   margin: 2px;
   padding: 2px;
 }
@@ -30,7 +44,7 @@ input {
   width: 90%;
   padding: 10px;
 }
-.add-products-outer {
+.CRUDsections {
   box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
     rgba(0, 0, 0, 0.22) 0px 10px 10px;
   width: 90%;
@@ -41,10 +55,10 @@ input {
   position: relative;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
-input[type="submit"] {
-  width: 30%;
+.add-submit {
+  width: 31%;
   position: absolute;
-  right: 10px;
+  right: 16px;
   bottom: 0px;
   margin: 20px;
   border-radius: 5px;
@@ -54,7 +68,7 @@ input[type="submit"] {
   font-size: 20px;
   background-color: rgb(0, 148, 253);
 }
-input[type="submit"]:hover {
+.add-submit:hover {
   cursor: pointer;
   background-color: rgb(0, 81, 255);
   color: rgb(255, 255, 255);
@@ -66,17 +80,117 @@ select {
   font-size: 20px;
 }
 
-form {
+.addDataform {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2px;
   padding: 15px;
 }
-/*! ----------------------------Small Screen Sizes -------------------------------- */
-@media all and (min-width: 320px) and (max-width: 809px) {
-  /*-------------------------- Universals-------------------------- */
-  form {
-    grid-template-columns: repeat(1, 1fr);
-  }
-  /* -------------------------Page Specifcs------------------------- */
+#product-databse-name,
+#delete-products-list {
+  background-color: rgb(234, 234, 236);
+}
+.DeleteProductCard {
+  background-color: rgb(255, 255, 255);
+  position: relative;
+  margin: 3px;
+  display: flex;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  place-items: center;
+}
+.DeleteProductCard > div {
+  height: 80px;
+  width: 80px;
+  margin: 5px;
+  overflow: hidden;
+}
+.DeleteProductCard > div > img {
+  width: 100%;
+}
+#delete-product-label {
+  width: 530px;
+  font-size: 18px;
+  font-weight: bolder;
+}
+#delete-product-id {
+  width: 50px;
+  text-align: center;
+}
+#delete-product-id > label {
+  font-size: 16px;
+}
+.product-button {
+  padding: 5px 20px;
+  font-size: 20px;
+  height: 60%;
+  border-radius: 5px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  color: white;
+  border: 0px;
+  position: absolute;
+  right: 25px;
+}
+#delete-product-button {
+  background-color: rgb(215, 8, 8);
+}
+#edit-product-button {
+  background-color: rgb(48, 25, 220);
+}
+#delete-product-button:hover {
+  cursor: pointer;
+  color: black;
+  border: 2px solid red;
+  background-color: rgb(249, 228, 228);
+}
+#edit-product-button:hover {
+  cursor: pointer;
+  color: rgb(25, 7, 125);
+  border: 2px solid rgb(21, 3, 95);
+  background-color: rgb(164, 169, 249);
+}
+#delete-description {
+  font-weight: normal;
+  font-size: 14px;
+}
+.infos {
+  width: auto;
+  text-align: center;
+}
+.infos > h2 {
+  font-size: 18px;
+}
+.edit-product-card {
+  padding: 15px;
+  display: flex;
+  justify-content: left;
+}
+.edit-product-card > div > img {
+  width: 300px;
+  height: 95%;
+  margin: 10px;
+}
+#viewproduct {
+  background-color: rgb(28, 224, 71);
+  color: white;
+  border: 1px solid whitesmoke;
+  width: 100%;
+  font-size: 18px;
+  padding: 1px 5px;
+  margin: 2px;
+}
+#viewproduct:hover {
+  cursor: pointer;
+  color: black;
+  background-color: rgb(155, 255, 6);
+  border: 1px solid green;
+}
+.details {
+  padding: 10px;
+}
+.changers > form {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  padding: 10px;
 }

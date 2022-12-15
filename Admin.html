@@ -17,18 +17,22 @@ alter data on db.json -->
       <!-- ? Nav Bar will come here  -->
     </header>
     <!----------------------------------------------- Main Body ----------------------------------------------->
-    <a href="Experiment.html" id="fetchbutton"><h1>Fetching Page</h1></a>
+    <!-- ḷoader -->
+    <img id="loader" src="./StyleZilla-Images/spinner1.gif" id="loader" alt=""> 
+    
+    <a href="ShowProducts.html" id="fetchbutton"><h1>All Products</h1></a>
     <main>
       <div id="tophead">
         <h1 class="Admins-Portal">Admin's Portal</h1>
         <img src="StyleZilla-Images/Bags.png" alt="">
         
       </div>
-      
+<!----------------------------------------------- Adding Products ----------------------------------------------->
       <section class="Adding Producs">
        
-        <div class="add-products-outer">
-          <h1>🛍️ Add New Products to <select name="Select Database" id="select">
+        <div id="add-products-outer" class="CRUDsections">
+          <h1>🛍️ Add New Products to <select name="Select Database" id="Addselect">
+            <option value="">Select Database</option>
             <option value="https://63984241fe03352a94ca27c3.mockapi.io/lifestyleApi/womensTopWear">Womens Top</option>
             <option value="https://63984241fe03352a94ca27c3.mockapi.io/lifestyleApi/WomensEthnicWear">Women Ethnic</option>
             <option value="https://63984241fe03352a94ca27c3.mockapi.io/lifestyleApi/MensFormals">Mens Formals </option>
@@ -41,7 +45,7 @@ alter data on db.json -->
        </h1>
         
           <div class="products-list">
-            <form autocomplete="on" id="AddProduct">
+            <form autocomplete="on" class="addDataform" id="AddProduct">
               
               <label> Product Title<br>
                 <input id="title" type="text" placeholder="Enter Product Title" required/>
@@ -76,14 +80,64 @@ alter data on db.json -->
                 <label> Product Image 2<br>
                   <input id="images" type="text" placeholder="Enter ImageUrl" required />
                   </label>
-              <input type="submit" value="Add Product"/>
+              <input class="add-submit" type="submit" value="Add Product"/>
             </not prettier>
              
             </form>
           </div>
         </div>
       </section>
-    </main>
+      <br>
+      <br>
+<!----------------------------------------------- Deleteing Products ----------------------------------------------->
+<section class="Deleteing-Products">
+       
+  <div id="Delete-products-outer"  class="CRUDsections">
+    <h1>🛍️ Delete Products From <select name="Select Database" id="DeleteSelect">
+      <option value="">Select DataBase</option>
+      <option value="https://63984241fe03352a94ca27c3.mockapi.io/lifestyleApi/womensTopWear" text="List of Women's Top Wears">Womens Top Wear</option>
+      <option value="https://63984241fe03352a94ca27c3.mockapi.io/lifestyleApi/WomensEthnicWear" text="List of Women's Ethnic Wears">Women Ethnic Wear</option>
+      <option value="https://63984241fe03352a94ca27c3.mockapi.io/lifestyleApi/MensFormals" text="List of Mens Formals">Mens Formals </option>
+      <option value="https://63984241fe03352a94ca27c3.mockapi.io/lifestyleApi/MensCasuals" text="List of Mens Casuals">Mens Casuals</option>
+      <option value="https://63987962044fa481d69ed8cc.mockapi.io/stylezilla/KidsWear" text="List of KidsWear Products">KidsWear</option>
+      <option value="https://63987962044fa481d69ed8cc.mockapi.io/stylezilla/BeautyProducts" text="List of Beauty Products">Beauty Products</option>
+      <option value="https://63987962044fa481d69ed8cc.mockapi.io/stylezilla/Shoes" text="List of Shoes">Shoes</option>
+      <option value="https://63987962044fa481d69ed8cc.mockapi.io/stylezilla/Bags" text="List of Bags">Bags</option>
+  </select>
+</h1>
+  
+    <div class="products-list" id="delete-products-list">
+<!-- Appending Divs Here -->
+    </div>
+  </div>
+</section>
+<br>
+      <br>
+<!----------------------------------------------- Edit A Product ----------------------------------------------->
+<section class="Edit-Products">
+       
+  <div id="Edit-products-outer"  class="CRUDsections">
+    <h1>🛍️ Edit Products From <select name="Select Database" id="EditSelect">
+      <option value="">Select DataBase</option>
+      <option value="https://63984241fe03352a94ca27c3.mockapi.io/lifestyleApi/womensTopWear">Womens Top Wear</option>
+      <option value="https://63984241fe03352a94ca27c3.mockapi.io/lifestyleApi/WomensEthnicWear">Women Ethnic Wear</option>
+      <option value="https://63984241fe03352a94ca27c3.mockapi.io/lifestyleApi/MensFormals">Mens Formals </option>
+      <option value="https://63984241fe03352a94ca27c3.mockapi.io/lifestyleApi/MensCasuals">Mens Casuals</option>
+      <option value="https://63987962044fa481d69ed8cc.mockapi.io/stylezilla/KidsWear">KidsWear</option>
+      <option value="https://63987962044fa481d69ed8cc.mockapi.io/stylezilla/BeautyProducts">Beauty Products</option>
+      <option value="https://63987962044fa481d69ed8cc.mockapi.io/stylezilla/Shoes">Shoes</option>
+      <option value="https://63987962044fa481d69ed8cc.mockapi.io/stylezilla/Bags">Bags</option>
+  </select>
+</h1>
+  
+    <div class="products-list" id="edit-products-list">
+     
+<!-- Appending Divs Here -->
+    </div>
+  </div>
+</section>
+<br><br>
+</main>
     <!----------------------------------------------- Footer ----------------------------------------------->
     <footer></footer>
   </body>
