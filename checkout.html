@@ -5,17 +5,117 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>StyleZilla:Checkout</title>
-    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="CSS/checkout.css" />
   </head>
   <body>
     <!----------------------------------------------- Header ----------------------------------------------->
-    <header></header>
+    <div id="top_bar">
+      <div id="left_top">
+        <h5>🚚 Free Shiping</h5>
+        <h5>🏬 Click & Collect</h5>
+        <h5>🏬 Return to store</h5>
+      </div>
+      <div id="right_top">
+        <h5>Download Our App</h5>
+        <h5>Store Locator</h5>
+        <h5>Help</h5>
+      </div>
+    </div>
+
+    <div id="nav_bar">
+      <a href="">
+        <img
+          src="./StyleZilla-Images/StyleZillaWIthoutBackground.png"
+          alt=""
+          id="logo"
+      /></a>
+      <a href=""> <h4>Women</h4></a>
+      <a href=""> <h4>Men</h4></a>
+      <a href=""> <h4>Kids</h4></a>
+      <a href=""> <h4>Shoes&Bags</h4></a>
+      <a href=""><h4>Beauty</h4></a>
+      <a href=""
+        ><input type="text" placeholder="🔍  What are you looking for ?"
+      /></a>
+      <a href=""> <h4>More</h4></a>
+      <a href=""><h4>SignUp/SignIn</h4></a>
+      <a href=""> <h4>Wishlist</h4></a>
+      <a href=""><h4>Cart</h4></a>
+    </div>
+
     <!----------------------------------------------- Main Body ----------------------------------------------->
     <main>
-      <section>"Yahallo"</section>
+      <section>
+        <h1 class="yourproducts">Your Shopping Basket</h1>
+        <hr />
+        <div class="checkoutpage">
+          <div class="showproducts">
+            <!-- append cards here -->
+          </div>
+          <div class="checkoutsection">
+            <div class="checkout-subs">
+              <label for="">Delivery to</label>
+              <input
+                id="delievery-input"
+                type="text"
+                placeholder="Enter Pincode"
+              />
+              <button id="checkbutton">Check</button><br />
+              <div id="pincode">
+                <p>
+                  Enter pin code in box above for delivery estimates and charges
+                  X
+                </p>
+              </div>
+            </div>
+            <div class="checkoutsubs">
+              <div id="offersub" class="checkout-subs">
+                <img
+                  id="offerimg"
+                  src="https://www.lifestylestores.com/static/icons/gift-box.png"
+                  alt=""
+                />
+                <div>
+                  <h4>Offers for you!</h4>
+                  <label>Choose and apply voucher in 2 simple steps</label>
+                </div>
+              </div>
+            </div>
+            <div id="totals" class="checkout-subs">
+              <div>
+                <label class="totals">Total Price</label>
+                <label>1000</label>
+              </div>
+              <div>
+                <label class="totals">Shipping Charge:</label>
+                <label>Free</label>
+              </div>
+              <hr />
+              <div>
+                <label class="totals Total">Total</label>
+                <label class="Total">$1000</label>
+              </div>
+              <br />
+              <div>
+                <button id="Checkout">Checkout</button>
+              </div>
+              <br />
+              <div>
+                <label>
+                  Shipping charges might vary based on pincode delivery location
+                </label>
+              </div>
+            </div>
+
+            <!-- checkout subs end -->
+          </div>
+        </div>
+      </section>
     </main>
     <!----------------------------------------------- Footer ----------------------------------------------->
-    <footer></footer>
+    <footer>
+      <div class="footer"></div>
+    </footer>
   </body>
 </html>
-<script src="index.js"></script>
+<script src="checkout.js"></script>

@@ -141,7 +141,7 @@ function ProductsListShow(data) {
         if (willDelete) {
           DeleteProduct(event.target.dataset.id);
         } else {
-          swal("Your imaginary file is safe!");
+          swal("Your Product file is safe!");
         }
       });
     });
