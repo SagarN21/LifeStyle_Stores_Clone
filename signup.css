@@ -1,6 +1,7 @@
 
 * {
   font-family: sans-serif;
+
 }
 /* **********************8********** css for signup page********************************** */
 .box {
@@ -8,6 +9,7 @@
   height: 470px;
 
   margin: auto;
+
 }
 
 .form {
@@ -46,7 +48,7 @@
   height: 40px;
   width: 508px;
   border-radius: 3px;
-  background-color: rgb(7, 104, 248);
+  background-color: #faa619;
   color: white;
   border: 0;
 }
@@ -115,6 +117,14 @@
 }
 .required {
   color: red;
+}
+body>div{
+  height: 740px;
+  margin: auto;
+  width: 560px;
+  
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;;
+  border-radius: 7px;
 }
 
 /* *********************************css for login page************************************************************* */

@@ -1,4 +1,5 @@
-   
+
+  
   document.querySelector("form").addEventListener("submit", fun);
 
   let signArr = JSON.parse(localStorage.getItem("sign")) || [];
@@ -16,11 +17,18 @@
     };
     console.log(obj);
     if (obj.nam == "" || obj.em == "" || obj.pas == "") {
-      alert("please enter full details");
+      swal("please enter full details");
     } else {
       signArr.push(obj);
+      
       localStorage.setItem("sign", JSON.stringify(signArr));
-      alert("Signup sucessfully");
-      window.location.href = "login.html";
+      // alert("Signup sucessfully")
+      swal("Signup Sucessfully!", "" ,"success")
+      setTimeout(() => {
+        window.location.href = "login.html";
+      }, 4000);
+       
+    
+      
     }
   }

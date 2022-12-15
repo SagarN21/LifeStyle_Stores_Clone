@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    * {
+      font-family: sans-serif;
+    }
+    .container {
+      width: 850px;
+      border: 1px solid blue;
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      gap: 20px;
+      margin-top: 70px;
+     
+    }
+    .container > div > img {
+      width: 20%;
+    }
+    .container > div {
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      border:  1px solid red;
+      height: 410px;
+      padding-top: 30px;
+      padding-left: 20px;
+    
+    }
+    .container > div > button {
+        height: 45px;
+      width: 100px;
+      flex-grow: 0;
+      border-radius: 10px;
+      border: 1px solid #faa619;
+      color: #faa619;
+      background-color: white;
+    }
+
+    #navbar {
+      height: 80px;
+      /* border: 1px solid red; */
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: rgb(8, 43, 42);
+      color: white;
+    }
+    #navbar > .carttotal {
+      height: 60px;
+      width: 200px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    #navbar:hover {
+      background-color: rgb(61, 43, 89);
+    }
+    .sticky {
+      position: fixed;
+      top: 0;
+      width: 99.5%;
+      z-index: 1;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    .shopping {
+      height: 70px;
+      width: 900px;
+      
+      margin-top: 100px;
+      margin-left: 100px;
+    }
+    .shopping > h1 {
+      font-weight: lighter;
+    }
+    .hr {
+      width: 1400px;
+      margin-left: 100px;
+    }
+    #conta {
+      width: 1400px;
+      border: 1px solid pink;
+      margin-left: 96px;
+      display: flex;
+      justify-content: space-between;
+    }
+    .checkout {
+      height: 700px;
+      width: 450px;
+      
+
+      margin-top: 70px;
+    }
+    .deliver {
+      height: 90px;
+      width: 450px;
+
+      box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    }
+    .deliver > div {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+      padding-top: 10px;
+      align-items: center;
+    }
+    .deliver > div > button {
+      height: 45px;
+      width: 100px;
+      flex-grow: 0;
+      border-radius: 10px;
+      border: 1px solid #faa619;
+      color: #faa619;
+      background-color: white;
+    }
+    .gift {
+      height: 90px;
+      width: 450px;
+
+      box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+      margin-top: 10px;
+      display: flex;
+      justify-content: space-between;
+      padding-top: 10px;
+      padding-bottom: 60px;
+    }
+    .image {
+      height: 120px;
+      width: 175px;
+
+      padding-left: 10px;
+      padding-top: 40px;
+    }
+    .text {
+      height: 120px;
+      width: 420px;
+
+      padding-left: 20px;
+      grid-template-columns: repeat(1, 1fr);
+      column-gap: 1px;
+      padding-top: 20px;
+    }
+    /* .choose {
+      height: 120px;
+      width: 450px;
+      border: 1px solid red;
+      padding-left: 10px;
+    } */
+
+    .price {
+      height: 365px;
+      width: 450px;
+      /* border: 1px solid red; */
+      box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+      margin-top: 10px;
+      grid-template-columns: repeat(1, 1fr);
+    }
+    .mrp,
+    .discount,
+    .charge,
+    .total {
+      height: 30px;
+      width: 450px;
+      padding-top: 10px;
+      margin-top: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .mrp > p {
+      padding-left: 20px;
+    }
+    .discount > p {
+      padding-left: 20px;
+    }
+    .charge > p {
+      padding-left: 20px;
+    }
+    .total > h3 {
+      padding-left: 20px;
+    }
+    .checkout_button {
+      padding-top: 20px;
+      height: 50px;
+      width: 450px;
+
+      text-align: center;
+    }
+    .checkout_button > button {
+      height: 50px;
+      width: 400px;
+      padding-left: 30px;
+      background-color: #faa619;
+      color: white;
+      border: 0;
+      border-radius: 2px;
+    }
+    .bottom_text {
+      height: 50px;
+      width: 400px;
+      background-color: #efefef;
+      margin: auto;
+    }
+  </style>
+  <body>
+    <header class="header sticky">
+      <!-- navbar -->
+      <div id="navbar">
+        <div class="carttotal">
+          <h1>carttotal</h1>
+          <div style="height: 40px; width: 80px; border: 1px solid red"></div>
+        </div>
+      </div>
+    </header>
+    <!-- *******************your shopping**************************************************** -->
+
+    <div class="shopping">
+      <h1>Your Shopping Basket</h1>
+    </div>
+
+    <!-- ***************************ul line************** -->
+    <div class="hr"><hr /></div>
+
+    <!-- ****************************************bottom******************** -->
+    <div id="conta">
+      <div class="container"></div>
+      <div class="checkout">
+        <!-- ****************************deliver********************** -->
+        <div class="deliver">
+          <div>
+            <h4 style="padding-left: 10px">Deliver to</h4>
+            <input
+              style="height: 40px; width: 200px; border-radius: 10px"
+              placeholder="    Enter Pincode"
+              type="Number"
+            />
+            <button>Check</button>
+          </div>
+        </div>
+        <!-- ************************gift************************* -->
+
+        <div class="gift">
+          <div class="image">
+            <img
+              width="100%"
+              src="https://www.lifestylestores.com/static/icons/gift-box.png"
+              alt=""
+            />
+          </div>
+          <div class="text">
+            <div style="display: flex; justify-content: space-between">
+              <h3>Offers for you !</h3>
+              <h4 style="color: #faa619; padding-right: 15px">Select</h4>
+            </div>
+            <div class="choose">
+              <p>Choose and apply voucher in 2 simple steps</p>
+            </div>
+          </div>
+        </div>
+        <!-- 
+        ******************price************************ -->
+        <div class="price">
+          <!-- *****************************total mrp -->
+          <div class="mrp">
+            <p>Total MRP</p>
+            <div
+              style="
+                height: 30px;
+                width: 74px;
+                margin-right: 30px;
+                /* border: 1px solid red; */
+              "
+            >
+            &#8377 99999.9
+            </div>
+          </div>
+          <!-- *********************************************discount -->
+          <div class="discount">
+            <p>Offer discount</p>
+            <div
+              style="
+                color: #46b275;
+                height: 30px;
+                width: 74px;
+                margin-right: 30px;
+                /* border: 1px solid red; */
+              "
+            >
+            &#8377 99
+            </div>
+          </div>
+
+          <!-- *****************************************Shipping charge -->
+          <div class="charge">
+            <p>Shipping charge</p>
+            <div
+              style="
+                height: 30px;
+                width: 74px;
+                margin-right: 30px;
+                /* border: 1px solid red; */
+              "
+            >
+              Free
+            </div>
+          </div>
+          <!-- *************************line****** -->
+          <div style="width: 400px; margin: auto"><hr /></div>
+          <!-- ******************total -->
+          <div class="total">
+            <h3>Total</h3>
+            <div
+              style="
+                height: 30px;
+                width: 74px;
+                margin-right: 30px;
+               
+              "
+            >
+            &#8377 99999
+            </div>
+          </div>
+          <!-- ****************************************button checkout***** -->
+          <div class="checkout_button">
+            <button>
+              <h3>Checkout now</h3>
+            </button>
+          </div>
+          <!-- **********************************bootom text************* -->
+          <div class="bottom_text">
+            <p>
+              Shipping charges might vary based on pincode delivery location
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+<script>
+  let cartitem = JSON.parse(localStorage.getItem("carts"));
+  displaytable(cartitem);
+  function displaytable(out) {
+    document.querySelector(".container").innerHTML = "";
+
+    out.forEach(function (ele) {
+      let div1 = document.createElement("div");
+      let div2=document.createElement("img")
+    //   let image = document.createElement("img");
+      div2.setAttribute("src", ele.image);
+      let div=document.createElement("div")
+
+      let title = document.createElement("h2");
+      title.innerText = ele.title;
+      let des = document.createElement("p");
+      des.innerText = ele.description;
+      let price = document.createElement("h6");
+      des.innerText = ele.price;
+
+      let btn = document.createElement("button");
+      btn.innerText = "remove";
+      btn.addEventListener("click", function () {});
+
+      let qty=document.createElement("div")
+      qty.innerText=""
+
+    
+    div.append( div2,title, des, price, btn)
+      ;
+      document.querySelector(".container").append(div);
+    });
+    function deletedata(data, value) {}
+  }
+</script>

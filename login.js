@@ -13,9 +13,13 @@
       logArr.forEach(function (ele) {
         if (ele.em == em1 && ele.pas == pas1) {
           localStorage.setItem("token", "loggedin");
-          alert("login sucessfull  Welcome To StyleZilla");
+          swal("login sucessfull",  "Welcome To StyleZilla "  ,"success");
           flag = true;
-          window.location.href = "index.html";
+          
+          setTimeout(() => {
+            window.location.href = "signup.html";
+          }, 4000);
+          
         }
       });
 
