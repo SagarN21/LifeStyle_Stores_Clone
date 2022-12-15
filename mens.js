@@ -86,7 +86,7 @@ let topPick = [
     "https://lmsin.net/cdn-cgi/image/w=500,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/desktop-Men-3modularblock-1-oneBythree-21June2022.jpg",
     "https://lmsin.net/cdn-cgi/image/w=500,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/desktop-Men-3modularblock-2-oneBythree-21June2022.jpg",
     "https://lmsin.net/cdn-cgi/image/w=500,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/desktop-Men-3modularblock-3-oneBythree-21June2022.jpg"
-] 
+]
 
 let winter = [
     "https://lmsin.net/cdn-cgi/image/w=500,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/LS-MEN-11modularblock-oneBythree-A-Men-09Sep2022.jpg",
@@ -148,24 +148,42 @@ let shopDepartment = [
     "https://lmsin.net/cdn-cgi/image/w=500,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/LS-MEN-6modularblock-oneBythree-C-Men-04March2022A.jpg"
 ]
 
-
-let slider = document.querySelector("#slider")
 let count = 0;
-setInterval(() => {
-    if (count == 6) {
-        count = 0
+let pre = document.querySelector(".pre")
+let next  = document.querySelector(".next")
+pre.addEventListener("click", ()=>{
+    count--
+    console.log(count)
+    setTimer()
+})
+next.addEventListener("click", ()=>{
+    if(count==4){
+        count=-1
     }
-    let image = document.cre
-}, 2000);
+    count++
+    console.log(count)
+    setTimer()
+})
 
+const slide = document.querySelectorAll(".slider")
+slide.forEach((item, index) => {
+    item.style.left = `${index*100}%`
+});
+ 
+function setTimer(){
+    slide.forEach((item)=>{
+        item.style.transform = `translateX(-${count*100}%)`
+    })
+}
+setTimer()
 
 
 //Discount part
-function discountImg(dis){
+function discountImg(dis) {
     let buy = document.querySelector("#buyFree")
     buy.innerHTML = ""
-    let image = dis.map((item)=>{
-        return `<img src="${item}" alt="">`
+    let image = dis.map((item) => {
+        return `<img src="${item}" class="allProductShow" alt="">`
     })
     buy.innerHTML = image.join("")
 }
@@ -173,11 +191,11 @@ discountImg(discount)
 //Discount part End
 
 //Brand Spotlight
-function brandSpotlight(brand){
+function brandSpotlight(brand) {
     let b = document.querySelector("#brandImage")
     b.innerHTML = ""
-    let Spotlight = brand.map((item)=>{
-        return `<img src="${item}" alt="">`
+    let Spotlight = brand.map((item) => {
+        return `<img src="${item}" class="allProductShow" alt="">`
     })
     b.innerHTML = Spotlight.join("")
 }
@@ -186,11 +204,11 @@ brandSpotlight(brand)
 
 
 //winter brand
-function winterClothes(winterwer){
+function winterClothes(winterwer) {
     let winter = document.querySelector("#winterClothes")
     winter.innerHTML = ""
-    let winterClothe = winterwer.map((item)=>{
-        return `<img src="${item}" alt="">`
+    let winterClothe = winterwer.map((item) => {
+        return `<img src="${item}" class="allProductShow"  alt="">`
     })
     winter.innerHTML = winterClothe.join("")
 }
@@ -199,11 +217,11 @@ winterClothes(winterwer)
 //winter brand end
 
 //big brand big discount
-function bigBrandClother(bigBrand){
+function bigBrandClother(bigBrand) {
     let big = document.querySelector("#bigBrandsProducts")
     big.innerHTML = ""
-    let brandClothes = bigBrand.map((item)=>{
-        return `<img src="${item}" alt="">`
+    let brandClothes = bigBrand.map((item) => {
+        return `<img src="${item}" class="allProductShow" alt="">`
     })
     big.innerHTML = brandClothes.join("")
 }
@@ -211,18 +229,18 @@ bigBrandClother(bigBrand)
 //big brand big discount
 
 //category part
-function shopCategory(category, topBrand){
+function shopCategory(category, topBrand) {
     let shop = document.querySelector("#categoryProducts")
     shop.innerHTML = ""
-    let shopCategory = category.map((item)=>{
-        return `<img src="${item}" alt="">`
+    let shopCategory = category.map((item) => {
+        return `<img src="${item}" class="allProductShow" alt="">`
     })
     shop.innerHTML = shopCategory.join("")
 
     let top = document.querySelector("#trandingBrands")
     top.innerHTML = ""
-    let topbrand = topBrand.map((item)=>{
-        return `<img src="${item}" alt="">`
+    let topbrand = topBrand.map((item) => {
+        return `<img src="${item}" class="allProductShow" alt="">`
     })
     top.innerHTML = topbrand.join("")
 }
@@ -232,94 +250,98 @@ shopCategory(category, topBrand)
 
 
 //topPick
-function topPicks(topPick, winter, mostLoved, highlight, activeWardrobe, dealCorner, mostrlovedbrand, essentialsyou, trendingWatch, shopDepartment){
+function topPicks(topPick, winter, mostLoved, highlight, activeWardrobe, dealCorner, mostrlovedbrand, essentialsyou, trendingWatch, shopDepartment) {
     let top = document.querySelector("#TopPicks")
     top.innerHTML = ""
-    let picks = topPick.map((item)=>{
-        return `<img src="${item}" alt="">`
+    let picks = topPick.map((item) => {
+        return `<img src="${item}" class="allProductShow" alt="">`
     })
     top.innerHTML = picks.join("")
     //====================================
 
     let clothes = document.querySelector("#winterTrends")
     clothes.innerHTML = ""
-    let winterClother = winter.map((item)=>{
-        return `<img src="${item}" alt="">`
+    let winterClother = winter.map((item) => {
+        return `<img src="${item}" class="allProductShow" alt="">`
     })
     clothes.innerHTML = winterClother.join("")
     //=======================================
 
     let most = document.querySelector("#mostlovedstyle")
     most.innerHTML = ""
-    let mostLovedStyle = mostLoved.map((item)=>{
-        return `<img src="${item}" alt="">`
+    let mostLovedStyle = mostLoved.map((item) => {
+        return `<img src="${item}" class="allProductShow" alt="">`
     })
     most.innerHTML = mostLovedStyle.join("")
     //=========================================
 
     let highlightclothes = document.querySelector("#highlights")
     highlightclothes.innerHTML = ""
-    let clotheshight = highlight.map((item)=>{
-        return `<img src="${item}" alt="">`
+    let clotheshight = highlight.map((item) => {
+        return `<img src="${item}" class="allProductShow" alt="">`
     })
     highlightclothes.innerHTML = clotheshight.join("")
     //=========================================
 
     let tred = document.querySelector("#trendsclothes")
     tred.innerHTML = ""
-    let trendsclothes = trendSetters.map((item)=>{
-        return `<img src="${item}" alt="">`
+    let trendsclothes = trendSetters.map((item) => {
+        return `<img src="${item}" class="allProductShow" alt="">`
     })
     tred.innerHTML = trendsclothes.join("")
     //=========================================
 
     let wardrobe = document.querySelector("#activeWardrobe")
     wardrobe.innerHTML = ""
-    let active = activeWardrobe.map((item)=>{
-        return `<img src="${item}" alt="">`
+    let active = activeWardrobe.map((item) => {
+        return `<img src="${item}" class="allProductShow" alt="">`
     })
     wardrobe.innerHTML = active.join("")
     //==================================
 
     let corner = document.querySelector("#dealCorner")
     corner.innerHTML = ""
-    let dealClothes = dealCorner.map((item)=>{
-        return `<img src="${item}" alt="">`
+    let dealClothes = dealCorner.map((item) => {
+        return `<img src="${item}" class="allProductShow" alt="">`
     })
     corner.innerHTML = dealClothes.join("")
     //=========================================
 
     let mostlove = document.querySelector("#mostLovedBrands")
     mostlove.innerHTML = ""
-    let mostloveclthes = mostrlovedbrand.map((item)=>{
-        return `<img src="${item}" alt="">`
+    let mostloveclthes = mostrlovedbrand.map((item) => {
+        return `<img src="${item}" class="allProductShow" alt="">`
     })
     mostlove.innerHTML = mostloveclthes.join("")
     //===============================================
 
     let essential = document.querySelector("#essentials")
     essential.innerHTML = ""
-    let essentialClothes = essentialsyou.map((item)=>{
-        return `<img src="${item}" alt="">`
+    let essentialClothes = essentialsyou.map((item) => {
+        return `<img src="${item}" class="allProductShow" alt="">`
     })
     essential.innerHTML = essentialClothes.join("")
     //=================================================
 
     let trending = document.querySelector("#watch")
     trending.innerHTML = ""
-    let trendWathchs = trendingWatch.map((item)=>{
-        return `<img src="${item}" alt="">`
+    let trendWathchs = trendingWatch.map((item) => {
+        return `<img src="${item}" class="allProductShow" alt="">`
     })
     trending.innerHTML = trendWathchs.join("")
     //============================================
 
     let shop = document.querySelector("#shopByDepartment")
     shop.innerHTML = ""
-    let shopClothes = shopDepartment.map((item)=>{
-        return `<img src="${item}" alt="">`
+    let shopClothes = shopDepartment.map((item) => {
+        return `<img src="${item}" class="allProductShow" alt="">`
     })
     shop.innerHTML = shopClothes.join("")
 
+    let goToProductPage  = document.querySelector(".allProductShow")
+    goToProductPage.addEventListener("click", ()=>{
+        window.location.href = "mensAllProducts.html"
+    })
 
 }
 topPicks(topPick, winter, mostLoved, highlight, activeWardrobe, dealCorner, mostrlovedbrand, essentialsyou, trendingWatch, shopDepartment)
