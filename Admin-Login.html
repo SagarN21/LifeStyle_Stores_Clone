@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>login</title>
+    <link rel="stylesheet" href="Admin-Login.css" />
+  </head>
+
+  <body>
+ 
+    <div id = "nav"> 
+        <img src ="images/stylezillawithoutbackground.png">
+        <h3>Admin Portal</h3>
+    </div>
+    <div class="box">
+      <div class="head">
+        <img
+          style="margin-top: 19px"
+          height="10%"
+          width="100%"
+          src="images\stylezillawithoutbackground.png"
+        />
+      </div>
+      <div class="signin">
+        <h1 style="padding-left: 11px">Sign in</h1>
+        <h4>or <a href="signup.html"> create an account</a></h4>
+      </div>
+
+      <form class="form">
+        <label for=""> Email<span class="required">*</span></label
+        ><br />
+        <input
+          id="username"
+          type="text"
+          required=""
+          placeholder="name@gmail.com"
+        />
+        <label for="">Password<span class="required">*</span></label>
+        <input type="password" placeholder="8 or more characters" id="pass" />
+
+        <input
+          type="submit"
+          value="Continue"
+          style="margin-top: 15px; font-size: 19px"
+        />
+      </form>
+    </div>
+
+    <div class="btm">
+      <div
+        style="
+          z-index: 100;
+          margin: 20px 0px;
+          border: none;
+          display: flex;
+          align-items: center;
+          height: 1px;
+          justify-content: center;
+          background-color: grey;
+        "
+      >
+        <div
+          style="padding: 3px 8px; margin-top: -3px; background-color: white"
+        >
+          or
+        </div>
+      </div>
+
+      <div class="gooo">
+        <mark>Continue with Google</mark>
+        <img
+          style="width: 7%; padding-left: 15px"
+          src="images\google-logo.png"
+        />
+      </div>
+
+      <p style ="background-color: white;"><u>Sign in with Apple </u></p>
+    </div>
+
+    <script src ="Admin-login.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  </body>
+</html>

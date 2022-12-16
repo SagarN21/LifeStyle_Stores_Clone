@@ -1,0 +1,119 @@
+* {
+    font-family: sans-serif;
+  }
+  .box {
+    width: 500px;
+    height: 400px;
+
+    margin: auto;
+  }
+  .form {
+    width: 210px;
+    height: 400px;
+
+    margin: auto;
+    margin-left: 80px;
+    font-size: 20px;
+    font-weight: bold;
+    height: 20px;
+    flex: 0 0 200px;
+    margin-left: 10px;
+    line-height: 1.9;
+  }
+  .box > .head {
+    margin-left: 140px;
+  }
+  .head {
+    width: 200px;
+
+    display: flex;
+    justify-content: space-around;
+    padding-left: 5px;
+    align-items: center;
+  }
+
+  #name,
+  #username,
+  #pass {
+    height: 40px;
+    width: 500px;
+    border-radius: 3px;
+    border: 2px solid lightgray;
+  }
+  #pass + input {
+    height: 40px;
+    width: 508px;
+    border-radius: 3px;
+    background-color: rgb(7, 104, 248);
+    color: white;
+    border: 0;
+  }
+  .btm {
+    width: 500px;
+    height: 200px;
+
+    margin: auto;
+    text-align: center;
+    padding-left: 20px;
+    line-height: 1;
+
+    font-size: 16px;
+  }
+  .btm > button {
+    line-height: 1.8;
+    height: 40px;
+    width: 508px;
+    border-radius: 3px;
+
+    border: 2px solid lightgray;
+    font-size: 15px;
+  }
+
+  .gooo {
+      height: 40px;
+    width: 508px;
+    border-radius: 3px;
+    font-size: 20px;
+    background-color: white;
+    line-height: 1.8;
+
+    display: flex;
+    margin: auto;
+    
+    border: 2px solid lightgray;
+  }
+  .gooo > mark {
+    background-color: white;
+    font-size: 20px;
+    color: rgb(7, 104, 248);
+    border-radius: 3px;
+    padding-bottom: 3px;
+    margin-left: 28%;
+  }
+  .signin {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .required {
+    color: red;
+  }
+
+  #nav{
+    border:0px solid red;
+    height:70px;
+    width:auto;
+    display: flex;
+  }
+
+  #nav img{
+    height:70px;
+  }
+
+  #nav h3{
+    margin-top: 30px;
+  }
+
+ body{
+    background-image: url("images/3556960.jpg");
+ }
