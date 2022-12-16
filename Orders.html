@@ -4,8 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Experiment</title>
-    <link rel="stylesheet" href="CSS/experiment.css" />
+    <title>Admin: Orders & Payments</title>
+    <link rel="stylesheet" href="CSS/Orders.css" />
+    <link rel="stylesheet" href="CSS/HeaderFooter.css">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -15,23 +16,66 @@
   </head>
   <body>
     <!----------------------------------------------- Header ----------------------------------------------->
-    <header></header>
+    <header>
+      <div id="nav_bar">
+        <img src="./Images/StyleZillaWIthoutBackground.png" alt="" id="logo" />
+        <div>
+          <a href=""> <h4>Women</h4></a>
+          <a href=""> <h4>Men</h4></a>
+          <a href=""> <h4>Kids</h4></a>
+          <a href=""> <h4>Shoes</h4></a>
+          <a href=""> <h4>Bags</h4></a>
+          <a href=""><h4>Beauty</h4></a>
+          <a href="" id="searchbar"
+            ><input type="text" placeholder="🔍  What are you looking for ?"
+          /></a>
+          <a href=""> <h4>More</h4></a>
+          <a href=""><h4 id="signin">SignUp/SignIn</h4></a>
+          <a href=""> <h4>Wishlist</h4></a>
+          <a href=""><h4>Cart</h4></a>
+        </div>
+      </div>
+    </header>
     <!----------------------------------------------- Main Body ----------------------------------------------->
+
     <main>
       <section>
-        <center>
+        <div id="mainsect">
+          <div id="tophead">
+            <h1 class="manage-order">🛍️ Manage Orders</h1>
+            <div>hello</div>
+          </div>
+      </section>
+      <section>
+          <div id="tophead">
+            <h1 class="manage-order">🛍️ Manage Payments</h1>
+            <div>hello</div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div id="tophead" class="allproducts">
+          <h1 class="manage-order">🛍️ All Products</h1>
+          <div class="container">
+            <!-- ? Append Data Here -->
+          </div>
+        </div>
+      </section>
+      <section>
+          <div class="showproducttop">
           <h1>
-            🛍️ Which Product Databse To Fetch?
+            🛍️ Show All Products<br />
             <select name="Select Database" id="select">
+              <option value="">Select Category</option>
               <option
                 value="https://63984241fe03352a94ca27c3.mockapi.io/lifestyleApi/womensTopWear"
               >
-                Womens Top
+                Womens Top Wear
               </option>
               <option
                 value="https://63984241fe03352a94ca27c3.mockapi.io/lifestyleApi/WomensEthnicWear"
               >
-                Women Ethnic
+                Women Ethnic Wear
               </option>
               <option
                 value="https://63984241fe03352a94ca27c3.mockapi.io/lifestyleApi/MensFormals"
@@ -65,11 +109,7 @@
               </option>
             </select>
           </h1>
-          <a href="Admin.html"><button>Admins Page</button></a>
-          <button id="fetchproducts">Fetch Products</button>
-        </center>
-        <div class="container">
-          <!-- ? Append Data Here -->
+          <a href="Admin.html" id="adminspagebutton">Admins Page</a>
         </div>
       </section>
     </main>
@@ -77,4 +117,13 @@
     <footer></footer>
   </body>
 </html>
-<script src="ShowProducts.js"></script>
+<script src="Js/Orders.js"></script>
+
+<!-- ?? This is the ALERTIFY Library -->
+<!-- JavaScript -->
+<script src="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
+<!-- CSS -->
+<link
+  rel="stylesheet"
+  href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/alertify.min.css"
+/>

@@ -106,21 +106,17 @@ function ProductsListShow(data) {
             150
           )}...</p><br>
        </div>
-        <div class="delete-infos"><h2>Brand</h2><label>${
-          item.brand
-        }</label></div>
-        <div class="delete-infos"><h2>Stock</h2><label>${
-          item.stock
-        }</label></div>
-        <div class="delete-infos"><h2>Rating</h2><label>${
-          item.rating
-        }</label><label>⭐</label></div>
-        <div class="delete-infos"><h2>Price</h2><label>${
-          item.price
-        }/-</label></div>
-        <button data-id="${
-          item.id
-        }" class="product-button" id="delete-product-button">Delete</button>
+        <div class="delete-infos"><h2>Brand</h2>
+        <label>${item.brand}</label></div>
+        <div class="delete-infos"><h2>Stock</h2>
+        <label>${item.stock}</label></div>
+        <div class="delete-infos"><h2>Rating</h2>
+        <label>${item.rating}</label><label>⭐</label></div>
+        <div class="delete-infos"><h2>Price</h2>
+        <label>${item.price}/-</label></div>
+        <button data-id="${item.id}" 
+        class="product-button" id="delete-product-button">
+        Delete</button>
       </div>
     `;
   });
@@ -237,7 +233,6 @@ async function PatchObjMaker(id) {
   try {
     let res = await fetch(`${url}/${id}`);
     let data = await res.json();
-    let obj = data;
     xyz(data);
   } catch (error) {
     console.log(error);
@@ -267,40 +262,52 @@ function xyz(obj) {
   <div class="changers">
     <form id="changeDataForm">
     <label>Change Product Title<br>
-  <textarea id="changetitle" type="text"  rows="2" cols="30" placeholder="Enter Product Title" required/>${obj.title}</textarea>
+  <textarea id="changetitle" type="text"  rows="2" cols="30" placeholder="Enter 
+  Product Title" required/>${obj.title}</textarea>
   </label>
 <label>Change Product Description<br>
-<textarea id="changedescription" type="text" rows="2" cols="30" placeholder="Enter Product Description" required/>${obj.description}</textarea>
+<textarea id="changedescription" type="text" rows="2" cols="30" 
+placeholder="Enter Product Description" required/>${obj.description}</textarea>
 </label>
 </label>
 <label>Change Product Price<br>
-<input id="changeprice" type="number" data-id=${obj.id} value=${obj.price} placeholder="Enter Product Price" required />
+<input id="changeprice" type="number" data-id=${obj.id} value=${obj.price}
+ placeholder="Enter Product Price" required />
 </label>
 <label>Change Product Discount<br>
-<input id="changediscountPercentage" value=${obj.discountPercentage} type="number" placeholder="Enter Product DiscountPercentage" required />
+<input id="changediscountPercentage" value=${obj.discountPercentage} type="number"
+ placeholder="Enter Product DiscountPercentage" required />
 </label>
 <label>Change Product Rating<br>
-<input id="changerating" type="number" value=${obj.rating} min="0" step="0.1" placeholder="Enter Product Rating" required />
+<input id="changerating" type="number" value=${obj.rating} min="0" step="0.1" 
+placeholder="Enter Product Rating" required />
 </label>
 <label>Change Product Stock<br>
-<input id="changestock" type="number" value=${obj.stock} placeholder="Enter Product Stock" required />
+<input id="changestock" type="number" value=${obj.stock} 
+placeholder="Enter Product Stock" required />
 </label>
 <label>Change Product Brand<br>
-<input id="changebrand" type="text" value=${obj.brand} placeholder="Enter Product Brand" required/>
+<input id="changebrand" type="text" value=${obj.brand} 
+placeholder="Enter Product Brand" required/>
 </label>
 <label>Change Product Category<br>
-<input id="changecategory" type="text" value=${obj.category} placeholder="Enter Product Category" required/>
+<input id="changecategory" type="text" value=${obj.category} 
+placeholder="Enter Product Category" required/>
 </label>
 <label>Change Product Thumbnail<br>
-<input id="changethumbnail" type="text" value=${obj.thumbnail} placeholder="Enter ThumbnailURL" required />
+<input id="changethumbnail" type="text" value=${obj.thumbnail} 
+placeholder="Enter ThumbnailURL" required />
 </label>
 <label>Change Product Image 1<br>
-<input id="changeimage1" type="text" value=${obj.images[0]} placeholder="Enter ImageUrl" required />
+<input id="changeimage1" type="text" value=${obj.images[0]} 
+placeholder="Enter ImageUrl" required />
 </label>
 <label>Change Product Image 2<br>
-  <input id="changeimage2" type="text" value=${obj.images[1]} placeholder="Enter ImageUrl" required />
+  <input id="changeimage2" type="text" value=${obj.images[1]} 
+  placeholder="Enter ImageUrl" required />
   </label>
-  <input type="submit" data-id=${obj.id} class="cardbutton" id="viewproduct" value="Save Changes">
+  <input type="submit" data-id=${obj.id} class="cardbutton" 
+  id="viewproduct" value="Save Changes">
 </form>
 </div>
   </div>

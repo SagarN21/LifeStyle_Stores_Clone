@@ -9,22 +9,41 @@ alter data on db.json -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>StyleZilla-Admin</title>
     <link rel="stylesheet" href="CSS/Admin.css" />
+    <link rel="stylesheet" href="CSS/HeaderFooter.css">
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   </head>
   <body>
     <!----------------------------------------------- Header ----------------------------------------------->
     <header>
+      <div id="nav_bar">
+        <img src="./Images/StyleZillaWIthoutBackground.png" alt="" id="logo" />
+        <div>
+          <a href=""> <h4>Women</h4></a>
+          <a href=""> <h4>Men</h4></a>
+          <a href=""> <h4>Kids</h4></a>
+          <a href=""> <h4>Shoes</h4></a>
+          <a href=""> <h4>Bags</h4></a>
+          <a href=""><h4>Beauty</h4></a>
+          <a href="" id="searchbar"
+            ><input type="text" placeholder="🔍  What are you looking for ?"
+          /></a>
+          <a href=""> <h4>More</h4></a>
+          <a href=""><h4 id="signin">SignUp/SignIn</h4></a>
+          <a href=""> <h4>Wishlist</h4></a>
+          <a href=""><h4>Cart</h4></a>
+        </div>
+      </div>
       <!-- ? Nav Bar will come here  -->
     </header>
     <!----------------------------------------------- Main Body ----------------------------------------------->
     <!-- ḷoader -->
-    <img id="loader" src="./StyleZilla-Images/spinner1.gif" id="loader" alt=""> 
+    <img id="loader" src="./Images/spinner1.gif" id="loader" alt=""> 
     
-    <a href="ShowProducts.html" id="fetchbutton"><h1>All Products</h1></a>
+    <a href="Orders.html" id="fetchbutton"><h1>All Products</h1></a>
     <main>
       <div id="tophead">
         <h1 class="Admins-Portal">Admin's Portal</h1>
-        <img src="StyleZilla-Images/Bags.png" alt="">
+        <img src="Images/Bags.png" alt="">
         
       </div>
 <!----------------------------------------------- Adding Products ----------------------------------------------->
@@ -142,6 +161,12 @@ alter data on db.json -->
     <footer></footer>
   </body>
 </html>
-<script src="Admin.js"></script>
+<script src="Js/Admin.js"></script>
 
 <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+<!-- ?? This is the ALERTIFY Library -->
+
+<script src="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/alertify.min.css"   
+/>

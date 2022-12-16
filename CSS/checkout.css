@@ -4,55 +4,6 @@
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
-#top_bar {
-  /* border: 1px solid red; */
-  margin: auto;
-  display: flex;
-  justify-content: space-between;
-  color: white;
-  background-color: black;
-  text-align: center;
-  height: 50px;
-  padding-left: 5%;
-  padding-right: 5%;
-}
-#top_bar h5 {
-  margin: auto;
-}
-#left_top {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 40px;
-}
-
-#right_top {
-  /* border: 1px solid green; */
-  width: 30%;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-}
-
-#nav_bar {
-  display: flex;
-  justify-content: space-evenly;
-  background-color: #f7f7f8;
-  text-align: center;
-}
-#logo {
-  border-radius: 5px;
-  width: 230px;
-  height: 90px;
-}
-#nav_bar > a > input {
-  height: 40px;
-  width: 250px;
-}
-#nav_bar > a {
-  text-decoration: none;
-  color: black;
-  margin: auto;
-}
-
 .footer {
   width: 100%;
   height: 380px;
@@ -104,6 +55,7 @@
   display: flex;
   justify-content: space-around;
 }
+
 .removeNview {
   cursor: pointer;
   margin: 8px;
@@ -114,6 +66,9 @@
   background-color: white;
   color: orange;
   padding: 10px;
+}
+.removeNview:hover {
+  border: 0.5px solid orange;
 }
 .plusminus {
   cursor: pointer;
@@ -187,6 +142,53 @@
   font-size: 20px;
   font-weight: bold;
 }
+#Checkout:hover {
+  background-color: rgb(255, 187, 60);
+}
 hr {
   margin: 10px 0px;
+}
+/*? ----------------------------Medium Screen Sizes -------------------------------- */
+@media all and (min-width: 810px) and (max-width: 1280px) {
+  * {
+    font-size: 14px;
+  }
+  .yourproducts {
+    margin: auto;
+    margin-left: 10px;
+  }
+  .checkoutpage {
+    width: 95%;
+    flex-direction: column-reverse;
+  }
+  .checkoutsection,
+  .showproducts {
+    width: 97%;
+  }
+  .removeNview {
+    font-size: 10px;
+    padding: 2px;
+    margin: 2px;
+    font-weight: lighter;
+  }
+}
+/*? ----------------------------Small Screen Sizes -------------------------------- */
+@media all and (min-width: 320px) and (max-width: 809px) {
+  .yourproducts {
+    margin: auto;
+    margin-left: 10px;
+  }
+  .checkoutpage {
+    width: 95%;
+    flex-direction: column-reverse;
+  }
+  .checkoutsection,
+  .showproducts {
+    width: 97%;
+  }
+  .removeNview {
+    font-size: 10px;
+    padding: 2px;
+    margin: 2px;
+  }
 }
