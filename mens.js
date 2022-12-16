@@ -148,34 +148,6 @@ let shopDepartment = [
     "https://lmsin.net/cdn-cgi/image/w=500,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/LS-MEN-6modularblock-oneBythree-C-Men-04March2022A.jpg"
 ]
 
-let count = 0;
-let pre = document.querySelector(".pre")
-let next  = document.querySelector(".next")
-pre.addEventListener("click", ()=>{
-    count--
-    console.log(count)
-    setTimer()
-})
-next.addEventListener("click", ()=>{
-    if(count==4){
-        count=-1
-    }
-    count++
-    console.log(count)
-    setTimer()
-})
-
-const slide = document.querySelectorAll(".slider")
-slide.forEach((item, index) => {
-    item.style.left = `${index*100}%`
-});
- 
-function setTimer(){
-    slide.forEach((item)=>{
-        item.style.transform = `translateX(-${count*100}%)`
-    })
-}
-setTimer()
 
 
 //Discount part
@@ -338,10 +310,13 @@ function topPicks(topPick, winter, mostLoved, highlight, activeWardrobe, dealCor
     })
     shop.innerHTML = shopClothes.join("")
 
-    let goToProductPage  = document.querySelector(".allProductShow")
-    goToProductPage.addEventListener("click", ()=>{
-        window.location.href = "mensAllProducts.html"
-    })
+    let goToProductPage  = document.querySelectorAll(".allProductShow")
+    for(let allProducts of goToProductPage){
+        allProducts.addEventListener("click", ()=>{
+            window.location.href = "mensAllProducts.html"
+        })
+    }
+   
 
 }
 topPicks(topPick, winter, mostLoved, highlight, activeWardrobe, dealCorner, mostrlovedbrand, essentialsyou, trendingWatch, shopDepartment)

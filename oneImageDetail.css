@@ -3,78 +3,150 @@
     margin: 0px;
     padding: 0px;
 }
-
-#showProducts{
-    /* border: 1px solid red; */
-    width: 98%;
-    margin: auto;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 5px;
-}
-#product{
-    /* border: 1px solid red; */
-    padding: 15px;
-    font-size: 14px;
-}
-#product>img{
-    width: 100%;
-   
-}
-
-.basket{
-    /* border: 1px solid green; */
-    background-color: white;
-    width: 339px;
-    margin-left: -15px;
-    height: 100px;
-    text-align: center;
-    display: none;
-    position: absolute;
-}
-.basket>button{
-    color: white;
-    background-color: orange;
-    border: 0px;
-    font-size: 15px;
-    width: 90%;
-    height: 50px;
-    margin-top: 40px;
-}
-#product:hover{
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-   
-}
-#product:hover .basket{
-    display: block;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-}
-.price{
+.margin, hr, .anchor{
     margin: 10px 0px;
-    font-weight: bold;
-    font-size: 16px;
-}
-.price>i{
-    margin-right: 5px;
-}
-.showCount{
-    color: grey;
-    margin: 25px;
 }
 #container{
+    /* border: 1px solid blue; */
+    display: flex;
+    width: 98%;
+    margin: 20px auto;
+}
+
+.image{
     /* border: 1px solid red; */
+    width: 65%;
+}
+.image>img{
+    width: 48%;
+}
+.checkBox{
+    /* border: 1px solid green; */
+    width: 35%;
+}
+.ship{
+    color: orange;
+    text-decoration: underline;
+}
+
+.smallImage>img{
+    width: 10%;
+    border: 2px solid teal;
+}
+.smallImage+p{
+    margin: 10px 0px;
+}
+.size{
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 0px;
+    width: 400px;
+}
+.sizeButton>button{
+    background-color: white;
+    border: 2px solid lightgrey;
+    height: 45px;
+    width: 63px;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 0px;
+}
+.basket{
+    background-color: orange;
+    color: white;
+    border: 1px solid orange;
+    border-radius: 5px;
+    width: 405px;
+    height: 50px;
+    font-size: 17px;
+}
+.favourite{
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-between;
+    width: 400px;
+}
+hr{
+    width: 400px;
     background-color: lightgray;
-    width: 95%;
-    margin: 40PX auto;
-    display: grid;
-    grid-template-columns: repeat(5,200px);
-    gap: 20px;
-    padding: 15px;
+}
+hr+button{
+    color: rgb(210, 94, 113);
+    background-color: pink;
+    border: 1px solid pink;
+    font-weight: bold;
+    margin: 10px 0px;
+    padding: 5px 5px;
+    border-radius: 3px ;
+}
+.anchor>a{
+    color: black;
+}
+a{
+    color: orange;
+}
+.fa-solid{
+    margin-right: 15px;
+}
+.text{
+    margin: 10px 30px;
+}
+.arrow{
+    margin: 20px 0px;
+    margin-right: 11px;
+}
+.truck{
+    margin: 20px 0px;
+    margin-right: 9px;
+}
+.pinCode{
+    margin-left: 30px;
+    font-size: 17px;
+    height: 50px;
+    width: 250px;
+}
+.pinCode+button{
+    height: 55px;
+    width: 80px;
+    background-color: orange;
+    color: white;
+    border: 1px solid orange;
+    margin-left: 5px;
     border-radius: 5px;
 }
-#container>select{
-    height: 35px;
-    border-radius: 5px;
+
+
+.list{
+    margin: 20px;
+}
+
+.likeMoreProducts{
+    /* border: 1px solid red; */
+    color: cadetblue;
+    margin-left: 25px;
+    font-size: 40px;
+}
+.likeMoreProducts:hover{
+    color: crimson;
+}
+#someImage{
+    /* border: 1px solid red; */
+    width: 98%;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+.individula{
+    /* border: 1px solid green; */
+    padding: 10px;
+}
+.individula:hover{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.individula>img{
+    width: 100%;
 }
 
 
@@ -374,6 +446,4 @@
       grid-template-columns: repeat(3, 1fr);
     }
   }
-
-
-
+  
