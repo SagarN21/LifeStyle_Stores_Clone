@@ -18,7 +18,18 @@
     console.log(obj);
     if (obj.nam == "" || obj.em == "" || obj.pas == "") {
       swal("please enter full details");
-    } else {
+    } 
+    else if(obj.nam == ""){
+      swal("please enter Full Name");
+    }
+    else if(obj.em == "" ){
+      swal("please enter Email");
+    }
+    else if(obj.pas == ""){
+      swal("please enter Password");
+    }
+      
+      else {
       signArr.push(obj);
       
       localStorage.setItem("sign", JSON.stringify(signArr));

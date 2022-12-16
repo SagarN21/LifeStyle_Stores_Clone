@@ -8,6 +8,7 @@
 
       margin: auto;
     }
+   
     .form {
       width: 210px;
       height: 400px;
@@ -108,3 +109,7 @@
       box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;;
       border-radius: 7px;
     }
+    ::placeholder{
+      color: rgb(212, 212, 212)
+  }
+ 
