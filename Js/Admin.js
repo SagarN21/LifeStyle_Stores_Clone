@@ -1,28 +1,12 @@
-//! APIs Links!!
+//?-----------------------------------------<Global variables>-------------------------------------------------------------------
 
-let WomensTopWear =
-  "https://63984241fe03352a94ca27c3.mockapi.io/lifestyleApi/womensTopWear";
-let WomensEthnicWear =
-  "https://63984241fe03352a94ca27c3.mockapi.io/lifestyleApi/WomenEthnicWear";
-let MensFormals =
-  "https://63984241fe03352a94ca27c3.mockapi.io/lifestyleApi/MensFormals";
-let MensCasuals =
-  "https://63984241fe03352a94ca27c3.mockapi.io/lifestyleApi/MensCasuals";
-let KidsWear =
-  "https://63987962044fa481d69ed8cc.mockapi.io/stylezilla/KidsWear";
-let BeautyProducts =
-  "https://63987962044fa481d69ed8cc.mockapi.io/stylezilla/BeautyProducts";
-let Shoes = "https://63987962044fa481d69ed8cc.mockapi.io/stylezilla/Shoes";
-let Bags = "https://63987962044fa481d69ed8cc.mockapi.io/stylezilla/Bags";
-
-// todo global variables
 let loader = document.getElementById("loader");
 let AddProductForm = document.getElementById("AddProduct");
 let DeleteSelector = document.getElementById("DeleteSelect");
 let EditSelector = document.getElementById("EditSelect");
 let container2 = document.getElementById("edit-products-list");
 
-//? Admin==>   <Adding Product to Databses>--------------------------------------------------------------------------------
+//? --------------------------------------Adding Product to Databses>--------------------------------------------------------------------------------
 
 AddProductForm.addEventListener("submit", function (event) {
   event.preventDefault();
@@ -35,7 +19,6 @@ AddProductForm.addEventListener("submit", function (event) {
     AllInputTagsValue[9].value,
     AllInputTagsValue[10].value,
   ];
-  //? Womens Top Wear
   AddProductInDatabase(obj);
 });
 
@@ -51,19 +34,17 @@ async function AddProductInDatabase(data) {
       body: JSON.stringify(data),
     });
     let addedproduct = await res.json();
-    console.log(res);
-    console.log(addedproduct);
+    console.log("Product Added", addedproduct);
     swal("Done!", "Product Added Successfully!", "success");
     loader.style.display = "none";
   } catch (error) {
     swal("ERROR!", "Cannot Add Product!", "error");
-
     console.log(error);
     loader.style.display = "none";
   }
 }
 
-// ? <Deleteting Products Functions>--------------------------------------------------------------------------------
+// ? ------------------------------------------<Deleteting Products Functions>--------------------------------------
 
 DeleteSelector.addEventListener("change", FetchDeleteData);
 async function FetchDeleteData() {
@@ -78,11 +59,9 @@ async function FetchDeleteData() {
   try {
     let res = await fetch(url);
     let data = await res.json();
-    console.log(data);
     ProductsListShow(data);
     loader.style.display = "none";
   } catch (error) {
-    // console.log(error);
     swal("ERROR!", "Unable to fetch from Server!", "error");
     loader.style.display = "none";
   }
@@ -163,7 +142,8 @@ async function DeleteProduct(id) {
   }
 }
 
-// ? <Edit a Product>----------------------------------------------------------------------------------------------
+// ? -------------------------------------------<Edit a Product>-----------------------------------------------------------
+
 EditSelector.addEventListener("change", FetchEditData);
 async function FetchEditData() {
   loader.style.display = "block";
@@ -177,7 +157,6 @@ async function FetchEditData() {
   try {
     let res = await fetch(url);
     let data = await res.json();
-    console.log(data);
     ProductsListShow2(data);
     loader.style.display = "none";
   } catch (error) {
@@ -233,12 +212,12 @@ async function PatchObjMaker(id) {
   try {
     let res = await fetch(`${url}/${id}`);
     let data = await res.json();
-    xyz(data);
+    ChangingDetails(data);
   } catch (error) {
     console.log(error);
   }
 }
-function xyz(obj) {
+function ChangingDetails(obj) {
   container2.innerHTML = `
   <div class="edit-product-card">
   <div>
@@ -345,7 +324,6 @@ placeholder="Enter ImageUrl" required />
       images: [image1, image2],
     };
     PatchPUT(newobj);
-    console.log(newobj);
   });
 }
 async function PatchPUT(obj) {
@@ -362,7 +340,7 @@ async function PatchPUT(obj) {
     });
     if (res.ok) {
       let data = await res.json();
-      console.log(data);
+      console.log("Product Details Changing Success", data);
       loader.style.display = "none";
       swal("Done!", "Changes Saved Successfully!", "success");
       FetchEditData();

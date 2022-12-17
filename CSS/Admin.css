@@ -14,7 +14,7 @@
   color: white;
   text-decoration: none;
   position: absolute;
-  top: 125px;
+  top: 105px;
   right: 50px;
   border: 0px;
   background-color: rgb(171, 214, 40);
@@ -102,15 +102,15 @@ select {
   position: relative;
   margin: 3px;
   display: flex;
+  border: 0.2px solid rgb(208, 208, 208);
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
     rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
   place-items: center;
-  transition: all 250ms ease;
+  transition: all 200ms ease;
 }
 .DeleteProductCard:hover {
   cursor: pointer;
-  transform: scale(1.009);
-  z-index: 1.001;
+  border: 0.4px solid black;
 }
 .DeleteProductCard > div {
   height: 80px;
@@ -133,6 +133,10 @@ select {
 #delete-product-id > label {
   font-size: 16px;
 }
+#delete-description {
+  font-weight: normal;
+  font-size: 14px;
+}
 .product-button {
   padding: 5px 20px;
   font-size: 20px;
@@ -145,10 +149,11 @@ select {
   right: 25px;
 }
 #delete-product-button {
-  transition: all 300ms ease;
+  transition: all 100ms ease;
   background-color: rgb(215, 8, 8);
 }
 #edit-product-button {
+  padding: 5px 32px;
   transition: all 300ms ease;
   background-color: rgb(48, 25, 220);
 }
@@ -160,14 +165,11 @@ select {
 }
 #edit-product-button:hover {
   cursor: pointer;
-  color: rgb(25, 7, 125);
+  color: rgb(20, 85, 183);
   border: 2px solid rgb(21, 3, 95);
   background-color: rgb(164, 169, 249);
 }
-#delete-description {
-  font-weight: normal;
-  font-size: 14px;
-}
+
 .infos {
   width: auto;
   text-align: center;
@@ -209,11 +211,128 @@ select {
   gap: 10px;
   padding: 10px;
 }
-/*! ----------------------------Small Screen Sizes -------------------------------- */
+/*? ----------------------------Small Screen Sizes -------------------------------- */
 @media all and (min-width: 320px) and (max-width: 809px) {
   /*-------------------------- Universals-------------------------- */
-  form {
+  .Admins-Portal {
+    font-size: 40px;
+  }
+  select {
+    font-size: 14px;
+  }
+  #fetchbutton {
+    z-index: 10000000;
+    top: 20px;
+    right: 10px;
+  }
+  #tophead > img {
+    width: 100px;
+  }
+  .CRUDsections {
+    min-height: 830px;
+  }
+
+  .add-submit {
+    width: 60%;
+    bottom: -70px;
+    padding: 5px 10px;
+    left: 52px;
+  }
+  .addDataform {
     grid-template-columns: repeat(1, 1fr);
   }
+  .DeleteProductCard > div {
+    margin: 1px;
+    height: auto;
+  }
+  #delete-product-id {
+    display: none;
+  }
+  #delete-description {
+    display: none;
+  }
+  #edit-product-button {
+    bottom: 50px;
+    padding: 5px 10px;
+    height: auto;
+    bottom: 44px;
+    font-size: 14px;
+  }
+  #delete-product-button {
+    padding: 5px 10px;
+    height: auto;
+    bottom: 36px;
+    font-size: 14px;
+  }
+  #delete-product-label {
+    width: 100px;
+  }
+  .DeleteProductCard {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 5px;
+    place-items: right;
+  }
   /* -------------------------Page Specifcs------------------------- */
+}
+/*? ----------------------------Medium Screen Sizes -------------------------------- */
+@media all and (min-width: 810px) and (max-width: 1280px) {
+  .Admins-Portal {
+    font-size: 40px;
+  }
+  select {
+    font-size: 14px;
+  }
+  #fetchbutton {
+    z-index: 10000000;
+    top: 20px;
+    right: 10px;
+  }
+  #tophead > img {
+    width: 100px;
+  }
+
+  .add-submit {
+    width: 40%;
+    bottom: 0px;
+    padding: 15px 40px;
+    right: 52px;
+  }
+  .addDataform {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .DeleteProductCard > div {
+    margin: 1px;
+    height: auto;
+  }
+  #delete-product-id {
+    display: none;
+  }
+  #delete-description {
+    display: none;
+  }
+  #edit-product-button {
+    bottom: 50px;
+    padding: 5px 10px;
+    height: auto;
+    bottom: 10px;
+    right: 27px;
+    font-size: 14px;
+  }
+  #delete-product-button {
+    padding: 5px 10px;
+    height: auto;
+    bottom: 5px;
+    right: 37px;
+    font-size: 14px;
+  }
+  #delete-product-label {
+    width: 200px;
+  }
+  .DeleteProductCard {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    padding: 5px;
+    place-items: right;
+  }
 }
