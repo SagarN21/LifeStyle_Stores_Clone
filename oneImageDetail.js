@@ -1,8 +1,11 @@
 async function getData() {
     try {
         let responce = await fetch("https://63984241fe03352a94ca27c3.mockapi.io/lifestyleApi/MensFormals")
-        if (responce.ok) {
-            let allData = await responce.json()
+        let secondData = await fetch("https://63984241fe03352a94ca27c3.mockapi.io/lifestyleApi/MensCasuals")
+        if (responce.ok || secondData.ok == true) {
+            let firstData = await responce.json()
+            let secData = await secondData.json()
+            allData = [...firstData, ...secData];
             let getId = sessionStorage.getItem("productId")
             let oneData = allData.filter((item) => {
                 return item.id == getId
@@ -12,6 +15,8 @@ async function getData() {
             image.innerHTML = ` <img src="${oneData[0].images[0]}" alt="">
             <img src="${oneData[0].images[1]}" alt="">
             `
+
+            
             let smallImage = document.querySelector(".smallImage")
             smallImage.innerHTML = `<img src="${oneData[0].images[0]}" alt="">`
             let p = document.querySelector(".price")
@@ -56,7 +61,7 @@ function showallData(allData){
         return `
     <div class="individula">
         <img src="${item.images[0]}" alt="">
-        <p><i class="fa-solid fa-indian-rupee-sign"></i>${item.price}</p>
+        <p class="moreShirt"><i class="fa-solid fa-indian-rupee-sign"></i>${item.price}</p>
         <p>${item.title}</p>
     </div>
     `

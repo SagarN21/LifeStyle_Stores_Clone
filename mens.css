@@ -3,12 +3,24 @@
   margin: 0px;
   padding: 0px;
 }
+/* banner */
+.carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+   
+	margin: auto;
+	width: 200%;
+  }
+  #banner{
+ 
+    margin-top: 50px;
+    width: 90%;
+  }
 
-
+  /* banner */
 #container {
   /* border: 1px solid red; */
   width: 97%;
-  margin: auto;
+  margin: 20px auto;
 }
 
 #container>img {
@@ -574,11 +586,7 @@ hr {
     grid-template-columns: repeat(3, 1fr);
   }
   /*======================men page responsive========== */
-  #container {
-    border: 1px solid red;
-  }
-  
-  
+ 
   #buyFree, #brandImage, #winterClothes{
     display: grid;
     grid-template-columns: repeat(2, 1fr);

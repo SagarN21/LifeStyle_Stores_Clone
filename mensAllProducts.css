@@ -3,6 +3,30 @@
     margin: 0px;
     padding: 0px;
 }
+body {
+  font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Helvetica, Arial, sans-serif; 
+}
+
+#productName{
+  height: 40px;
+  width: 20%;
+  border: 1px solid grey;
+}
+#container{
+  /* border: 1px solid red; */
+  background-color: lightgray;
+  width: 95%;
+  margin: 40PX auto;
+  display: grid;
+  grid-template-columns: repeat(5,200px);
+  gap: 20px;
+  padding: 15px;
+  border-radius: 5px;
+}
+#container>select{
+  height: 35px;
+  border-radius: 5px;
+}
 
 #showProducts{
     /* border: 1px solid red; */
@@ -19,13 +43,12 @@
 }
 #product>img{
     width: 100%;
-   
 }
 
 .basket{
     /* border: 1px solid green; */
     background-color: white;
-    width: 339px;
+    width: 24.3%;
     margin-left: -15px;
     height: 100px;
     text-align: center;
@@ -61,21 +84,7 @@
     color: grey;
     margin: 25px;
 }
-#container{
-    /* border: 1px solid red; */
-    background-color: lightgray;
-    width: 95%;
-    margin: 40PX auto;
-    display: grid;
-    grid-template-columns: repeat(5,200px);
-    gap: 20px;
-    padding: 15px;
-    border-radius: 5px;
-}
-#container>select{
-    height: 35px;
-    border-radius: 5px;
-}
+
 
 
 /* <!----------------------------------------------- Header CSS -----------------------------------------------> */
@@ -274,7 +283,7 @@
   }
   
   /*? ----------------------------Medium Screen Sizes -------------------------------- */
-  @media all and (min-width: 810px) and (max-width: 1280px) {
+  @media all and (min-width: 810px) and (max-width: 1200px) {
     /* <!----------------------------------------------- Header -----------------------------------------------> */
     #top_bar {
       flex-direction: column;
@@ -305,6 +314,27 @@
     #signin {
       background-color: #f7f4f4;
       padding: 10px;
+    }
+    /*===========my media==========*/
+    #container{
+      display: grid;
+      grid-template-columns: repeat(3,200px);
+      gap: 20px;
+     
+    }
+    #container>select{
+      height: 45px;
+      width: 210px;
+      border-radius: 5px;
+    }
+    
+    #showProducts{
+        /* border: 1px solid red; */
+        width: 98%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 5px;
     }
   }
   /*?----------------------------Small Screen Sizes -------------------------------- */
@@ -373,6 +403,41 @@
     #footer {
       grid-template-columns: repeat(3, 1fr);
     }
+    #container{
+      display: grid;
+      grid-template-columns: repeat(2,200px);
+      gap: 10px;
+     
+    }
+    #container>select{
+      height: 45px;
+      width: 180px;
+      border-radius: 5px;
+    }
+    
+    #showProducts{
+        /* border: 1px solid red; */
+        width: 98%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 5px;
+    }
+    #product{
+      /* border: 1px solid red; */
+      padding: 10px;
+      font-size: 14px;
+    }
+    #product>img{
+        width: 100%;
+    }
+    .basket{
+      /* border: 1px solid green; */
+      width: 49.8%;
+      margin-left: -15px;
+      display: none;
+      position: absolute;
+  }
   }
 
 

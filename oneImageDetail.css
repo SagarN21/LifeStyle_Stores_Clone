@@ -1,449 +1,623 @@
-*{
-    font-family: sans-serif;
-    margin: 0px;
-    padding: 0px;
+* {
+  font-family: sans-serif;
+  margin: 0px;
+  padding: 0px;
 }
-.margin, hr, .anchor{
-    margin: 10px 0px;
+
+.margin,
+hr,
+.anchor {
+  margin: 10px 0px;
 }
-#container{
-    /* border: 1px solid blue; */
-    display: flex;
+
+#container {
+  /* border: 1px solid blue; */
+  display: flex;
+  width: 98%;
+  margin: 20px auto;
+}
+
+.image {
+  /* border: 1px solid red; */
+  width: 65%;
+}
+
+.image>img {
+  width: 48%;
+}
+
+.checkBox {
+  /* border: 1px solid green; */
+  width: 35%;
+}
+
+.ship {
+  color: orange;
+  text-decoration: underline;
+}
+
+.smallImage>img {
+  width: 10%;
+  border: 2px solid teal;
+}
+
+.smallImage+p {
+  margin: 10px 0px;
+}
+
+.size {
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: space-between;
+  margin: 5px 0px;
+  width: 400px;
+}
+
+.sizeButton>button {
+  background-color: white;
+  border: 2px solid lightgrey;
+  height: 45px;
+  width: 63px;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 10px 0px;
+}
+
+.basket {
+  background-color: orange;
+  color: white;
+  border: 1px solid orange;
+  border-radius: 5px;
+  width: 406px;
+  height: 50px;
+  font-size: 17px;
+}
+
+.favourite {
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: space-between;
+  width: 400px;
+}
+
+hr {
+  width: 400px;
+  background-color: lightgray;
+}
+
+hr+button {
+  color: rgb(210, 94, 113);
+  background-color: pink;
+  border: 1px solid pink;
+  font-weight: bold;
+  margin: 10px 0px;
+  padding: 5px 5px;
+  border-radius: 3px;
+}
+
+.anchor>a {
+  color: black;
+}
+
+.moreshirt{
+  color: blue;
+  margin-left: -50px;
+}
+a {
+  color: orange;
+}
+
+.fa-solid {
+  margin-right: 15px;
+}
+
+.text {
+  margin: 10px 30px;
+}
+
+.arrow {
+  margin: 20px 0px;
+  margin-right: 11px;
+}
+
+.truck {
+  margin: 20px 0px;
+  margin-right: 9px;
+}
+
+.pinCode {
+  margin-left: 30px;
+  font-size: 17px;
+  height: 50px;
+  width: 250px;
+}
+
+.pinCode+button {
+  height: 55px;
+  width: 80px;
+  background-color: orange;
+  color: white;
+  border: 1px solid orange;
+  margin-left: 5px;
+  border-radius: 5px;
+}
+
+.list {
+  margin: 20px;
+}
+
+.likeMoreProducts {
+  /* border: 1px solid red; */
+  color: cadetblue;
+  margin-left: 25px;
+  font-size: 40px;
+}
+
+.likeMoreProducts:hover {
+  color: crimson;
+}
+
+#someImage {
+  /* border: 1px solid red; */
+  width: 98%;
+  margin: 20px auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.individula {
+  /* border: 1px solid green; */
+  padding: 10px;
+}
+
+.individula:hover {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.individula>img {
+  width: 100%;
+}
+
+.price {
+  margin-left: -18px;
+  margin-right: 10px;
+}
+
+/* <!----------------------------------------------- Header CSS -----------------------------------------------> */
+#top_bar {
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  background-color: black;
+  text-align: center;
+  height: 50px;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+#top_bar h5 {
+  margin: auto;
+}
+
+#left_top {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+#right_top {
+  width: 30%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+/* html {
+    position: relative;
+  } */
+#nav_bar {
+  z-index: 1000000;
+  position: sticky;
+  top: 0px;
+  padding: 1px;
+  background-color: rgb(246, 249, 247);
+}
+
+#nav_bar>div {
+  margin: 20px;
+  margin-left: 240px;
+  width: 80%;
+  display: flex;
+  justify-content: right;
+  background-color: rgb(246, 249, 247);
+  text-align: center;
+}
+
+#logo {
+  position: absolute;
+  border-radius: 5px;
+  width: 230px;
+  height: 90px;
+}
+
+#nav_bar>div>a>input {
+  height: 33px;
+  padding: 3px;
+  width: 250px;
+}
+
+#nav_bar>div>a {
+  text-decoration: none;
+  color: black;
+  margin: auto;
+}
+
+/* <!----------------------------------------------- Footer CSS -----------------------------------------------> */
+#subscribe {
+  height: 300px;
+  margin-left: 8%;
+}
+
+#subscribe {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#email_subs {
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+#email_subs>p {
+  margin-bottom: 30px;
+}
+
+#email_subs>input {
+  width: 300px;
+  padding: 0px 8px;
+  height: 50px;
+  margin-left: 10px;
+}
+
+#email_subs>button {
+  width: 200px;
+  height: 50px;
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+}
+
+#play_store {
+  margin-right: 80px;
+  margin-top: 20px;
+}
+
+#play_store>p {
+  margin-bottom: 30px;
+}
+
+#play_store>button {
+  padding: 10px;
+  height: auto;
+  width: 150px;
+  background-color: black;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+#footer {
+  margin-top: 50px;
+  height: 500px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  margin-left: 8%;
+  font-size: larger;
+}
+
+#footer a {
+  text-decoration: none;
+  color: rgb(158, 156, 156);
+  margin-bottom: 5px;
+}
+
+#footer a:hover {
+  color: orange;
+}
+
+#contact {
+  display: flex;
+  margin-top: 120px;
+  margin-left: 8%;
+  margin-bottom: 15px;
+  justify-content: space-evenly;
+  font-size: larger;
+}
+
+#contact img {
+  width: 10%;
+  margin-right: 20px;
+}
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: orange;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#side_menu {
+  display: none;
+}
+
+/*? ----------------------------Medium Screen Sizes -------------------------------- */
+@media all and (min-width: 810px) and (max-width: 1000px) {
+
+  /* <!----------------------------------------------- Header -----------------------------------------------> */
+  #top_bar {
+    flex-direction: column;
+    height: auto;
+    padding: 7px;
+  }
+
+  #top_bar h5 {
+    font-size: 10px;
+    font-weight: light;
+  }
+
+  #right_top {
+    display: none;
+  }
+
+  #logo {
+    position: relative;
+    top: 8px;
+    left: 84px;
+  }
+
+  #nav_bar>div {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 2px;
+    margin: auto;
+  }
+
+  #searchbar {
+    display: none;
+  }
+
+  #signin {
+    background-color: #f7f4f4;
+    padding: 10px;
+  }
+
+  #someImage {
+    /* border: 1px solid red; */
     width: 98%;
     margin: 20px auto;
-}
-
-.image{
-    /* border: 1px solid red; */
-    width: 65%;
-}
-.image>img{
-    width: 48%;
-}
-.checkBox{
-    /* border: 1px solid green; */
-    width: 35%;
-}
-.ship{
-    color: orange;
-    text-decoration: underline;
-}
-
-.smallImage>img{
-    width: 10%;
-    border: 2px solid teal;
-}
-.smallImage+p{
-    margin: 10px 0px;
-}
-.size{
-    /* border: 1px solid red; */
-    display: flex;
-    justify-content: space-between;
-    margin: 5px 0px;
-    width: 400px;
-}
-.sizeButton>button{
-    background-color: white;
-    border: 2px solid lightgrey;
-    height: 45px;
-    width: 63px;
-    font-size: 18px;
-    font-weight: bold;
-    margin: 10px 0px;
-}
-.basket{
-    background-color: orange;
-    color: white;
-    border: 1px solid orange;
-    border-radius: 5px;
-    width: 405px;
-    height: 50px;
-    font-size: 17px;
-}
-.favourite{
-    /* border: 1px solid red; */
-    display: flex;
-    justify-content: space-between;
-    width: 400px;
-}
-hr{
-    width: 400px;
-    background-color: lightgray;
-}
-hr+button{
-    color: rgb(210, 94, 113);
-    background-color: pink;
-    border: 1px solid pink;
-    font-weight: bold;
-    margin: 10px 0px;
-    padding: 5px 5px;
-    border-radius: 3px ;
-}
-.anchor>a{
-    color: black;
-}
-a{
-    color: orange;
-}
-.fa-solid{
-    margin-right: 15px;
-}
-.text{
-    margin: 10px 30px;
-}
-.arrow{
-    margin: 20px 0px;
-    margin-right: 11px;
-}
-.truck{
-    margin: 20px 0px;
-    margin-right: 9px;
-}
-.pinCode{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+  .image>img{
+    display: block;
+    width: 95%;
+    margin: 10px;
+  }
+  .basket{
+    width: 265px;
+  }
+  .size{
+    width: 270px;
+  }
+  .favourite {
+   width: 270px;
+  }
+  hr {
+    width: 270px; 
+  }
+  .pinCode {
     margin-left: 30px;
     font-size: 17px;
     height: 50px;
     width: 250px;
-}
-.pinCode+button{
-    height: 55px;
-    width: 80px;
-    background-color: orange;
-    color: white;
-    border: 1px solid orange;
-    margin-left: 5px;
-    border-radius: 5px;
+    display: block;
+    border: 1px solid black;
+  }
+  
+  .pinCode+button {
+    margin: 25px;
+    width: 150px;
+  }
 }
 
+/*?----------------------------Small Screen Sizes -------------------------------- */
+@media all and (min-width: 10px) and (max-width: 809px) {
+  * {
+    font-size: 12px;
+  }
 
-.list{
+  /* <!----------------------------------------------- Header -----------------------------------------------> */
+  #top_bar {
+    flex-direction: column;
+    height: auto;
+    padding: 7px;
+  }
+
+  #top_bar h5 {
+    font-size: 10px;
+    font-weight: light;
+  }
+
+  #right_top {
+    display: none;
+  }
+
+  #logo {
+    position: relative;
+    top: 8px;
+    left: 84px;
+  }
+
+  #nav-bar {
+    flex-direction: column;
+  }
+
+  #nav_bar>div {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 2px;
+    margin: auto;
+  }
+
+  #searchbar {
+    display: none;
+  }
+
+  #signin {
+    background-color: #f7f4f4;
+    padding: 10px;
+  }
+
+  /* <!----------------------------------------------- Footer -----------------------------------------------> */
+  #subscribe {
+    flex-direction: column;
+  }
+
+  #email_subs>input {
+    margin: auto;
+    margin-bottom: 2px;
+    border: 1px solid black;
+  }
+
+  #play_store {
+    margin: auto;
+  }
+
+  #email_subs>button {
+    width: 95%;
+  }
+
+  #contact {
+    margin: auto;
+    display: grid;
     margin: 20px;
-}
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    align-items: center;
+  }
 
-.likeMoreProducts{
-    /* border: 1px solid red; */
-    color: cadetblue;
-    margin-left: 25px;
-    font-size: 40px;
-}
-.likeMoreProducts:hover{
-    color: crimson;
-}
-#someImage{
+  #footer {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  /* my media query */
+  #someImage {
     /* border: 1px solid red; */
     width: 98%;
     margin: 20px auto;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 10px;
-}
-.individula{
-    /* border: 1px solid green; */
-    padding: 10px;
-}
-.individula:hover{
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-}
-.individula>img{
+  }
+
+  /*=============my media query============*/
+  #container{
+    /* border: 1px solid red; */
+    width: 92%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .image{
+    /* border: 1px solid blue; */
+    width: 99%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+  .image>img{
     width: 100%;
+  }
+  .checkBox{
+    /* border: 1px solid gold; */
+    width: 99%;
+  }
+  i, p, a, span, li, h3{
+    font-size: 20px;
+  }
+  .size{
+    /* border: 1px solid red; */
+    width: 85%;
+  }
+  .basket{
+    width: 85%;
+  }
+  .favourite{
+    width: 85%;
+  }
+  hr{
+    width: 85%;
+  }
+  hr+button{
+    font-size: 20px;
+  }
+  .pinCode{
+    border: 1px solid black;
+    margin-left: 15px;
+    padding-left: 5px;
+  }
+
+
 }
-
-
-/* <!----------------------------------------------- Header CSS -----------------------------------------------> */
-#top_bar {
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
-    color: white;
-    background-color: black;
-    text-align: center;
-    height: 50px;
-    padding-left: 5%;
-    padding-right: 5%;
-  }
-  #top_bar h5 {
-    margin: auto;
-  }
-  #left_top {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 40px;
-  }
-  
-  #right_top {
-    width: 30%;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-  }
-  /* html {
-    position: relative;
-  } */
-  #nav_bar {
-    z-index: 1000000;
-    position: sticky;
-    top: 0px;
-    padding: 1px;
-    background-color: rgb(246, 249, 247);
-  }
-  #nav_bar > div {
-    margin: 20px;
-    margin-left: 240px;
-    width: 80%;
-    display: flex;
-    justify-content: right;
-    background-color: rgb(246, 249, 247);
-    text-align: center;
-  }
-  #logo {
-    position: absolute;
-    border-radius: 5px;
-    width: 230px;
-    height: 90px;
-  }
-  #nav_bar > div > a > input {
-    height: 33px;
-    padding: 3px;
-    width: 250px;
-  }
-  #nav_bar > div > a {
-    text-decoration: none;
-    color: black;
-    margin: auto;
-  }
-  /* <!----------------------------------------------- Footer CSS -----------------------------------------------> */
-  #subscribe {
-    height: 300px;
-    margin-left: 8%;
-  }
-  #subscribe {
-    margin-top: 50px;
-    display: flex;
-    justify-content: space-between;
-  }
-  #email_subs {
-    margin-top: 20px;
-    margin-left: 20px;
-  }
-  #email_subs > p {
-    margin-bottom: 30px;
-  }
-  #email_subs > input {
-    width: 300px;
-    padding: 0px 8px;
-    height: 50px;
-    margin-left: 10px;
-  }
-  #email_subs > button {
-    width: 200px;
-    height: 50px;
-    background-color: black;
-    color: white;
-    border-radius: 5px;
-  }
-  #play_store {
-    margin-right: 80px;
-    margin-top: 20px;
-  }
-  #play_store > p {
-    margin-bottom: 30px;
-  }
-  #play_store > button {
-    padding: 10px;
-    height: auto;
-    width: 150px;
-    background-color: black;
-    color: white;
-    font-size: 18px;
-    font-weight: bold;
-    border-radius: 5px;
-    margin-bottom: 20px;
-  }
-  #footer {
-    margin-top: 50px;
-    height: 500px;
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    margin-left: 8%;
-    font-size: larger;
-  }
-  #footer a {
-    text-decoration: none;
-    color: rgb(158, 156, 156);
-    margin-bottom: 5px;
-  }
-  #footer a:hover {
-    color: orange;
-  }
-  #contact {
-    display: flex;
-    margin-top: 120px;
-    margin-left: 8%;
-    margin-bottom: 15px;
-    justify-content: space-evenly;
-    font-size: larger;
-  }
-  #contact img {
-    width: 10%;
-    margin-right: 20px;
-  }
-  
-  #myBtn {
-    display: none;
-    position: fixed;
-    bottom: 20px;
-    right: 30px;
-    z-index: 99;
-    font-size: 18px;
-    border: none;
-    outline: none;
-    background-color: red;
-    color: white;
-    cursor: pointer;
-    padding: 15px;
-    border-radius: 4px;
-  }
-  
-  #myBtn:hover {
-    background-color: orange;
-  }
-  
-  .sidenav {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: #111;
-    overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 60px;
-  }
-  
-  .sidenav a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #818181;
-    display: block;
-    transition: 0.3s;
-  }
-  
-  .sidenav a:hover {
-    color: #f1f1f1;
-  }
-  
-  .sidenav .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-  }
-  #side_menu {
-    display: none;
-  }
-  
-  /*? ----------------------------Medium Screen Sizes -------------------------------- */
-  @media all and (min-width: 810px) and (max-width: 1280px) {
-    /* <!----------------------------------------------- Header -----------------------------------------------> */
-    #top_bar {
-      flex-direction: column;
-      height: auto;
-      padding: 7px;
-    }
-    #top_bar h5 {
-      font-size: 10px;
-      font-weight: light;
-    }
-    #right_top {
-      display: none;
-    }
-    #logo {
-      position: relative;
-      top: 8px;
-      left: 84px;
-    }
-    #nav_bar > div {
-      display: grid;
-      grid-template-columns: repeat(5, 1fr);
-      gap: 2px;
-      margin: auto;
-    }
-    #searchbar {
-      display: none;
-    }
-    #signin {
-      background-color: #f7f4f4;
-      padding: 10px;
-    }
-  }
-  /*?----------------------------Small Screen Sizes -------------------------------- */
-  @media all and (min-width: 10px) and (max-width: 809px) {
-    * {
-      font-size: 12px;
-    }
-    /* <!----------------------------------------------- Header -----------------------------------------------> */
-    #top_bar {
-      flex-direction: column;
-      height: auto;
-      padding: 7px;
-    }
-    #top_bar h5 {
-      font-size: 10px;
-      font-weight: light;
-    }
-    #right_top {
-      display: none;
-    }
-    #logo {
-      position: relative;
-      top: 8px;
-      left: 84px;
-    }
-    #nav-bar {
-      flex-direction: column;
-    }
-    #nav_bar > div {
-      display: grid;
-      grid-template-columns: repeat(5, 1fr);
-      gap: 2px;
-      margin: auto;
-    }
-    #searchbar {
-      display: none;
-    }
-    #signin {
-      background-color: #f7f4f4;
-      padding: 10px;
-    }
-  
-    /* <!----------------------------------------------- Footer -----------------------------------------------> */
-    #subscribe {
-      flex-direction: column;
-    }
-    #email_subs > input {
-      margin: auto;
-      margin-bottom: 2px;
-      border: 1px solid black;
-    }
-    #play_store {
-      margin: auto;
-    }
-    #email_subs > button {
-      width: 95%;
-    }
-    #contact {
-      margin: auto;
-      display: grid;
-      margin: 20px;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 10px;
-      align-items: center;
-    }
-    #footer {
-      grid-template-columns: repeat(3, 1fr);
-    }
-  }
-  
