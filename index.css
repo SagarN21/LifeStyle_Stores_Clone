@@ -496,7 +496,9 @@
   background-color: orange;
 }
 
-
+#logo1{
+  display: none;
+}
 
 
 
@@ -517,24 +519,24 @@
   #right_top {
     display: none;
   }
-  #logo {
+  /* #logo {
     position: relative;
     top: 8px;
     left: 84px;
     margin-right: 150px;
     padding: 0%;
     width: 70%;
-  }
-  
+   
+  } */
+ 
   #nav_bar{
-    /* border: 1px solid red; */
+    
     display: grid;
     grid-template-columns: repeat(5, 20%);
-  margin: 0%;
-   gap: 1px;
-  width: 90%;
-  margin-left: 5%;
-  padding: 0px;
+  column-gap: -150px;
+   
+ 
+  font-size: small;
   }
   #searchbar {
     display: none;
@@ -707,8 +709,8 @@
     grid-template-columns: repeat(3, 30%);
    
     margin: auto;
-    width: 70%;
-    margin-left: 10%;
+    /* width: 70%;
+    margin-left: 10%; */
   }
   #searchbar {
     display: none;
