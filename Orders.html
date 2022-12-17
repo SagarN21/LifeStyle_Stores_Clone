@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin: Orders & Payments</title>
+    <link rel="stylesheet" href="CSS/Orders.css" />
+    <link rel="stylesheet" href="CSS/HeaderFooter.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!--?--------------------------------------------- Header ----------------------------------------------->
+    <header>
+      <div id="nav_bar">
+        <img src="./Images/StyleZillaWIthoutBackground.png" alt="" id="logo" />
+        <div>
+          <a href=""> <h4>Women</h4></a>
+          <a href=""> <h4>Men</h4></a>
+          <a href=""> <h4>Kids</h4></a>
+          <a href=""> <h4>Shoes</h4></a>
+          <a href=""> <h4>Bags</h4></a>
+          <a href=""><h4>Beauty</h4></a>
+          <a href="" id="searchbar"
+            ><input type="text" placeholder="🔍  Search for Products"
+          /></a>
+          <a href=""> <h4>More</h4></a>
+          <a href=""><h4 id="signin">👤 Admin</h4></a>
+          <a href=""> <h4>Wishlist</h4></a>
+          <a href=""><h4>Cart</h4></a>
+        </div>
+      </div>
+    </header>
+    <!--?--------------------------------------------- Main Body ----------------------------------------------->
+    <img id="loader" src="./Images/spinner1.gif" id="loader" alt="" />
+    <main>
+      <section class="mainsect1">
+        <div id="tophead">
+          <h1 class="manage-order"> Manage Orders🛍️</h1>
+          <div class="orders-container">
+            <label>No orders to manage</label>
+           </div>
+        </div>
+      </section>
+      <section>
+        <div id="tophead" class="allproducts">
+          <h1 class="manage-order"> All Products 🛍️</h1>
+          <div class="container">
+    
+            <!-- ? Append Data Here -->
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="showproducttop">
+          <h1>
+            Show All Products🛍️ <br />
+            <select name="Select Database" id="select">
+              <option value="">Select Category</option>
+              <option value="https://63984241fe03352a94ca27c3.mockapi.io/lifestyleApi/womensTopWear">Womens Top Wear</option>
+              <option value="https://63984241fe03352a94ca27c3.mockapi.io/lifestyleApi/WomensEthnicWear">Women Ethnic Wear</option>
+              <option value="https://63984241fe03352a94ca27c3.mockapi.io/lifestyleApi/MensFormals">Mens Formals</option>
+              <option value="https://63984241fe03352a94ca27c3.mockapi.io/lifestyleApi/MensCasuals">Mens Casuals</option>
+              <option value="https://63987962044fa481d69ed8cc.mockapi.io/stylezilla/KidsWear">KidsWear</option>
+              <option value="https://63987962044fa481d69ed8cc.mockapi.io/stylezilla/BeautyProducts">Beauty Products</option>
+              <option value="https://63987962044fa481d69ed8cc.mockapi.io/stylezilla/Shoes">Shoes</option>
+              <option value="https://63987962044fa481d69ed8cc.mockapi.io/stylezilla/Bags">Bags</option>
+            </select>
+          </h1>
+          <a href="Admin.html" id="adminspagebutton">Admins Page</a>
+        </div>
+      </section>
+    </main>
+    <!--?--------------------------------------------- Footer ----------------------------------------------->
+    <footer></footer>
+  </not prettier>
+  </body>
+</html>
+<script src="Js/Orders.js"></script>
+
+<!--??--------------------------------------------- <SweetAlert Library> ----------------------------------------------->
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>

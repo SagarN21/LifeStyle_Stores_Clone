@@ -1,0 +1,338 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+#loader {
+  display: none;
+  position: fixed;
+  width: 50px;
+}
+#fetchbutton {
+  border-radius: 5px;
+  color: white;
+  text-decoration: none;
+  position: absolute;
+  top: 105px;
+  right: 50px;
+  border: 0px;
+  background-color: rgb(171, 214, 40);
+  padding: 10px;
+  transition: all 350ms ease;
+}
+#fetchbutton:hover {
+  transform: scale(1.05);
+  border-bottom: 2px solid green;
+}
+#tophead {
+  display: flex;
+  justify-content: center;
+}
+#tophead > img {
+  width: 150px;
+  height: auto;
+}
+.Admins-Portal {
+  font-size: 100px;
+  font-weight: bolder;
+  display: grid;
+  place-items: center;
+}
+.addDataform > * {
+  margin: 2px;
+  padding: 2px;
+}
+input {
+  width: 90%;
+  padding: 10px;
+}
+input:focus {
+  outline: 2px solid rgb(91, 200, 246);
+}
+.CRUDsections {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  width: 90%;
+  margin: auto;
+  padding: 20px;
+}
+.products-list {
+  position: relative;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.add-submit {
+  cursor: pointer;
+  font-weight: bold;
+  width: 31%;
+  position: absolute;
+  right: 16px;
+  bottom: 0px;
+  margin: 20px;
+  border-radius: 5px;
+  border: 0px;
+  padding: 15px 20px;
+  color: white;
+  font-size: 20px;
+  background-color: rgb(0, 148, 253);
+  transition: all 300ms ease;
+}
+.add-submit:hover {
+  background-color: rgb(0, 81, 255);
+  color: rgb(255, 255, 255);
+  transform: scale(1.005);
+}
+select {
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.addDataform {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2px;
+  padding: 15px;
+}
+#product-databse-name,
+#delete-products-list {
+  background-color: rgb(234, 234, 236);
+}
+.DeleteProductCard {
+  background-color: rgb(255, 255, 255);
+  position: relative;
+  margin: 3px;
+  display: flex;
+  border: 0.2px solid rgb(208, 208, 208);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  place-items: center;
+  transition: all 200ms ease;
+}
+.DeleteProductCard:hover {
+  cursor: pointer;
+  border: 0.4px solid black;
+}
+.DeleteProductCard > div {
+  height: 80px;
+  width: 80px;
+  margin: 5px;
+  overflow: hidden;
+}
+.DeleteProductCard > div > img {
+  width: 100%;
+}
+#delete-product-label {
+  width: 530px;
+  font-size: 18px;
+  font-weight: bolder;
+}
+#delete-product-id {
+  width: 50px;
+  text-align: center;
+}
+#delete-product-id > label {
+  font-size: 16px;
+}
+#delete-description {
+  font-weight: normal;
+  font-size: 14px;
+}
+.product-button {
+  padding: 5px 20px;
+  font-size: 20px;
+  height: 60%;
+  border-radius: 5px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  color: white;
+  border: 0px;
+  position: absolute;
+  right: 25px;
+}
+#delete-product-button {
+  transition: all 100ms ease;
+  background-color: rgb(215, 8, 8);
+}
+#edit-product-button {
+  padding: 5px 32px;
+  transition: all 300ms ease;
+  background-color: rgb(48, 25, 220);
+}
+#delete-product-button:hover {
+  cursor: pointer;
+  color: black;
+  border: 2px solid red;
+  background-color: rgb(249, 228, 228);
+}
+#edit-product-button:hover {
+  cursor: pointer;
+  color: rgb(20, 85, 183);
+  border: 2px solid rgb(21, 3, 95);
+  background-color: rgb(164, 169, 249);
+}
+
+.infos {
+  width: auto;
+  text-align: center;
+}
+.infos > h2 {
+  font-size: 18px;
+}
+.edit-product-card {
+  padding: 15px;
+  display: flex;
+  justify-content: left;
+}
+.edit-product-card > div > img {
+  width: 300px;
+  height: 95%;
+  margin: 10px;
+}
+#viewproduct {
+  background-color: rgb(28, 224, 71);
+  color: white;
+  border: 1px solid whitesmoke;
+  width: 100%;
+  font-size: 18px;
+  padding: 1px 5px;
+  margin: 2px;
+}
+#viewproduct:hover {
+  cursor: pointer;
+  color: black;
+  background-color: rgb(155, 255, 6);
+  border: 1px solid green;
+}
+.details {
+  padding: 10px;
+}
+.changers > form {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  padding: 10px;
+}
+/*? ----------------------------Small Screen Sizes -------------------------------- */
+@media all and (min-width: 320px) and (max-width: 809px) {
+  /*-------------------------- Universals-------------------------- */
+  .Admins-Portal {
+    font-size: 40px;
+  }
+  select {
+    font-size: 14px;
+  }
+  #fetchbutton {
+    z-index: 10000000;
+    top: 20px;
+    right: 10px;
+  }
+  #tophead > img {
+    width: 100px;
+  }
+  .CRUDsections {
+    min-height: 830px;
+  }
+
+  .add-submit {
+    width: 60%;
+    bottom: -70px;
+    padding: 5px 10px;
+    left: 52px;
+  }
+  .addDataform {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .DeleteProductCard > div {
+    margin: 1px;
+    height: auto;
+  }
+  #delete-product-id {
+    display: none;
+  }
+  #delete-description {
+    display: none;
+  }
+  #edit-product-button {
+    bottom: 50px;
+    padding: 5px 10px;
+    height: auto;
+    bottom: 44px;
+    font-size: 14px;
+  }
+  #delete-product-button {
+    padding: 5px 10px;
+    height: auto;
+    bottom: 36px;
+    font-size: 14px;
+  }
+  #delete-product-label {
+    width: 100px;
+  }
+  .DeleteProductCard {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 5px;
+    place-items: right;
+  }
+  /* -------------------------Page Specifcs------------------------- */
+}
+/*? ----------------------------Medium Screen Sizes -------------------------------- */
+@media all and (min-width: 810px) and (max-width: 1280px) {
+  .Admins-Portal {
+    font-size: 40px;
+  }
+  select {
+    font-size: 14px;
+  }
+  #fetchbutton {
+    z-index: 10000000;
+    top: 20px;
+    right: 10px;
+  }
+  #tophead > img {
+    width: 100px;
+  }
+
+  .add-submit {
+    width: 40%;
+    bottom: 0px;
+    padding: 15px 40px;
+    right: 52px;
+  }
+  .addDataform {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .DeleteProductCard > div {
+    margin: 1px;
+    height: auto;
+  }
+  #delete-product-id {
+    display: none;
+  }
+  #delete-description {
+    display: none;
+  }
+  #edit-product-button {
+    bottom: 50px;
+    padding: 5px 10px;
+    height: auto;
+    bottom: 10px;
+    right: 27px;
+    font-size: 14px;
+  }
+  #delete-product-button {
+    padding: 5px 10px;
+    height: auto;
+    bottom: 5px;
+    right: 37px;
+    font-size: 14px;
+  }
+  #delete-product-label {
+    width: 200px;
+  }
+  .DeleteProductCard {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    padding: 5px;
+    place-items: right;
+  }
+}
