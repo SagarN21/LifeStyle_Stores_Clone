@@ -1,0 +1,444 @@
+*{
+    font-family: sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+body {
+  font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Helvetica, Arial, sans-serif; 
+}
+
+#productName{
+  height: 40px;
+  width: 20%;
+  border: 1px solid grey;
+}
+#container{
+  /* border: 1px solid red; */
+  background-color: lightgray;
+  width: 95%;
+  margin: 40PX auto;
+  display: grid;
+  grid-template-columns: repeat(5,200px);
+  gap: 20px;
+  padding: 15px;
+  border-radius: 5px;
+}
+#container>select{
+  height: 35px;
+  border-radius: 5px;
+}
+
+#showProducts{
+    /* border: 1px solid red; */
+    width: 98%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+}
+#product{
+    /* border: 1px solid red; */
+    padding: 15px;
+    font-size: 14px;
+}
+#product>img{
+    width: 100%;
+}
+
+.basket{
+    /* border: 1px solid green; */
+    background-color: white;
+    width: 24.3%;
+    margin-left: -15px;
+    height: 100px;
+    text-align: center;
+    display: none;
+    position: absolute;
+}
+.basket>button{
+    color: white;
+    background-color: orange;
+    border: 0px;
+    font-size: 15px;
+    width: 90%;
+    height: 50px;
+    margin-top: 40px;
+}
+#product:hover{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+   
+}
+#product:hover .basket{
+    display: block;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.price{
+    margin: 10px 0px;
+    font-weight: bold;
+    font-size: 16px;
+}
+.price>i{
+    margin-right: 5px;
+}
+.showCount{
+    color: grey;
+    margin: 25px;
+}
+
+
+
+/* <!----------------------------------------------- Header CSS -----------------------------------------------> */
+#top_bar {
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    background-color: black;
+    text-align: center;
+    height: 50px;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  #top_bar h5 {
+    margin: auto;
+  }
+  #left_top {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+  }
+  
+  #right_top {
+    width: 30%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  /* html {
+    position: relative;
+  } */
+  #nav_bar {
+    z-index: 1000000;
+    position: sticky;
+    top: 0px;
+    padding: 1px;
+    background-color: rgb(246, 249, 247);
+  }
+  #nav_bar > div {
+    margin: 20px;
+    margin-left: 240px;
+    width: 80%;
+    display: flex;
+    justify-content: right;
+    background-color: rgb(246, 249, 247);
+    text-align: center;
+  }
+  #logo {
+    position: absolute;
+    border-radius: 5px;
+    width: 230px;
+    height: 90px;
+  }
+  #nav_bar > div > a > input {
+    height: 33px;
+    padding: 3px;
+    width: 250px;
+  }
+  #nav_bar > div > a {
+    text-decoration: none;
+    color: black;
+    margin: auto;
+  }
+  /* <!----------------------------------------------- Footer CSS -----------------------------------------------> */
+  #subscribe {
+    height: 300px;
+    margin-left: 8%;
+  }
+  #subscribe {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+  }
+  #email_subs {
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+  #email_subs > p {
+    margin-bottom: 30px;
+  }
+  #email_subs > input {
+    width: 300px;
+    padding: 0px 8px;
+    height: 50px;
+    margin-left: 10px;
+  }
+  #email_subs > button {
+    width: 200px;
+    height: 50px;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+  }
+  #play_store {
+    margin-right: 80px;
+    margin-top: 20px;
+  }
+  #play_store > p {
+    margin-bottom: 30px;
+  }
+  #play_store > button {
+    padding: 10px;
+    height: auto;
+    width: 150px;
+    background-color: black;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+  #footer {
+    margin-top: 50px;
+    height: 500px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    margin-left: 8%;
+    font-size: larger;
+  }
+  #footer a {
+    text-decoration: none;
+    color: rgb(158, 156, 156);
+    margin-bottom: 5px;
+  }
+  #footer a:hover {
+    color: orange;
+  }
+  #contact {
+    display: flex;
+    margin-top: 120px;
+    margin-left: 8%;
+    margin-bottom: 15px;
+    justify-content: space-evenly;
+    font-size: larger;
+  }
+  #contact img {
+    width: 10%;
+    margin-right: 20px;
+  }
+  
+  #myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+  }
+  
+  #myBtn:hover {
+    background-color: orange;
+  }
+  
+  .sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  #side_menu {
+    display: none;
+  }
+  
+  /*? ----------------------------Medium Screen Sizes -------------------------------- */
+  @media all and (min-width: 810px) and (max-width: 1200px) {
+    /* <!----------------------------------------------- Header -----------------------------------------------> */
+    #top_bar {
+      flex-direction: column;
+      height: auto;
+      padding: 7px;
+    }
+    #top_bar h5 {
+      font-size: 10px;
+      font-weight: light;
+    }
+    #right_top {
+      display: none;
+    }
+    #logo {
+      position: relative;
+      top: 8px;
+      left: 84px;
+    }
+    #nav_bar > div {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 2px;
+      margin: auto;
+    }
+    #searchbar {
+      display: none;
+    }
+    #signin {
+      background-color: #f7f4f4;
+      padding: 10px;
+    }
+    /*===========my media==========*/
+    #container{
+      display: grid;
+      grid-template-columns: repeat(3,200px);
+      gap: 20px;
+     
+    }
+    #container>select{
+      height: 45px;
+      width: 210px;
+      border-radius: 5px;
+    }
+    
+    #showProducts{
+        /* border: 1px solid red; */
+        width: 98%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 5px;
+    }
+  }
+  /*?----------------------------Small Screen Sizes -------------------------------- */
+  @media all and (min-width: 10px) and (max-width: 809px) {
+    * {
+      font-size: 12px;
+    }
+    /* <!----------------------------------------------- Header -----------------------------------------------> */
+    #top_bar {
+      flex-direction: column;
+      height: auto;
+      padding: 7px;
+    }
+    #top_bar h5 {
+      font-size: 10px;
+      font-weight: light;
+    }
+    #right_top {
+      display: none;
+    }
+    #logo {
+      position: relative;
+      top: 8px;
+      left: 84px;
+    }
+    #nav-bar {
+      flex-direction: column;
+    }
+    #nav_bar > div {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 2px;
+      margin: auto;
+    }
+    #searchbar {
+      display: none;
+    }
+    #signin {
+      background-color: #f7f4f4;
+      padding: 10px;
+    }
+  
+    /* <!----------------------------------------------- Footer -----------------------------------------------> */
+    #subscribe {
+      flex-direction: column;
+    }
+    #email_subs > input {
+      margin: auto;
+      margin-bottom: 2px;
+      border: 1px solid black;
+    }
+    #play_store {
+      margin: auto;
+    }
+    #email_subs > button {
+      width: 95%;
+    }
+    #contact {
+      margin: auto;
+      display: grid;
+      margin: 20px;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+      align-items: center;
+    }
+    #footer {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    #container{
+      display: grid;
+      grid-template-columns: repeat(2,200px);
+      gap: 10px;
+     
+    }
+    #container>select{
+      height: 45px;
+      width: 180px;
+      border-radius: 5px;
+    }
+    
+    #showProducts{
+        /* border: 1px solid red; */
+        width: 98%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 5px;
+    }
+    #product{
+      /* border: 1px solid red; */
+      padding: 10px;
+      font-size: 14px;
+    }
+    #product>img{
+        width: 100%;
+    }
+    .basket{
+      /* border: 1px solid green; */
+      width: 49.8%;
+      margin-left: -15px;
+      display: none;
+      position: absolute;
+  }
+  }
+
+
+
