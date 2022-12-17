@@ -3,7 +3,7 @@
 let WomensTopWear =
   "https://63984241fe03352a94ca27c3.mockapi.io/lifestyleApi/womensTopWear";
 let WomensEthnicWear =
-  "https://63984241fe03352a94ca27c3.mockapi.io/lifestyleApi/WomenEthnicWear";
+  "https://63984241fe03352a94ca27c3.mockapi.io/lifestyleApi/WomensEthnicWear";
 let MensFormals =
   "https://63984241fe03352a94ca27c3.mockapi.io/lifestyleApi/MensFormals";
 let MensCasuals =
