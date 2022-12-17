@@ -73,7 +73,7 @@ function ProductsListShow(data) {
   let newArray = data.map((item) => {
     return `
     <div class="DeleteProductCard">
-        <div id="delete-product-id" data-id="${item.id}"><h1>ID.</h1><label>${
+        <div id="delete-product-id" data-id="${item.id}"><h3>ID.</h3><label>${
       item.id
     }</label></div>
         <div><img src="${item.thumbnail}" alt=""></div>
@@ -85,13 +85,13 @@ function ProductsListShow(data) {
             150
           )}...</p><br>
        </div>
-        <div class="delete-infos"><h2>Brand</h2>
+        <div class="delete-infos"><h3>Brand</h3>
         <label>${item.brand}</label></div>
-        <div class="delete-infos"><h2>Stock</h2>
+        <div class="delete-infos"><h3>Stock</h3>
         <label>${item.stock}</label></div>
-        <div class="delete-infos"><h2>Rating</h2>
+        <div class="delete-infos"><h3>Rating</h3>
         <label>${item.rating}</label><label>⭐</label></div>
-        <div class="delete-infos"><h2>Price</h2>
+        <div class="delete-infos"><h3>Price</h3>
         <label>${item.price}/-</label></div>
         <button data-id="${item.id}" 
         class="product-button" id="delete-product-button">

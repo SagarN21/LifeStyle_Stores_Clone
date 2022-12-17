@@ -12,7 +12,7 @@ let ManagePayment = document.getElementsByClassName("manage-payments");
 
 window.addEventListener("load", () => {
   setTimeout(() => {
-    alertify.success("Welcome back Admin!");
+    swal("Welcome Admin 👤");
   }, 1000);
   CheckLSData();
 });
@@ -21,11 +21,11 @@ function CheckLSData() {
   setTimeout(() => {
     let LSdata = JSON.parse(localStorage.getItem("cart")) || [];
     if (LSdata.length == 0) {
-      alertify.warning("No orders to manage today ✅");
+      swal("No orders to manage today ✅");
       loader.style.display = "none";
     } else {
       ManageProduct();
-      alertify.warning("You have some Pending Orders left ");
+      swal("There are some pending orders left 🔽");
     }
   }, 2000);
 }
@@ -35,9 +35,11 @@ function ManageProduct() {
 function ShowDataonManage(data) {
   let ordersContainer = document.querySelector(".orders-container");
   ordersContainer.innerHTML = "";
-  let total = 0;
-  for (let key of data) {
-    total += +key.price;
+  let total = +localStorage.getItem("TotalPrice");
+  if (total == 0) {
+    for (let k of LSdata) {
+      total += +k.price;
+    }
   }
   let newArray = data.map((item) => {
     return `
@@ -161,7 +163,7 @@ function ShowData(data) {
       let product = await GetDataFromId(id);
       LSdata.push(product);
       localStorage.setItem("cart", JSON.stringify(LSdata));
-      alertify.warning("Added Product to Cart");
+      swal("Added to Basket", "", "success");
       loader.style.display = "none";
     });
   }

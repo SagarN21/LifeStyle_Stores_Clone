@@ -218,7 +218,7 @@
   #logo {
     position: relative;
     top: 8px;
-    left: 84px;
+    left: 40%;
   }
   #nav_bar > div {
     display: grid;
@@ -255,7 +255,7 @@
   #logo {
     position: relative;
     top: 8px;
-    left: 84px;
+    left: 25%;
   }
   #nav-bar {
     flex-direction: column;
