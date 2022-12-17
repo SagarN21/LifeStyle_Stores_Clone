@@ -1,0 +1,136 @@
+
+* {
+  font-family: sans-serif;
+
+}
+/* **********************8********** css for signup page********************************** */
+.box {
+  width: 500px;
+  height: 470px;
+
+  margin: auto;
+
+}
+
+.form {
+  width: 210px;
+  height: 400px;
+
+  margin: auto;
+  margin-left: 80px;
+  font-size: 20px;
+  font-weight: bold;
+  height: 20px;
+  flex: 0 0 200px;
+  margin-left: 10px;
+  line-height: 1.9;
+}
+
+.head {
+  width: 200px;
+
+  display: flex;
+  justify-content: space-around;
+  padding-left: 5px;
+  align-items: center;
+}
+.box>h1{
+  color: #faa619;
+}
+
+#name,
+#email,
+#pass {
+  height: 40px;
+  width: 500px;
+  border-radius: 3px;
+  border: 2px solid lightgray;
+}
+
+#pass + input {
+  height: 40px;
+  width: 508px;
+  border-radius: 3px;
+  background-color: #faa619;
+  color: white;
+  border: 0;
+}
+
+.btm {
+  width: 500px;
+  height: 200px;
+
+  margin: auto;
+  margin-bottom: 40px;
+  text-align: center;
+  padding-left: 20px;
+  line-height: 1;
+
+  font-size: 15px;
+  /* padding-top: 10px; */
+}
+
+.btm > button {
+  line-height: 1.8;
+  height: 40px;
+  width: 508px;
+  border-radius: 3px;
+
+  border: 2px solid lightgray;
+  font-size: 15px;
+}
+
+.goo {
+    height: 40px;
+    width: 506px;
+    border-radius: 3px;
+  margin-bottom: 25px;
+  font-size: 20px;
+  background-color: white;
+  line-height: 1.8;
+  border: 2px solid lightgray;
+  display: flex;
+  margin: auto;
+  
+
+}
+.head > img {
+  width: 100%;
+  padding-left: 280px;
+  margin-top: 30px;
+  height: 100%;
+}
+.or {
+  z-index: 110;
+  margin: 42px 0px;
+  border: none;
+  display: flex;
+  align-items: center;
+  height: 1px;
+  justify-content: center;
+  background-color: grey;
+}
+.goo > mark {
+  background-color: white;
+  font-size: 20px;
+  color: rgb(7, 104, 248);
+  border-radius: 3px;
+  padding-bottom: 3px;
+  margin-left: 28%;
+}
+.required {
+  color: red;
+}
+body>div{
+  height: 740px;
+  margin: auto;
+  width: 560px;
+  
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;;
+  border-radius: 7px;
+}
+::placeholder{
+  color: rgb(212, 212, 212)
+}
+
+/* *********************************css for login page************************************************************* */
