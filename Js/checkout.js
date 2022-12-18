@@ -133,5 +133,5 @@ check.addEventListener("click", () => {
 
 let checkout = document.getElementById("Checkout");
 checkout.addEventListener("click", () => {
-  window.location.href = "payment.html";
+  window.location.href = "address.html";
 });
