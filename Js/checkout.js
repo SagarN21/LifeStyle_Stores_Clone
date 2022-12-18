@@ -128,3 +128,10 @@ check.addEventListener("click", () => {
   );
   document.getElementById("delievery-input").value = "";
 });
+
+//? <!----------------------------------------------- < extra> ----------------------------------------------->
+
+let checkout = document.getElementById("Checkout");
+checkout.addEventListener("click", () => {
+  window.location.href = "payment.html";
+});

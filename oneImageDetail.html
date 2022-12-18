@@ -1,246 +1,287 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="oneImageDetail.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
-</head>
-<body>
-     <!----------------------------------------------- Header HTML ----------------------------------------------->
-   <header>
-    <div id="top_bar">
-      <div id="left_top">
-        <h5>🚚 Free Shiping</h5>
-        <h5>🏬 Click & Collect</h5>
-        <h5>🏬 Return to store</h5>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>StyleZilla : Product Info</title>
+    <link rel="stylesheet" href="oneImageDetail.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!----------------------------------------------- Header HTML ----------------------------------------------->
+    <header>
+      <div id="top_bar">
+        <div id="left_top">
+          <h5>🚚 Free Shiping</h5>
+          <h5>🏬 Click & Collect</h5>
+          <h5>🏬 Return to store</h5>
+        </div>
+        <div id="right_top">
+          <h5>Download Our App</h5>
+          <h5>Store Locator</h5>
+          <h5>Help</h5>
+        </div>
       </div>
-      <div id="right_top">
-        <h5>Download Our App</h5>
-        <h5>Store Locator</h5>
-        <h5>Help</h5>
-      </div>
-    </div>
 
-
-    <div id="nav_bar">
-      <img src="image/styleZilla.png" alt="" id="logo" />
-      <div>
-        <a href=""> <h4>Women</h4></a>
-        <a href="mens.html"> <h4>Men</h4></a>
-        <a href=""> <h4>Kids</h4></a>
-        <a href=""> <h4>Shoes</h4></a>
-        <a href=""> <h4>Bags</h4></a>
-        <a href=""><h4>Beauty</h4></a>
-        <a href="" id="searchbar"
-          ><input type="text" placeholder="🔍  What are you looking for ?"
+      <div id="nav_bar">
+        <a href="index.html"
+          ><img src="image/styleZilla.png" alt="" id="logo"
         /></a>
-        <a href=""> <h4>More</h4></a>
-        <a href=""><h4 id="signin">SignUp/SignIn</h4></a>
-        <a href=""> <h4>Wishlist</h4></a>
-        <a href=""><h4>Cart</h4></a>
+        <div>
+          <a href="womens_Index.html"> <h4>Women</h4></a>
+          <a href="mens.html"> <h4>Men</h4></a>
+          <a href=""> <h4>Kids</h4></a>
+          <a href=""> <h4>Shoes</h4></a>
+          <a href=""> <h4>Bags</h4></a>
+          <a href=""><h4>Beauty</h4></a>
+          <a href="" id="searchbar"
+            ><input type="text" placeholder="🔍  What are you looking for ?"
+          /></a>
+          <a href=""> <h4>More</h4></a>
+          <a href="signup.html"><h4 id="signin">SignUp/SignIn</h4></a>
+          <a href=""> <h4>Wishlist</h4></a>
+          <a href="checkout.html"><h4>Cart</h4></a>
+        </div>
       </div>
-    </div>
-</header>
-<!----------------------------------------------- Header HTML end ----------------------------------------------->
-
+    </header>
+    <!----------------------------------------------- Header HTML end ----------------------------------------------->
 
     <div id="container">
-        <div class="image"></div>
-        <div class="checkBox">
-            <i class="fa-solid fa-indian-rupee-sign"></i>
-            <span class="price"></span>
-            <span>Inclusiv of all taxes</span>
-            <span>price</span><span>Svae price</span>
-            <p class="ship margin">Free shipping on all orders</p>
-            <div class="smallImage margin"></div>
-            <p>Color: ${color}</p>
-            <div class="size"><p>Size:</p><p>Size Guide</p></div>
-            <div class="sizeButton">
-                <button>S</button>
-                <button>M</button>
-                <button>L</button>
-                <button>XL</button>
-                <button>XXL</button>
-                <button>4XL</button>
-                <button>5XL</button>
-            </div>
-            <button class="basket margin">ADD TO BASKET</button>
-            <div class="favourite margin"><p>Add to Favourites</p><p><i>font icon</i> Share</p></div>
-            <hr>
-            <button>PROMOTION OFFER</button>
-            <p class="anchor">Shop for Rs. 2,999 & Get 10% Off. Code - EOSS10 <a href="#">Browse promotion</a></p>
-            <hr>
-            <div>
-                <p class="collect"><i class="fa-solid fa-archway"></i>Click & Collect</p>
-                <p class="text" >Order this product now and collext it from a store of your choice. <a href="#">Learn more</a></p>
-            </div>
-            <p class="return"><i class="fa-sharp fa-solid fa-arrow-left-long arrow"></i> 10 days easy return policy. <a href="#">Learn more</a></p>
-            <div>
-                <p class="pay"><i class="fa-solid fa-calendar-days"></i>Pay in installments</p>
-                <p class="text">Pay in easy installments on orders of ₹ 3,000 or more. Available for select banks. <a href="#">Learn more</a></p>
-            </div>
-            <p class="order"><i class="fa-solid fa-truck truck"></i>When willl I receive my order?</p>
-            <input type="number" placeholder="Enter your Pincode" class="pinCode"><button>Check</button>
-            <hr style="margin: 25px;">
-            <h3>Overview</h3>
-            <p>This polo t-shirt comes with a striped pattern that is enhanced by vented hems and a half-sleeved silhouette.</p>
-            <ul class="list">
-                <li>Type : Polo Neck</li>
-                <li>Design : Striped</li>
-                <li>Length : Short</li>
-                <li>Sleeve Length : Half Sleeves</li>
-                <li>Fabric : Cotton Blend</li>
-                <li>Fit : Slim</li>
-                <li>Care Instructions : Hand Wash</li>
-                <li>Model Wears : Size M, has Height 6'0" and</li>
-                <li>Occasion : Casual</li>
-                <li>Product : T-shirt</li>
-                <li>Country of Origin : India</li>
-                <li>Manufactured By : Fahrenheit Clothing (India) Pvt Ltd</li>
-                <li>For Consumer Complaints Contact : Manager Commercial, Lifestyle International Pvt. Ltd. 1800-123-1555</li>
-                <li>Net Quantity : 1</li>
-            </ul>
+      <div class="image"></div>
+      <div class="checkBox">
+        <i class="fa-solid fa-indian-rupee-sign"></i>
+        <span class="price"></span>
+        <span>Inclusiv of all taxes</span>
+        <span>price</span><span>Svae price</span>
+        <p class="ship margin">Free shipping on all orders</p>
+        <div class="smallImage margin"></div>
+        <p>Color: ${color}</p>
+        <div class="size">
+          <p>Size:</p>
+          <p>Size Guide</p>
         </div>
+        <div class="sizeButton">
+          <button>S</button>
+          <button>M</button>
+          <button>L</button>
+          <button>XL</button>
+          <button>XXL</button>
+          <button>4XL</button>
+          <button>5XL</button>
+        </div>
+        <button class="basket margin">ADD TO BASKET</button>
+        <div class="favourite margin">
+          <p>Add to Favourites</p>
+          <p><i>font icon</i> Share</p>
+        </div>
+        <hr />
+        <button>PROMOTION OFFER</button>
+        <p class="anchor">
+          Shop for Rs. 2,999 & Get 10% Off. Code - EOSS10
+          <a href="#">Browse promotion</a>
+        </p>
+        <hr />
+        <div>
+          <p class="collect">
+            <i class="fa-solid fa-archway"></i>Click & Collect
+          </p>
+          <p class="text">
+            Order this product now and collext it from a store of your choice.
+            <a href="#">Learn more</a>
+          </p>
+        </div>
+        <p class="return">
+          <i class="fa-sharp fa-solid fa-arrow-left-long arrow"></i> 10 days
+          easy return policy. <a href="#">Learn more</a>
+        </p>
+        <div>
+          <p class="pay">
+            <i class="fa-solid fa-calendar-days"></i>Pay in installments
+          </p>
+          <p class="text">
+            Pay in easy installments on orders of ₹ 3,000 or more. Available for
+            select banks. <a href="#">Learn more</a>
+          </p>
+        </div>
+        <p class="order">
+          <i class="fa-solid fa-truck truck"></i>When willl I receive my order?
+        </p>
+        <input
+          type="number"
+          placeholder="Enter your Pincode"
+          class="pinCode"
+        /><button>Check</button>
+        <hr style="margin: 25px" />
+        <h3>Overview</h3>
+        <p>
+          This polo t-shirt comes with a striped pattern that is enhanced by
+          vented hems and a half-sleeved silhouette.
+        </p>
+        <ul class="list">
+          <li>Type : Polo Neck</li>
+          <li>Design : Striped</li>
+          <li>Length : Short</li>
+          <li>Sleeve Length : Half Sleeves</li>
+          <li>Fabric : Cotton Blend</li>
+          <li>Fit : Slim</li>
+          <li>Care Instructions : Hand Wash</li>
+          <li>Model Wears : Size M, has Height 6'0" and</li>
+          <li>Occasion : Casual</li>
+          <li>Product : T-shirt</li>
+          <li>Country of Origin : India</li>
+          <li>Manufactured By : Fahrenheit Clothing (India) Pvt Ltd</li>
+          <li>
+            For Consumer Complaints Contact : Manager Commercial, Lifestyle
+            International Pvt. Ltd. 1800-123-1555
+          </li>
+          <li>Net Quantity : 1</li>
+        </ul>
+      </div>
     </div>
     <!-- fetch Image -->
     <p class="likeMoreProducts">You may also like</p>
     <div id="someImage"></div>
 
     <!----------------------------------------------- Footer HTML Start ----------------------------------------------->
-<!-- subscribe section -->
-<div id="subscribe">
-    <div id="email_subs">
-      <h1>Subscribe to our awesome emails.</h1>
-      <p>Get our latest offers and news straight in your inbox.</p>
-      <input type="email" placeholder="Please Enter Your Email Address">
-      <button>SUBSCRIBE</button>
+    <!-- subscribe section -->
+    <div id="subscribe">
+      <div id="email_subs">
+        <h1>Subscribe to our awesome emails.</h1>
+        <p>Get our latest offers and news straight in your inbox.</p>
+        <input type="email" placeholder="Please Enter Your Email Address" />
+        <button>SUBSCRIBE</button>
+      </div>
+      <div id="play_store">
+        <h1>Download our apps</h1>
+        <p>Shop our products and offers on-the-go.</p>
+        <button>Download on the App Store</button>
+        <button>Get It On Google Play</button>
+      </div>
     </div>
-    <div id="play_store">
-      <h1>Download our apps</h1>
-      <p>Shop our products and offers on-the-go.</p>
-      <button> Download on the App Store</button>
-      <button>Get It On Google Play</button>
+
+    <!--Footer  -->
+    <div id="footer">
+      <div>
+        <h5>Womens</h5>
+        <a href="">Tops</a><br />
+        <a href="">Ethnicwear</a><br />
+        <a href="">Bottoms</a><br />
+        <a href="">Dresses & Jumpsuits</a><br />
+        <a href="">Winterwear</a><br />
+        <a href="">Lingerie</a><br />
+        <a href="">Nightwear</a><br />
+        <a href="">Sportswear</a><br />
+        <a href="">Beauty</a><br />
+        <a href="">Watches & Sunglasses</a><br />
+      </div>
+      <div>
+        <h5>Mens</h5>
+        <a href="">Tops</a><br />
+        <a href="">Ethnicwear</a><br />
+        <a href="">Bottoms</a><br />
+        <a href="">Sportswear</a><br />
+        <a href="">Winterwear</a><br />
+        <a href="">Innerwear</a><br />
+        <a href="">Grooming</a><br />
+        <a href="">Sportswear</a><br />
+
+        <a href="">Watches & Sunglasses</a><br />
+      </div>
+      <div>
+        <h5>Kids</h5>
+        <a href="">Girls Clothing</a><br />
+        <a href="">Boys Clothing</a><br />
+        <a href="">Infants Girls</a><br />
+        <a href="">Infants Boys</a><br />
+        <a href="">Winterwear</a><br />
+        <a href="">Add ons</a><br />
+        <a href="">The Teen Shop</a><br />
+      </div>
+      <div>
+        <h5>Shops&Bags</h5>
+        <a href="">Girls</a><br />
+        <a href="">Boys</a><br />
+        <a href="">Women</a><br />
+        <a href="">Mens</a><br />
+        <a href="">Women Accessories</a><br />
+        <a href="">Men Accessories</a><br />
+        <a href="">Essential</a><br />
+      </div>
+      <div>
+        <h5>Beauty</h5>
+        <a href="">Makeup Eyes</a><br />
+        <a href="">Makeup Face</a><br />
+        <a href="">Makeup Nails</a><br />
+        <a href="">Mens</a><br />
+        <a href="">Perfumes</a><br />
+      </div>
+      <div>
+        <h5>Explore</h5>
+        <a href="">Online Offers</a><br />
+        <a href="">Store Offers</a><br />
+        <a href="">Online Gift Card</a><br />
+        <a href="">Store Gift Card</a><br />
+        <a href="">Stores Nearby</a><br />
+        <a href="">EDGE Membership</a><br />
+        <a href="">Shop on WhatsApp</a><br />
+        <a href="">Fashion VLOG</a><br />
+        <a href="">Join CIRCLEMAG</a><br />
+        <a href="">SBI Offers</a><br />
+        <a href="">Homecentre</a><br />
+      </div>
+      <div>
+        <h5>About Us</h5>
+        <a href="">About us</a><br />
+        <a href="">Careers</a><br />
+        <a href="">Take a Tour</a><br />
+        <a href="">Blog</a><br />
+        <a href="">Store Locator</a><br />
+        <a href="">Landmark Cares</a><br />
+      </div>
+      <div>
+        <h5>Help</h5>
+        <a href="">Contact us</a><br />
+        <a href="">Shipping</a><br />
+        <a href="">Returns Process</a><br />
+        <a href="">Returns Policy</a><br />
+        <a href="">Help Centre</a><br />
+      </div>
     </div>
-  </div>
-  
-  <!--Footer  -->
-  <div id="footer">
-    <div>
-      <h5>Womens</h5>
-      <a href="">Tops</a><br>
-      <a href="">Ethnicwear</a><br>
-      <a href="">Bottoms</a><br>
-      <a href="">Dresses & Jumpsuits</a><br>
-      <a href="">Winterwear</a><br>
-      <a href="">Lingerie</a><br>
-      <a href="">Nightwear</a><br>
-      <a href="">Sportswear</a><br>
-      <a href="">Beauty</a><br>
-      <a href="">Watches & Sunglasses</a><br>
+    <!-- contact option -->
+    <div id="contact">
+      <div>
+        <p>You can talk to us</p>
+        <p>📞1800-123-1555</p>
+      </div>
+      <div>
+        <p>Help center</p>
+        <p>📧 stylezilla.info@mail.com</p>
+      </div>
+      <div>
+        <p>Write to us</p>
+        <p>🗃️ help.stylezilla.com</p>
+      </div>
+      <div>
+        <img
+          src="https://cdn-icons-png.flaticon.com/128/3488/3488299.png"
+          alt=""
+        />
+        <img
+          src="https://cdn-icons-png.flaticon.com/128/733/733558.png"
+          alt=""
+        />
+        <img
+          src="https://cdn-icons-png.flaticon.com/128/2504/2504947.png"
+          alt=""
+        />
+      </div>
     </div>
-    <div>
-      <h5>Mens</h5>
-      <a href="">Tops</a><br>
-      <a href="">Ethnicwear</a><br>
-      <a href="">Bottoms</a><br>
-      <a href="">Sportswear</a><br>
-      <a href="">Winterwear</a><br>
-      <a href="">Innerwear</a><br>
-      <a href="">Grooming</a><br>
-      <a href="">Sportswear</a><br>
-  
-      <a href="">Watches & Sunglasses</a><br>
-    </div>
-    <div>
-      <h5>Kids</h5>
-      <a href="">Girls Clothing</a><br>
-      <a href="">Boys Clothing</a><br>
-      <a href="">Infants Girls</a><br>
-      <a href="">Infants Boys</a><br>
-      <a href="">Winterwear</a><br>
-      <a href="">Add ons</a><br>
-      <a href="">The Teen Shop</a><br>
-  
-    </div>
-    <div>
-      <h5>Shops&Bags</h5>
-      <a href="">Girls</a><br>
-      <a href="">Boys</a><br>
-      <a href="">Women</a><br>
-      <a href="">Mens</a><br>
-      <a href="">Women Accessories</a><br>
-      <a href="">Men Accessories</a><br>
-      <a href="">Essential</a><br>
-    </div>
-    <div>
-      <h5>Beauty</h5>
-      <a href="">Makeup Eyes</a><br>
-      <a href="">Makeup Face</a><br>
-      <a href="">Makeup Nails</a><br>
-      <a href="">Mens</a><br>
-      <a href="">Perfumes</a><br>
-  
-    </div>
-    <div>
-      <h5>Explore</h5>
-      <a href="">Online Offers</a><br>
-      <a href="">Store Offers</a><br>
-      <a href="">Online Gift Card</a><br>
-      <a href="">Store Gift Card</a><br>
-      <a href="">Stores Nearby</a><br>
-      <a href="">EDGE Membership</a><br>
-      <a href="">Shop on WhatsApp</a><br>
-      <a href="">Fashion VLOG</a><br>
-      <a href="">Join CIRCLEMAG</a><br>
-      <a href="">SBI Offers</a><br>
-      <a href="">Homecentre</a><br>
-    </div>
-    <div>
-      <h5>About Us</h5>
-      <a href="">About us</a><br>
-      <a href="">Careers</a><br>
-      <a href="">Take a Tour</a><br>
-      <a href="">Blog</a><br>
-      <a href="">Store Locator</a><br>
-      <a href="">Landmark Cares</a><br>
-  
-    </div>
-    <div>
-      <h5>Help</h5>
-      <a href="">Contact us</a><br>
-      <a href="">Shipping</a><br>
-      <a href="">Returns Process</a><br>
-      <a href="">Returns Policy</a><br>
-      <a href="">Help Centre</a><br>
-  
-    </div>
-  </div>
-  <!-- contact option -->
-  <div id="contact">
-  
-    <div>
-      <p>You can talk to us</p>
-      <p>📞1800-123-1555</p>
-    </div>
-    <div>
-      <p>Help center</p>
-      <p>📧 stylezilla.info@mail.com</p>
-    </div>
-    <div>
-      <p>Write to us</p>
-      <p>🗃️ help.stylezilla.com</p>
-    </div>
-    <div>
-      <img src="https://cdn-icons-png.flaticon.com/128/3488/3488299.png" alt="">
-      <img src="https://cdn-icons-png.flaticon.com/128/733/733558.png" alt="">
-      <img src="https://cdn-icons-png.flaticon.com/128/2504/2504947.png" alt="">
-    </div>
-  </div>
-  <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
-  <!----------------------------------------------- Footer HTML End ----------------------------------------------->
-</body>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <!----------------------------------------------- Footer HTML End ----------------------------------------------->
+  </body>
 </html>
 <script src="oneImageDetail.js"></script>

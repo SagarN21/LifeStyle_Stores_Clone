@@ -1,308 +1,311 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>StyleZilla : Mens</title>
+    <link rel="stylesheet" href="mensAllProducts.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="mensAllProducts.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
-</head>
-
-<body>
-    
-
+  <body>
     <!----------------------------------------------- Header HTML ----------------------------------------------->
-   <header>
-    <div id="top_bar">
-      <div id="left_top">
-        <h5>🚚 Free Shiping</h5>
-        <h5>🏬 Click & Collect</h5>
-        <h5>🏬 Return to store</h5>
+    <header>
+      <div id="top_bar">
+        <div id="left_top">
+          <h5>🚚 Free Shiping</h5>
+          <h5>🏬 Click & Collect</h5>
+          <h5>🏬 Return to store</h5>
+        </div>
+        <div id="right_top">
+          <h5>Download Our App</h5>
+          <h5>Store Locator</h5>
+          <h5>Help</h5>
+        </div>
       </div>
-      <div id="right_top">
-        <h5>Download Our App</h5>
-        <h5>Store Locator</h5>
-        <h5>Help</h5>
+
+      <div id="nav_bar">
+        <a href="index.html"
+          ><img src="image/styleZilla.png" alt="" id="logo"
+        /></a>
+        <div>
+          <a href="womens_Index.html"> <h4>Women</h4></a>
+          <a href="mens.html"> <h4>Men</h4></a>
+          <a href=""> <h4>Kids</h4></a>
+          <a href=""> <h4>Shoes</h4></a>
+          <a href=""> <h4>Bags</h4></a>
+          <a href=""><h4>Beauty</h4></a>
+          <input
+            oninput="searchProduct()"
+            type="text"
+            id="productName"
+            placeholder="🔍  What are you looking for ?"
+          />
+          <a href=""> <h4>More</h4></a>
+          <a href="signup.html"><h4 id="signin">SignUp/SignIn</h4></a>
+          <a href=""> <h4>Wishlist</h4></a>
+          <a href="checkout.html"><h4>Cart</h4></a>
+        </div>
       </div>
-    </div>
-
-
-    <div id="nav_bar">
-      <img src="image/styleZilla.png" alt="" id="logo" />
-      <div>
-        <a href=""> <h4>Women</h4></a>
-        <a href="mens.html"> <h4>Men</h4></a>
-        <a href=""> <h4>Kids</h4></a>
-        <a href=""> <h4>Shoes</h4></a>
-        <a href=""> <h4>Bags</h4></a>
-        <a href=""><h4>Beauty</h4></a>
-       <input oninput="searchProduct()" type="text" id="productName" placeholder="🔍  What are you looking for ?"/>
-        <a href=""> <h4>More</h4></a>
-        <a href=""><h4 id="signin">SignUp/SignIn</h4></a>
-        <a href=""> <h4>Wishlist</h4></a>
-        <a href=""><h4>Cart</h4></a>
-      </div>
-    </div>
-</header>
-<!----------------------------------------------- Header HTML end ----------------------------------------------->
-
+    </header>
+    <!----------------------------------------------- Header HTML end ----------------------------------------------->
 
     <div id="container">
-        <select name="" id="sortByPrice">
-            <option value="">Price</option>
-            <option value="500">less 500</option>
-            <option value="600">less 600</option>
-            <option value="700">less 700</option>
-            <option value="1000">Less 1000</option>
-            <option value="1001">Greater 1000</option>
-        </select>
-        <select name="" id="discount">
-          <option value="0">New</option>
-          <option value="10">10% OFF</option>
-          <option value="12">12% OFF</option>
-          <option value="15">15% OFF</option>
-          <option value="16">16% OFF</option>
-          <option value="18">18% OFF</option>
-          <option value="40">40% OFF</option>
-          <option value="50">50% OFF</option>
+      <select name="" id="sortByPrice">
+        <option value="">Price</option>
+        <option value="500">less 500</option>
+        <option value="600">less 600</option>
+        <option value="700">less 700</option>
+        <option value="1000">Less 1000</option>
+        <option value="1001">Greater 1000</option>
       </select>
-        <select name="" id="">
-            <option value="jeans">Shirt</option>
-            <option value="bootcutjeans">Formal Shirt</option>
-            <option value="skinnyfitjeans">Casual Shirt</option>
-            <option value="">Polo </option>
-        </select>
-        <select name="" id="">
-            <option value="cottonlycra">Cotton Lycra</option>
-            <option value="cottonblend">Cotton Blend</option>
-            <option value="cotton">Cotton</option>
-        </select>
+      <select name="" id="discount">
+        <option value="0">New</option>
+        <option value="10">10% OFF</option>
+        <option value="12">12% OFF</option>
+        <option value="15">15% OFF</option>
+        <option value="16">16% OFF</option>
+        <option value="18">18% OFF</option>
+        <option value="40">40% OFF</option>
+        <option value="50">50% OFF</option>
+      </select>
+      <select name="" id="">
+        <option value="jeans">Shirt</option>
+        <option value="bootcutjeans">Formal Shirt</option>
+        <option value="skinnyfitjeans">Casual Shirt</option>
+        <option value="">Polo</option>
+      </select>
+      <select name="" id="">
+        <option value="cottonlycra">Cotton Lycra</option>
+        <option value="cottonblend">Cotton Blend</option>
+        <option value="cotton">Cotton</option>
+      </select>
 
-        <select name="" id="">
-            <option value="20">28</option>
-            <option value="30">30</option>
-            <option value="32">32</option>
-            <option value="34">34</option>
-            <option value="36">36</option>
-            <option value="38">38</option>
-            <option value="40">40</option>
-        </select>
-        <select name="" id="">
-            <option value="blue">Blue</option>
-            <option value="black">Black</option>
-            <option value="grey">Grey</option>
-            <option value="white">White</option>
-            <option value="brown">Brown</option>
-            <option value="green">Green</option>
-            <option value="offwhite">Off White</option>
-        </select>
-        <select name="" id="">
-            <option value="">American Eagle</option>
-            <option value="">Arrow Sport</option>
-            <option value="">Being Human</option>
-            <option value="">Bossini</option>
-            <option value="">Celio</option>
-            <option value="">Denimize</option>
-            <option value="">Flying Machine</option>
-            <option value="">Forca</option>
-            <option value="">Indian Terrain</option>
-            <option value="">JACK & JONES</option>
-            <option value="">Killer</option>
-            <option value="">Lee</option>
-            <option value="">Levi's</option>
-            <option value="">LP Jeans</option>
-            <option value="">Pepe Jeans</option>
-            <option value="">Selected</option>
-            <option value="">Spykar</option>
-        </select>
-       
-        <select name="" id="">
-            <option value="">EOSS10</option>
-            <option value="">Buy 2 Products Get 30 Percent Off</option>
-        </select>
-        <select name="" id="">
-            <option value="">Washed</option>
-            <option value="">Solid</option>
-            <option value="">Faded</option>
-            <option value="">Stonewashed</option>
-            <option value="">Stonewash</option>
-            <option value="">Dark Wash</option>
-            <option value="">Dark Washed</option>
-            <option value="">Distressed</option>
-        </select>
-        <select name="" id="">
-            <option value="">Skinny</option>
-            <option value="">Slim Tapered</option>
-            <option value="">Slim</option>
-            <option value="">Slim Straight</option>
-            <option value="">Regular</option>
-            <option value="">Tapered</option>
-            <option value="">Boot Cut</option>
-            <option value="">Staight</option>
-            <option value="">Regular Tapered</option>
-        </select>
-        <select name="" id="">
-            <option value="">Stonewash</option>
-            <option value="">Dark Wash</option>
-            <option value="">Light Wash</option>
-            <option value="">Mid-Wash</option>
-            <option value="">Ripped/Distressed</option>
-            <option value="">Ice Wash</option>
-        </select>
+      <select name="" id="">
+        <option value="20">28</option>
+        <option value="30">30</option>
+        <option value="32">32</option>
+        <option value="34">34</option>
+        <option value="36">36</option>
+        <option value="38">38</option>
+        <option value="40">40</option>
+      </select>
+      <select name="" id="">
+        <option value="blue">Blue</option>
+        <option value="black">Black</option>
+        <option value="grey">Grey</option>
+        <option value="white">White</option>
+        <option value="brown">Brown</option>
+        <option value="green">Green</option>
+        <option value="offwhite">Off White</option>
+      </select>
+      <select name="" id="">
+        <option value="">American Eagle</option>
+        <option value="">Arrow Sport</option>
+        <option value="">Being Human</option>
+        <option value="">Bossini</option>
+        <option value="">Celio</option>
+        <option value="">Denimize</option>
+        <option value="">Flying Machine</option>
+        <option value="">Forca</option>
+        <option value="">Indian Terrain</option>
+        <option value="">JACK & JONES</option>
+        <option value="">Killer</option>
+        <option value="">Lee</option>
+        <option value="">Levi's</option>
+        <option value="">LP Jeans</option>
+        <option value="">Pepe Jeans</option>
+        <option value="">Selected</option>
+        <option value="">Spykar</option>
+      </select>
 
-        <select name="Discount Range" id="">
-            <option value="">40% and above</option>
-            <option value="">30% and above</option>
-            <option value="">20% and above</option>
-            <option value="">Less than 10%</option>
-        </select>
-        
+      <select name="" id="">
+        <option value="">EOSS10</option>
+        <option value="">Buy 2 Products Get 30 Percent Off</option>
+      </select>
+      <select name="" id="">
+        <option value="">Washed</option>
+        <option value="">Solid</option>
+        <option value="">Faded</option>
+        <option value="">Stonewashed</option>
+        <option value="">Stonewash</option>
+        <option value="">Dark Wash</option>
+        <option value="">Dark Washed</option>
+        <option value="">Distressed</option>
+      </select>
+      <select name="" id="">
+        <option value="">Skinny</option>
+        <option value="">Slim Tapered</option>
+        <option value="">Slim</option>
+        <option value="">Slim Straight</option>
+        <option value="">Regular</option>
+        <option value="">Tapered</option>
+        <option value="">Boot Cut</option>
+        <option value="">Staight</option>
+        <option value="">Regular Tapered</option>
+      </select>
+      <select name="" id="">
+        <option value="">Stonewash</option>
+        <option value="">Dark Wash</option>
+        <option value="">Light Wash</option>
+        <option value="">Mid-Wash</option>
+        <option value="">Ripped/Distressed</option>
+        <option value="">Ice Wash</option>
+      </select>
+
+      <select name="Discount Range" id="">
+        <option value="">40% and above</option>
+        <option value="">30% and above</option>
+        <option value="">20% and above</option>
+        <option value="">Less than 10%</option>
+      </select>
     </div>
 
     <!-- Api show image -->
     <p class="showCount"></p>
     <div id="showProducts"></div>
 
-    
-<!----------------------------------------------- Footer HTML Start ----------------------------------------------->
-<!-- subscribe section -->
-<div id="subscribe">
-    <div id="email_subs">
-      <h1>Subscribe to our awesome emails.</h1>
-      <p>Get our latest offers and news straight in your inbox.</p>
-      <input type="email" placeholder="Please Enter Your Email Address">
-      <button>SUBSCRIBE</button>
+    <!----------------------------------------------- Footer HTML Start ----------------------------------------------->
+    <!-- subscribe section -->
+    <div id="subscribe">
+      <div id="email_subs">
+        <h1>Subscribe to our awesome emails.</h1>
+        <p>Get our latest offers and news straight in your inbox.</p>
+        <input type="email" placeholder="Please Enter Your Email Address" />
+        <button>SUBSCRIBE</button>
+      </div>
+      <div id="play_store">
+        <h1>Download our apps</h1>
+        <p>Shop our products and offers on-the-go.</p>
+        <button>Download on the App Store</button>
+        <button>Get It On Google Play</button>
+      </div>
     </div>
-    <div id="play_store">
-      <h1>Download our apps</h1>
-      <p>Shop our products and offers on-the-go.</p>
-      <button> Download on the App Store</button>
-      <button>Get It On Google Play</button>
-    </div>
-  </div>
-  
-  <!--Footer  -->
-  <div id="footer">
-    <div>
-      <h5>Womens</h5>
-      <a href="">Tops</a><br>
-      <a href="">Ethnicwear</a><br>
-      <a href="">Bottoms</a><br>
-      <a href="">Dresses & Jumpsuits</a><br>
-      <a href="">Winterwear</a><br>
-      <a href="">Lingerie</a><br>
-      <a href="">Nightwear</a><br>
-      <a href="">Sportswear</a><br>
-      <a href="">Beauty</a><br>
-      <a href="">Watches & Sunglasses</a><br>
-    </div>
-    <div>
-      <h5>Mens</h5>
-      <a href="">Tops</a><br>
-      <a href="">Ethnicwear</a><br>
-      <a href="">Bottoms</a><br>
-      <a href="">Sportswear</a><br>
-      <a href="">Winterwear</a><br>
-      <a href="">Innerwear</a><br>
-      <a href="">Grooming</a><br>
-      <a href="">Sportswear</a><br>
-  
-      <a href="">Watches & Sunglasses</a><br>
-    </div>
-    <div>
-      <h5>Kids</h5>
-      <a href="">Girls Clothing</a><br>
-      <a href="">Boys Clothing</a><br>
-      <a href="">Infants Girls</a><br>
-      <a href="">Infants Boys</a><br>
-      <a href="">Winterwear</a><br>
-      <a href="">Add ons</a><br>
-      <a href="">The Teen Shop</a><br>
-  
-    </div>
-    <div>
-      <h5>Shops&Bags</h5>
-      <a href="">Girls</a><br>
-      <a href="">Boys</a><br>
-      <a href="">Women</a><br>
-      <a href="">Mens</a><br>
-      <a href="">Women Accessories</a><br>
-      <a href="">Men Accessories</a><br>
-      <a href="">Essential</a><br>
-    </div>
-    <div>
-      <h5>Beauty</h5>
-      <a href="">Makeup Eyes</a><br>
-      <a href="">Makeup Face</a><br>
-      <a href="">Makeup Nails</a><br>
-      <a href="">Mens</a><br>
-      <a href="">Perfumes</a><br>
-  
-    </div>
-    <div>
-      <h5>Explore</h5>
-      <a href="">Online Offers</a><br>
-      <a href="">Store Offers</a><br>
-      <a href="">Online Gift Card</a><br>
-      <a href="">Store Gift Card</a><br>
-      <a href="">Stores Nearby</a><br>
-      <a href="">EDGE Membership</a><br>
-      <a href="">Shop on WhatsApp</a><br>
-      <a href="">Fashion VLOG</a><br>
-      <a href="">Join CIRCLEMAG</a><br>
-      <a href="">SBI Offers</a><br>
-      <a href="">Homecentre</a><br>
-    </div>
-    <div>
-      <h5>About Us</h5>
-      <a href="">About us</a><br>
-      <a href="">Careers</a><br>
-      <a href="">Take a Tour</a><br>
-      <a href="">Blog</a><br>
-      <a href="">Store Locator</a><br>
-      <a href="">Landmark Cares</a><br>
-  
-    </div>
-    <div>
-      <h5>Help</h5>
-      <a href="">Contact us</a><br>
-      <a href="">Shipping</a><br>
-      <a href="">Returns Process</a><br>
-      <a href="">Returns Policy</a><br>
-      <a href="">Help Centre</a><br>
-  
-    </div>
-  </div>
-  <!-- contact option -->
-  <div id="contact">
-  
-    <div>
-      <p>You can talk to us</p>
-      <p>📞1800-123-1555</p>
-    </div>
-    <div>
-      <p>Help center</p>
-      <p>📧 stylezilla.info@mail.com</p>
-    </div>
-    <div>
-      <p>Write to us</p>
-      <p>🗃️ help.stylezilla.com</p>
-    </div>
-    <div>
-      <img src="https://cdn-icons-png.flaticon.com/128/3488/3488299.png" alt="">
-      <img src="https://cdn-icons-png.flaticon.com/128/733/733558.png" alt="">
-      <img src="https://cdn-icons-png.flaticon.com/128/2504/2504947.png" alt="">
-    </div>
-  </div>
-  <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
-  <!----------------------------------------------- Footer HTML End ----------------------------------------------->
-  
 
+    <!--Footer  -->
+    <div id="footer">
+      <div>
+        <h5>Womens</h5>
+        <a href="">Tops</a><br />
+        <a href="">Ethnicwear</a><br />
+        <a href="">Bottoms</a><br />
+        <a href="">Dresses & Jumpsuits</a><br />
+        <a href="">Winterwear</a><br />
+        <a href="">Lingerie</a><br />
+        <a href="">Nightwear</a><br />
+        <a href="">Sportswear</a><br />
+        <a href="">Beauty</a><br />
+        <a href="">Watches & Sunglasses</a><br />
+      </div>
+      <div>
+        <h5>Mens</h5>
+        <a href="">Tops</a><br />
+        <a href="">Ethnicwear</a><br />
+        <a href="">Bottoms</a><br />
+        <a href="">Sportswear</a><br />
+        <a href="">Winterwear</a><br />
+        <a href="">Innerwear</a><br />
+        <a href="">Grooming</a><br />
+        <a href="">Sportswear</a><br />
 
-</body>
-
+        <a href="">Watches & Sunglasses</a><br />
+      </div>
+      <div>
+        <h5>Kids</h5>
+        <a href="">Girls Clothing</a><br />
+        <a href="">Boys Clothing</a><br />
+        <a href="">Infants Girls</a><br />
+        <a href="">Infants Boys</a><br />
+        <a href="">Winterwear</a><br />
+        <a href="">Add ons</a><br />
+        <a href="">The Teen Shop</a><br />
+      </div>
+      <div>
+        <h5>Shops&Bags</h5>
+        <a href="">Girls</a><br />
+        <a href="">Boys</a><br />
+        <a href="">Women</a><br />
+        <a href="">Mens</a><br />
+        <a href="">Women Accessories</a><br />
+        <a href="">Men Accessories</a><br />
+        <a href="">Essential</a><br />
+      </div>
+      <div>
+        <h5>Beauty</h5>
+        <a href="">Makeup Eyes</a><br />
+        <a href="">Makeup Face</a><br />
+        <a href="">Makeup Nails</a><br />
+        <a href="">Mens</a><br />
+        <a href="">Perfumes</a><br />
+      </div>
+      <div>
+        <h5>Explore</h5>
+        <a href="">Online Offers</a><br />
+        <a href="">Store Offers</a><br />
+        <a href="">Online Gift Card</a><br />
+        <a href="">Store Gift Card</a><br />
+        <a href="">Stores Nearby</a><br />
+        <a href="">EDGE Membership</a><br />
+        <a href="">Shop on WhatsApp</a><br />
+        <a href="">Fashion VLOG</a><br />
+        <a href="">Join CIRCLEMAG</a><br />
+        <a href="">SBI Offers</a><br />
+        <a href="">Homecentre</a><br />
+      </div>
+      <div>
+        <h5>About Us</h5>
+        <a href="">About us</a><br />
+        <a href="">Careers</a><br />
+        <a href="">Take a Tour</a><br />
+        <a href="">Blog</a><br />
+        <a href="">Store Locator</a><br />
+        <a href="">Landmark Cares</a><br />
+      </div>
+      <div>
+        <h5>Help</h5>
+        <a href="">Contact us</a><br />
+        <a href="">Shipping</a><br />
+        <a href="">Returns Process</a><br />
+        <a href="">Returns Policy</a><br />
+        <a href="">Help Centre</a><br />
+      </div>
+    </div>
+    <!-- contact option -->
+    <div id="contact">
+      <div>
+        <p>You can talk to us</p>
+        <p>📞1800-123-1555</p>
+      </div>
+      <div>
+        <p>Help center</p>
+        <p>📧 stylezilla.info@mail.com</p>
+      </div>
+      <div>
+        <p>Write to us</p>
+        <p>🗃️ help.stylezilla.com</p>
+      </div>
+      <div>
+        <img
+          src="https://cdn-icons-png.flaticon.com/128/3488/3488299.png"
+          alt=""
+        />
+        <img
+          src="https://cdn-icons-png.flaticon.com/128/733/733558.png"
+          alt=""
+        />
+        <img
+          src="https://cdn-icons-png.flaticon.com/128/2504/2504947.png"
+          alt=""
+        />
+      </div>
+    </div>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <!----------------------------------------------- Footer HTML End ----------------------------------------------->
+  </body>
 </html>
 <script src="mensAllProducts.js"></script>
 <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
