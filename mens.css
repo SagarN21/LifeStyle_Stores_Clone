@@ -1,29 +1,28 @@
 * {
-  font-family: sans-serif;
   margin: 0px;
   padding: 0px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 /* banner */
 .carousel-inner > .item > img,
-  .carousel-inner > .item > a > img {
-   
-	margin: auto;
-	width: 200%;
-  }
-  #banner{
- 
-    margin-top: 50px;
-    width: 90%;
-  }
+.carousel-inner > .item > a > img {
+  margin: auto;
+  width: 200%;
+}
+#banner {
+  margin-top: 50px;
+  width: 90%;
+}
 
-  /* banner */
+/* banner */
 #container {
   /* border: 1px solid red; */
   width: 97%;
   margin: 20px auto;
 }
 
-#container>img {
+#container > img {
   width: 100%;
   margin: 20px 0px;
 }
@@ -32,7 +31,7 @@
   text-align: center;
 }
 
-#button>button {
+#button > button {
   color: orange;
   background-color: white;
   border: 1px solid blue;
@@ -41,7 +40,7 @@
   margin: 30px;
 }
 
-#button>button:hover {
+#button > button:hover {
   border: 1px solid orange;
 }
 
@@ -61,7 +60,7 @@ hr {
   justify-content: space-between;
 }
 
-#buyFree>img {
+#buyFree > img {
   width: 16%;
   margin: 10px 0px;
 }
@@ -71,7 +70,7 @@ hr {
   justify-content: space-between;
 }
 
-#brandImage>img {
+#brandImage > img {
   width: 16%;
   margin: 10px 0px;
   border-radius: 15px;
@@ -82,7 +81,7 @@ hr {
   justify-content: space-between;
 }
 
-#winterClothes>img {
+#winterClothes > img {
   width: 16%;
   margin: 10px 0px;
 }
@@ -95,9 +94,9 @@ hr {
   flex-wrap: wrap;
 }
 
-#bigBrandsProducts>img,
-#categoryProducts>img,
-#trandingBrands>img {
+#bigBrandsProducts > img,
+#categoryProducts > img,
+#trandingBrands > img {
   width: 16%;
   margin: 10px 0px;
   border-radius: 15px;
@@ -113,12 +112,12 @@ hr {
   justify-content: space-between;
 }
 
-#TopPicks>img,
-#winterTrends>img,
-#mostlovedstyle>img,
-#highlights>img,
-#trendsclothes>img,
-#activeWardrobe>img {
+#TopPicks > img,
+#winterTrends > img,
+#mostlovedstyle > img,
+#highlights > img,
+#trendsclothes > img,
+#activeWardrobe > img {
   width: 33.3%;
   margin: 10px 0px;
 }
@@ -128,7 +127,7 @@ hr {
   justify-content: space-between;
 }
 
-#dealCorner>img {
+#dealCorner > img {
   width: 19%;
   height: 300px;
   margin: 10px 0px;
@@ -140,7 +139,7 @@ hr {
   justify-content: space-between;
 }
 
-#mostLovedBrands>img,
+#mostLovedBrands > img,
 #essentials {
   width: 50%;
   margin: 10px 0px;
@@ -152,7 +151,7 @@ hr {
   justify-content: space-between;
 }
 
-#watch>img {
+#watch > img {
   width: 230px;
   height: 300px;
 }
@@ -162,11 +161,9 @@ hr {
   justify-content: space-between;
 }
 
-#shopByDepartment>img {
+#shopByDepartment > img {
   width: 33%;
 }
-
-
 
 /* <!----------------------------------------------- Header CSS -----------------------------------------------> */
 #top_bar {
@@ -208,7 +205,7 @@ hr {
   background-color: rgb(246, 249, 247);
 }
 
-#nav_bar>div {
+#nav_bar > div {
   margin: 20px;
   margin-left: 240px;
   width: 80%;
@@ -225,13 +222,13 @@ hr {
   height: 90px;
 }
 
-#nav_bar>div>a>input {
+#nav_bar > div > a > input {
   height: 33px;
   padding: 3px;
   width: 250px;
 }
 
-#nav_bar>div>a {
+#nav_bar > div > a {
   text-decoration: none;
   color: black;
   margin: auto;
@@ -254,18 +251,18 @@ hr {
   margin-left: 20px;
 }
 
-#email_subs>p {
+#email_subs > p {
   margin-bottom: 30px;
 }
 
-#email_subs>input {
+#email_subs > input {
   width: 300px;
   padding: 0px 8px;
   height: 50px;
   margin-left: 10px;
 }
 
-#email_subs>button {
+#email_subs > button {
   width: 200px;
   height: 50px;
   background-color: black;
@@ -278,11 +275,11 @@ hr {
   margin-top: 20px;
 }
 
-#play_store>p {
+#play_store > p {
   margin-bottom: 30px;
 }
 
-#play_store>button {
+#play_store > button {
   padding: 10px;
   height: auto;
   width: 150px;
@@ -387,7 +384,6 @@ hr {
 
 /*? ----------------------------Medium Screen Sizes -------------------------------- */
 @media all and (min-width: 810px) and (max-width: 1000px) {
-
   /* <!----------------------------------------------- Header -----------------------------------------------> */
   #top_bar {
     flex-direction: column;
@@ -410,7 +406,7 @@ hr {
     left: 84px;
   }
 
-  #nav_bar>div {
+  #nav_bar > div {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     gap: 2px;
@@ -430,30 +426,29 @@ hr {
   #container {
     border: 2px solid red;
     margin: auto;
-
   }
 
   #buyFree {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
   }
-  #buyFree>img {
+  #buyFree > img {
     width: 98%;
   }
   #brandImage {
-   display: grid;
-   grid-template-columns: repeat(3,1fr);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
   }
-  #brandImage>img {
-    width:95%;
+  #brandImage > img {
+    width: 95%;
   }
 
   #winterClothes {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
 
-  #winterClothes>img {
+  #winterClothes > img {
     width: 95%;
     margin: 10px 0px;
   }
@@ -462,12 +457,12 @@ hr {
   #categoryProducts,
   #trandingBrands {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
 
-  #bigBrandsProducts>img,
-  #categoryProducts>img,
-  #trandingBrands>img {
+  #bigBrandsProducts > img,
+  #categoryProducts > img,
+  #trandingBrands > img {
     width: 95%;
     margin: 10px 0px;
     border-radius: 15px;
@@ -483,12 +478,12 @@ hr {
     justify-content: space-between;
   }
 
-  #TopPicks>img,
-  #winterTrends>img,
-  #mostlovedstyle>img,
-  #highlights>img,
-  #trendsclothes>img,
-  #activeWardrobe>img {
+  #TopPicks > img,
+  #winterTrends > img,
+  #mostlovedstyle > img,
+  #highlights > img,
+  #trendsclothes > img,
+  #activeWardrobe > img {
     width: 33.3%;
     margin: 10px 0px;
   }
@@ -497,14 +492,12 @@ hr {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
-  #dealCorner>img {
-    width:95%;
+  #dealCorner > img {
+    width: 95%;
     height: 500px;
     margin: 10px 0px;
   }
-
 }
-
 
 /*?----------------------------Small Screen Sizes -------------------------------- */
 @media all and (min-width: 10px) and (max-width: 809px) {
@@ -538,7 +531,7 @@ hr {
     flex-direction: column;
   }
 
-  #nav_bar>div {
+  #nav_bar > div {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     gap: 2px;
@@ -559,7 +552,7 @@ hr {
     flex-direction: column;
   }
 
-  #email_subs>input {
+  #email_subs > input {
     margin: auto;
     margin-bottom: 2px;
     border: 1px solid black;
@@ -569,7 +562,7 @@ hr {
     margin: auto;
   }
 
-  #email_subs>button {
+  #email_subs > button {
     width: 95%;
   }
 
@@ -586,29 +579,32 @@ hr {
     grid-template-columns: repeat(3, 1fr);
   }
   /*======================men page responsive========== */
- 
-  #buyFree, #brandImage, #winterClothes{
+
+  #buyFree,
+  #brandImage,
+  #winterClothes {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
-  
-  #buyFree>img, #brandImage>img, #winterClothes>img {
+
+  #buyFree > img,
+  #brandImage > img,
+  #winterClothes > img {
     width: 95%;
     margin: 10px 0px;
   }
-  
+
   #bigBrandsProducts,
   #categoryProducts,
   #trandingBrands {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
-  
-  #bigBrandsProducts>img,
-  #categoryProducts>img,
-  #trandingBrands>img {
+
+  #bigBrandsProducts > img,
+  #categoryProducts > img,
+  #trandingBrands > img {
     width: 95%;
-    
   }
   #TopPicks,
   #winterTrends,
@@ -620,61 +616,62 @@ hr {
     justify-content: space-between;
     flex-wrap: wrap;
   }
-  
-  #TopPicks>img,
-  #winterTrends>img,
-  #mostlovedstyle>img,
-  #highlights>img,
-  #trendsclothes>img,
-  #activeWardrobe>img {
+
+  #TopPicks > img,
+  #winterTrends > img,
+  #mostlovedstyle > img,
+  #highlights > img,
+  #trendsclothes > img,
+  #activeWardrobe > img {
     width: 50%;
     margin: 10px 0px;
   }
-  
+
   #dealCorner {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
-  
-  #dealCorner>img {
+
+  #dealCorner > img {
     width: 95%;
     height: 250px;
     margin: 10px 0px;
   }
-  
+
   #mostLovedBrands,
   #essentials {
     border: 1px solid red;
-   display: grid;
-   grid-template-columns: repeat(1, 1fr);
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
   }
-  
-  #mostLovedBrands>img,#essentials>img{
+
+  #mostLovedBrands > img,
+  #essentials > img {
     width: 100%;
   }
-  #essentials{
+  #essentials {
     width: 98%;
   }
-  
+
   #watch {
     /* border: 1px solid red; */
     width: 100%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
-  #watch>img {
-   width: 96%;
+  #watch > img {
+    width: 96%;
   }
-  
+
   #shopByDepartment {
     display: grid;
-    grid-template-columns: repeat(1,1fr);
+    grid-template-columns: repeat(1, 1fr);
   }
-  
-  #shopByDepartment>img {
+
+  #shopByDepartment > img {
     width: 100%;
   }
-  #button>button{
+  #button > button {
     width: 250px;
     margin-left: 16px;
   }

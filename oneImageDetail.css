@@ -1,7 +1,8 @@
 * {
-  font-family: sans-serif;
   margin: 0px;
   padding: 0px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 .margin,
@@ -22,7 +23,7 @@ hr,
   width: 65%;
 }
 
-.image>img {
+.image > img {
   width: 48%;
 }
 
@@ -36,12 +37,12 @@ hr,
   text-decoration: underline;
 }
 
-.smallImage>img {
+.smallImage > img {
   width: 10%;
   border: 2px solid teal;
 }
 
-.smallImage+p {
+.smallImage + p {
   margin: 10px 0px;
 }
 
@@ -53,7 +54,7 @@ hr,
   width: 400px;
 }
 
-.sizeButton>button {
+.sizeButton > button {
   background-color: white;
   border: 2px solid lightgrey;
   height: 45px;
@@ -85,7 +86,7 @@ hr {
   background-color: lightgray;
 }
 
-hr+button {
+hr + button {
   color: rgb(210, 94, 113);
   background-color: pink;
   border: 1px solid pink;
@@ -95,11 +96,11 @@ hr+button {
   border-radius: 3px;
 }
 
-.anchor>a {
+.anchor > a {
   color: black;
 }
 
-.moreshirt{
+.moreshirt {
   color: blue;
   margin-left: -50px;
 }
@@ -132,7 +133,7 @@ a {
   width: 250px;
 }
 
-.pinCode+button {
+.pinCode + button {
   height: 55px;
   width: 80px;
   background-color: orange;
@@ -175,7 +176,7 @@ a {
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
-.individula>img {
+.individula > img {
   width: 100%;
 }
 
@@ -224,7 +225,7 @@ a {
   background-color: rgb(246, 249, 247);
 }
 
-#nav_bar>div {
+#nav_bar > div {
   margin: 20px;
   margin-left: 240px;
   width: 80%;
@@ -241,13 +242,13 @@ a {
   height: 90px;
 }
 
-#nav_bar>div>a>input {
+#nav_bar > div > a > input {
   height: 33px;
   padding: 3px;
   width: 250px;
 }
 
-#nav_bar>div>a {
+#nav_bar > div > a {
   text-decoration: none;
   color: black;
   margin: auto;
@@ -270,18 +271,18 @@ a {
   margin-left: 20px;
 }
 
-#email_subs>p {
+#email_subs > p {
   margin-bottom: 30px;
 }
 
-#email_subs>input {
+#email_subs > input {
   width: 300px;
   padding: 0px 8px;
   height: 50px;
   margin-left: 10px;
 }
 
-#email_subs>button {
+#email_subs > button {
   width: 200px;
   height: 50px;
   background-color: black;
@@ -294,11 +295,11 @@ a {
   margin-top: 20px;
 }
 
-#play_store>p {
+#play_store > p {
   margin-bottom: 30px;
 }
 
-#play_store>button {
+#play_store > button {
   padding: 10px;
   height: auto;
   width: 150px;
@@ -403,7 +404,6 @@ a {
 
 /*? ----------------------------Medium Screen Sizes -------------------------------- */
 @media all and (min-width: 810px) and (max-width: 1000px) {
-
   /* <!----------------------------------------------- Header -----------------------------------------------> */
   #top_bar {
     flex-direction: column;
@@ -426,7 +426,7 @@ a {
     left: 84px;
   }
 
-  #nav_bar>div {
+  #nav_bar > div {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     gap: 2px;
@@ -450,22 +450,22 @@ a {
     grid-template-columns: repeat(3, 1fr);
     gap: 10px;
   }
-  .image>img{
+  .image > img {
     display: block;
     width: 95%;
     margin: 10px;
   }
-  .basket{
+  .basket {
     width: 265px;
   }
-  .size{
+  .size {
     width: 270px;
   }
   .favourite {
-   width: 270px;
+    width: 270px;
   }
   hr {
-    width: 270px; 
+    width: 270px;
   }
   .pinCode {
     margin-left: 30px;
@@ -475,8 +475,8 @@ a {
     display: block;
     border: 1px solid black;
   }
-  
-  .pinCode+button {
+
+  .pinCode + button {
     margin: 25px;
     width: 150px;
   }
@@ -514,7 +514,7 @@ a {
     flex-direction: column;
   }
 
-  #nav_bar>div {
+  #nav_bar > div {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     gap: 2px;
@@ -535,7 +535,7 @@ a {
     flex-direction: column;
   }
 
-  #email_subs>input {
+  #email_subs > input {
     margin: auto;
     margin-bottom: 2px;
     border: 1px solid black;
@@ -545,7 +545,7 @@ a {
     margin: auto;
   }
 
-  #email_subs>button {
+  #email_subs > button {
     width: 95%;
   }
 
@@ -572,14 +572,14 @@ a {
   }
 
   /*=============my media query============*/
-  #container{
+  #container {
     /* border: 1px solid red; */
     width: 92%;
     margin: auto;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
   }
-  .image{
+  .image {
     /* border: 1px solid blue; */
     width: 99%;
     display: grid;
@@ -587,37 +587,40 @@ a {
     gap: 10px;
     margin-bottom: 10px;
   }
-  .image>img{
+  .image > img {
     width: 100%;
   }
-  .checkBox{
+  .checkBox {
     /* border: 1px solid gold; */
     width: 99%;
   }
-  i, p, a, span, li, h3{
+  i,
+  p,
+  a,
+  span,
+  li,
+  h3 {
     font-size: 20px;
   }
-  .size{
+  .size {
     /* border: 1px solid red; */
     width: 85%;
   }
-  .basket{
+  .basket {
     width: 85%;
   }
-  .favourite{
+  .favourite {
     width: 85%;
   }
-  hr{
+  hr {
     width: 85%;
   }
-  hr+button{
+  hr + button {
     font-size: 20px;
   }
-  .pinCode{
+  .pinCode {
     border: 1px solid black;
     margin-left: 15px;
     padding-left: 5px;
   }
-
-
 }

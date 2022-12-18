@@ -1,115 +1,152 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+#nav {
+  border: 0px solid red;
+  height: 70px;
+  width: auto;
+  display: flex;
+}
+body {
+  background-color: #e3ddd2;
+}
+#nav img {
+  height: 70px;
+}
 
-    * {
-      font-family: sans-serif;
-    }
-    .box {
-      width: 500px;
-      height: 400px;
+#nav h3 {
+  margin-top: 30px;
+}
 
-      margin: auto;
-    }
-   
-    .form {
-      width: 210px;
-      height: 400px;
+.box {
+  margin: 12px auto;
 
-      margin: auto;
-      margin-left: 80px;
-      font-size: 20px;
-      font-weight: bold;
-      height: 20px;
-      flex: 0 0 200px;
-      margin-left: 10px;
-      line-height: 1.9;
-    }
-    .box > .head {
-      margin-left: 140px;
-    }
-    .head {
-      width: 200px;
+  background-color: white;
+  margin: auto;
+  height: max-content;
+  padding: 25px;
+  width: 490px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  transform: translateY(-25px);
+}
+input {
+  padding-left: 12px;
+}
+#logo {
+  margin: auto;
+  height: 10%;
+  width: 300px;
+}
+.form {
+  width: 98%;
+  margin: auto;
+  font-size: 20px;
+  font-weight: bold;
+  flex: 0 0 200px;
+  margin-left: 10px;
+  line-height: 1.9;
+}
+.head {
+  display: flex;
+  justify-content: space-around;
+  padding-left: 5px;
+  align-items: center;
+}
 
-      display: flex;
-      justify-content: space-around;
-      padding-left: 5px;
-      align-items: center;
-    }
+#name,
+#email,
+#pass {
+  padding: 3px;
+  font-size: 18px;
+  padding-left: 15px;
+  width: 92%;
+  height: 40px;
+  border-radius: 3px;
+  border: 2px solid lightgray;
+}
+#pass + input {
+  height: 40px;
+  width: 95%;
+  border-radius: 3px;
+  background-color: #faa619;
+  color: white;
+  border: 0;
+}
+.btm {
+  width: 95%;
+  margin: auto;
+  text-align: center;
+  line-height: 1;
+  font-size: 16px;
+}
+.btm > button {
+  line-height: 1.8;
+  height: 40px;
+  width: 508px;
+  border-radius: 3px;
+  border: 2px solid lightgray;
+  font-size: 15px;
+}
 
-    #name,
-    #email,
-    #pass {
-      height: 40px;
-      width: 500px;
-      border-radius: 3px;
-      border: 2px solid lightgray;
-    }
-    #pass + input {
-      height: 40px;
-      width: 508px;
-      border-radius: 3px;
-      background-color: #faa619;
-      color: white;
-      border: 0;
-    }
-    .btm {
-      width: 500px;
-      height: 200px;
-
-      margin: auto;
-      text-align: center;
-      padding-left: 20px;
-      line-height: 1;
-
-      font-size: 16px;
-    }
-    .btm > button {
-      line-height: 1.8;
-      height: 40px;
-      width: 508px;
-      border-radius: 3px;
-
-      border: 2px solid lightgray;
-      font-size: 15px;
-    }
-
-    .gooo {
-        height: 40px;
-      width: 508px;
-      border-radius: 3px;
-      font-size: 20px;
-      background-color: white;
-      line-height: 1.8;
-
-      display: flex;
-      margin: auto;
-      
-      border: 2px solid lightgray;
-    }
-    .gooo > mark {
-      background-color: white;
-      font-size: 20px;
-      color: rgb(7, 104, 248);
-      border-radius: 3px;
-      padding-bottom: 3px;
-      margin-left: 28%;
-    }
-    .signin {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    }
-    .required {
-      color: red;
-    }
-  
-    body>div{
-      height: 535px;
-      margin: auto;
-      width: 560px;
-      
-      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;;
-      border-radius: 7px;
-    }
-    ::placeholder{
-      color: rgb(212, 212, 212)
-  }
- 
+.gooo {
+  height: 50px;
+  width: 98%;
+  border-radius: 3px;
+  font-size: 20px;
+  background-color: white;
+  border: 2px solid lightgray;
+  display: flex;
+  justify-content: center;
+  place-items: center;
+}
+#continue {
+  cursor: pointer;
+  margin-top: 15px;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 7px;
+}
+#continue:hover {
+  background-color: #ffbc49;
+}
+#google {
+  width: 7%;
+  padding-left: 15px;
+}
+.gooo > label {
+  background-color: white;
+  font-size: 20px;
+  color: rgb(7, 104, 248);
+  border-radius: 3px;
+  padding-bottom: 3px;
+}
+.signin {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.required {
+  color: red;
+}
+::placeholder {
+  color: rgb(212, 212, 212);
+}
+#admin {
+  position: fixed;
+  cursor: pointer;
+  right: 25px;
+  top: 10px;
+  font-weight: bold;
+  max-height: 40px;
+  padding: 10px;
+  border: 2px solid transparent;
+  color: rgb(255, 255, 255);
+  background-color: #f7b139;
+  border: 0px;
+}
+#admin:hover {
+  border: 2px solid white;
+}
