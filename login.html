@@ -4,23 +4,22 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>login</title>
+    <title>StyleZilla : Login</title>
     <link rel="stylesheet" href="login.css" />
   </head>
-
+  <div id="nav">
+    <a href="index.html"
+      ><img src="images/stylezillawithoutbackground.png"
+    /></a>
+  </div>
   <body>
     <div>
       <div class="box">
         <div class="head">
-          <img
-            style="margin-top: 19px"
-            height="10%"
-            width="100%"
-            src="images/logo.png"
-          />
+          <a href="index.html"><img id="logo" src="images/logo.png" /></a>
         </div>
         <div class="signin">
-          <h1 style="padding-left: 11px; color: #faa619">Sign in</h1>
+          <h1 style="padding-left: 11px; color: #faa619">Login</h1>
           <h4>or <a href="signup.html"> create an account</a></h4>
         </div>
 
@@ -36,45 +35,26 @@
           <label for="">Password<span class="required">*</span></label>
           <input type="password" placeholder="8 or more characters" id="pass" />
 
-          <input
-            type="submit"
-            value="Continue"
-            style="margin-top: 15px; font-size: 19px"
-          />
+          <input type="submit" value="Continue" id="continue" />
         </form>
-      </div>
-
-      <div class="btm">
-        <div
-          style="
-            z-index: 100;
-            margin: 20px 0px;
-            border: none;
-            display: flex;
-            align-items: center;
-            height: 1px;
-            justify-content: center;
-            background-color: grey;
-          "
-        >
-          <div
-            style="padding: 3px 8px; margin-top: -3px; background-color: white"
-          >
-            or
+        <div class="btm">
+          <div id="btmdiv">
+            <br />
+            <hr />
+            <div style="padding: 3px 8px; background-color: white">or</div>
           </div>
+          <br />
+          <div class="gooo">
+            <label>Continue with Google </label>
+            <img id="google" src="images/google-logo.png" />
+          </div>
+          <br />
+          <p><u>Sign in with Apple </u></p>
+          <br /><br /><br /><br />
         </div>
-
-        <div class="gooo">
-          <mark>Continue with Google</mark>
-          <img
-            style="width: 7%; padding-left: 15px"
-            src="images/google-logo.png"
-          />
-        </div>
-
-        <p><u>Sign in with Apple </u></p>
       </div>
     </div>
+    <a href="Admin-Login.html"><button id="admin">Admin Login</button></a>
   </body>
 </html>
 

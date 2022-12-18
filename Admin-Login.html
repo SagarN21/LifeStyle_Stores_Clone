@@ -4,27 +4,27 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>login</title>
+    <title>StyleZilla: Admin: Login</title>
     <link rel="stylesheet" href="Admin-Login.css" />
   </head>
 
   <body>
     <div id="nav">
-      <img src="images/stylezillawithoutbackground.png" />
-      <h3>Admin Portal</h3>
+      <a href="index.html"
+        ><img src="images/stylezillawithoutbackground.png"
+      /></a>
     </div>
     <div class="box">
       <div class="head">
         <a href="index.html"
           ><img
-            style="margin-top: 19px"
             height="10%"
             width="100%"
             src="images\stylezillawithoutbackground.png"
         /></a>
       </div>
       <div class="signin">
-        <h1 style="padding-left: 11px">Sign in</h1>
+        <h1>Sign in</h1>
         <h4>or <a href="signup.html"> create an account</a></h4>
       </div>
 
@@ -46,37 +46,36 @@
           style="margin-top: 15px; font-size: 19px"
         />
       </form>
-    </div>
-
-    <div class="btm">
-      <div
-        style="
-          z-index: 100;
-          margin: 20px 0px;
-          border: none;
-          display: flex;
-          align-items: center;
-          height: 1px;
-          justify-content: center;
-          background-color: grey;
-        "
-      >
+      <div class="btm">
         <div
-          style="padding: 3px 8px; margin-top: -3px; background-color: white"
+          style="
+            z-index: 100;
+            margin: 20px 0px;
+            border: none;
+            display: flex;
+            align-items: center;
+            height: 1px;
+            justify-content: center;
+            background-color: grey;
+          "
         >
-          or
+          <div
+            style="padding: 3px 8px; margin-top: -3px; background-color: white"
+          >
+            or
+          </div>
         </div>
-      </div>
 
-      <div class="gooo">
-        <mark>Continue with Google</mark>
-        <img
-          style="width: 7%; padding-left: 15px"
-          src="images\google-logo.png"
-        />
+        <div class="gooo">
+          <label>Continue with Google </label>
+          <img id="google" src="images/google-logo.png" />
+        </div>
+        <br />
+        <p><u>Sign in with Apple </u></p>
+        <br /><br /><br /><br />
+        <br />
+        <p><u>Sign in with Apple </u></p>
       </div>
-
-      <p style="background-color: white"><u>Sign in with Apple </u></p>
     </div>
 
     <script src="Admin-login.js"></script>

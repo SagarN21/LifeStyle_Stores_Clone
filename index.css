@@ -1,147 +1,126 @@
-*{
-  font-family: sans-serif;
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  scroll-behavior: smooth;
 }
 #top_bar {
-    
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
-    color: white;
-    background-color: black;
-    text-align: center;
-    padding-left: 5%;
-    padding-right: 5%;
-   
-    width: 100%;
-    z-index: 1;
-    position: sticky;
-    top: 0px;
-
-   
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  background-color: black;
+  text-align: center;
+  padding-left: 5%;
+  padding-right: 5%;
+  width: 100%;
+  z-index: 1;
+  position: sticky;
+  top: 0px;
 }
 
 #left_top {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 40px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
 }
 
 #right_top {
-    /* border: 1px solid green; */
-    width: 30%;
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-
+  width: 30%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
 }
 
-#nav_bar{
- 
- 
-    display: flex;
-   
-   justify-content: space-evenly;
-   
-    background-color: #F7F7F8;
-   
-    padding-top: 20px;
-    text-align: center;
-    width: 100%;
-    position: fixed;
-    z-index: 1;
-  
+#nav_bar {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #f7f7f8;
+  padding-top: 5px;
+  text-align: center;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
 }
-#logo
-{
- position: relative;
-    border-radius: 5px;
-  width: 200px;
-  height: 80px;
-  margin-bottom: 20px;
- 
+#logo {
+  position: relative;
+  border-radius: 5px;
+  width: 220px;
+  height: 92px;
+  padding-bottom: 5px;
 }
-#nav_bar>input{
-    
-    height: 40px;
-    width: 250px;
-    margin-top: 15px;
-    border-radius: 10px;
-   
-}
-#nav_bar>a>h4{
-    margin-top: 25px;
+#nav_bar > input {
+  height: 40px;
+  width: 250px;
+  margin-top: 27px;
+  border: 0.5px solid rgb(182, 181, 181);
+  padding-left: 11px;
 }
 
-
-#nav_bar>a{
-    text-decoration: none;
-    color: black;
+#nav_bar > a {
+  display: grid;
+  place-items: center;
+  text-decoration: none;
+  color: black;
 }
-#nav_bar>a:hover{
+#nav_bar > a:hover {
   color: orange;
 }
-/* drop down list */
-
-#women_list{
-
+#women_list {
   height: 300px;
-  
   display: flex;
   justify-content: space-evenly;
   padding: 20px;
   margin-left: 5%;
   display: none;
   margin-top: 120px;
- 
 }
 #womin_list_last a {
- display: flex;
- flex-direction: column;
+  display: flex;
+  flex-direction: column;
   text-decoration: none;
   color: black;
   font-weight: bold;
 }
-#women_list a ,  #mens_list a , #kids_list a , #shoes_bag_list a , #beauty_list a{
+#women_list a,
+#mens_list a,
+#kids_list a,
+#shoes_bag_list a,
+#beauty_list a {
   text-decoration: none;
   color: rgb(123, 121, 121);
- 
 }
-#women_list>div a:first-child ,  #mens_list a:first-child , #kids_list a:first-child
-,#shoes_bag_list a:first-child , #beauty_list a:first-child{
- color: black;
- font-size: larger;
- font-weight: bold;
+#women_list > div a:first-child,
+#mens_list a:first-child,
+#kids_list a:first-child,
+#shoes_bag_list a:first-child,
+#beauty_list a:first-child {
+  color: black;
+  font-size: larger;
+  font-weight: bold;
 }
-#women_list a:hover ,  #mens_list a:hover , #kids_list a:hover , #shoes_bag_list a:hover , #beauty_list a:hover{
+#women_list a:hover,
+#mens_list a:hover,
+#kids_list a:hover,
+#shoes_bag_list a:hover,
+#beauty_list a:hover {
   color: orange;
 }
-#women_list>div a:first-child:hover{
+#women_list > div a:first-child:hover {
   color: orange;
 }
 
-#mens_list{
+#mens_list {
   height: 300px;
-  
   display: flex;
   justify-content: space-evenly;
   padding: 10px;
   margin-left: 5%;
   margin-top: 120px;
- padding-bottom: 30px;
- display: none;
+  padding-bottom: 30px;
+  display: none;
 }
-#kids_list{
-  height: 300px;
-  margin-top: 120px;
-  display: flex;
-  justify-content: space-evenly;
-  padding: 10px;
-  margin-left: 5%;
-
- padding-bottom: 30px;
- display: none;
-
-}
-#shoes_bag_list{
+#kids_list {
   height: 300px;
   margin-top: 120px;
   display: flex;
@@ -149,10 +128,10 @@
   padding: 10px;
   margin-left: 5%;
 
- padding-bottom: 30px;
- display: none;
+  padding-bottom: 30px;
+  display: none;
 }
-#beauty_list{
+#shoes_bag_list {
   height: 300px;
   margin-top: 120px;
   display: flex;
@@ -160,320 +139,293 @@
   padding: 10px;
   margin-left: 5%;
 
- padding-bottom: 30px;
- display: none;
+  padding-bottom: 30px;
+  display: none;
 }
-/* #pop_up{
-  background-color: orange;
-  margin-left: 75%;
-  margin-right: 15%;
-  text-align: center;
+#beauty_list {
+  height: 300px;
+  margin-top: 120px;
+  display: flex;
+  justify-content: space-evenly;
   padding: 10px;
-} */
+  margin-left: 5%;
 
-/* banner */
+  padding-bottom: 30px;
+  display: none;
+}
 .carousel-inner > .item > img,
-  .carousel-inner > .item > a > img {
-   
- 
-   
-	
-	margin: auto;
-	width: 200%;
-  }
-  #banner{
-   margin-top: 150px;
-   
-    width: 90%;
-  }
- 
+.carousel-inner > .item > a > img {
+  margin: auto;
+  width: 200%;
+}
+#banner {
+  margin-top: 150px;
 
-  /* off section */
-  .off_section{
-    
-    margin-top: 50px;
-    margin-left: 8%;
-  }
+  width: 90%;
+}
 
-  /* our benifit */
-  #our_benifit{
-    margin-top: 50px;
-    margin-left: 8%;
-  }
-  #our_benifit>h2{
-    text-decoration:underline rgb(242, 208, 12) ;
-  }
-  #unmissable{
-    margin-top: 50px;
-    margin-left: 8%;
-  }
-  #unmissable>h2{
-    text-decoration:underline rgb(242, 208, 12) ;
-    margin-bottom: 20px;
-  }
-  #unmissable>div>img{
-   
-   margin-left: 20px;
-  }
-  .offer{
-    margin-top: 50px;
-    margin-left: 10%;
-    
-  }
+/* off section */
+.off_section {
+  margin-top: 50px;
+  margin-left: 8%;
+}
 
-  #Winterwear{
-    margin-top: 50px;
-    margin-left: 8%;
-  }
-  #Winterwear>h2{
-    text-decoration:underline rgb(242, 208, 12) ;
-    margin-bottom: 20px;
-  }
-  #Winterwear>div>img{
-   
-   margin-left: 20px;
-   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  }
+/* our benifit */
+#our_benifit {
+  margin-top: 50px;
+  margin-left: 8%;
+}
+#our_benifit > h2 {
+  text-decoration: underline rgb(242, 208, 12);
+}
+#unmissable {
+  margin-top: 50px;
+  margin-left: 8%;
+}
+#unmissable > h2 {
+  text-decoration: underline rgb(242, 208, 12);
+  margin-bottom: 20px;
+}
+#unmissable > div > img {
+  margin-left: 20px;
+}
+.offer {
+  margin-top: 50px;
+  margin-left: 10%;
+}
 
-  /* trending */
-  #trending{
-    margin-top: 50px;
-    margin-left: 8%;
-  }
-  #trending>h2{
-    text-decoration:underline rgb(242, 208, 12) ;
-    margin-bottom: 20px;
-  }
-  #trending>div>img{
-   
-   margin-left: 20px;
-   margin-bottom: 20px;
-  }
+#Winterwear {
+  margin-top: 50px;
+  margin-left: 8%;
+}
+#Winterwear > h2 {
+  text-decoration: underline rgb(242, 208, 12);
+  margin-bottom: 20px;
+}
+#Winterwear > div > img {
+  margin-left: 20px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
 
-  /* Watches */
+/* trending */
+#trending {
+  margin-top: 50px;
+  margin-left: 8%;
+}
+#trending > h2 {
+  text-decoration: underline rgb(242, 208, 12);
+  margin-bottom: 20px;
+}
+#trending > div > img {
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
 
-  #watces{
-    margin-top: 50px;
-    margin-left: 8%;
-  }
-  #watces>h2{
-    text-decoration:underline rgb(242, 208, 12) ;
-    margin-bottom: 20px;
-  }
-  #watces>div>img{
-   
-   border-radius: 10px;
-   margin-bottom: 20px;
-   width: 95%;
-  }
-  #top-category{
-   
-    margin-left: 8%;
-   
-    height: 350px;
-    display: flex;
-  }
-  #top_btn{
-   
-    display: flex;
-    flex-direction: column;
-    width: 10%;
-    height: 100%;
-    background-color: aliceblue;
-   
-  }
-  #top_btn>button{
-    margin-bottom: 10px;
-    width: 120px;
-    height: 50px;
-    background-color: aliceblue;
-    border: none;
-  }
- 
- #womens_in_top_category>img{
-    height: 100%;
-    margin-right: 20px;
-    margin-left: 20px;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-   
-  }
-  #mens_in_top_category>img{
-    height: 100%;
-    margin-right: 20px;
-    margin-left: 20px;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-   
-  }
-  #kids_in_top_category>img{
-    height: 100%;
-    margin-right: 20px;
-    margin-left: 20px;
-    
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  }
-  #shoes_in_top_category>img {
-    height: 100%;
-    margin-right: 20px;
-    margin-left: 20px;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-   
-  }
-  #beauty_in_top_category>img{
-    height: 100%;
-    margin-right: 20px;
-    margin-left: 100px;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  }
-  #top-category1>h2{
+/* Watches */
+
+#watces {
+  margin-top: 50px;
+  margin-left: 8%;
+}
+#watces > h2 {
+  text-decoration: underline rgb(242, 208, 12);
+  margin-bottom: 20px;
+}
+#watces > div > img {
+  border-radius: 10px;
+  margin-bottom: 20px;
+  width: 95%;
+}
+#top-category {
+  margin-left: 8%;
+
+  height: 350px;
+  display: flex;
+}
+#top_btn {
+  display: flex;
+  flex-direction: column;
+  width: 10%;
+  height: 100%;
+  background-color: aliceblue;
+}
+#top_btn > button {
+  margin-bottom: 10px;
+  width: 120px;
+  height: 50px;
+  background-color: aliceblue;
+  border: none;
+}
+
+#womens_in_top_category > img {
+  height: 100%;
+  margin-right: 20px;
+  margin-left: 20px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+#mens_in_top_category > img {
+  height: 100%;
+  margin-right: 20px;
+  margin-left: 20px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+#kids_in_top_category > img {
+  height: 100%;
+  margin-right: 20px;
+  margin-left: 20px;
+
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+#shoes_in_top_category > img {
+  height: 100%;
+  margin-right: 20px;
+  margin-left: 20px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+#beauty_in_top_category > img {
+  height: 100%;
+  margin-right: 20px;
+  margin-left: 100px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+#top-category1 > h2 {
   margin-left: 8%;
   margin-top: 50px;
-  text-decoration: underline  rgb(242, 208, 12) ;
-  }
-  /* top in deals */
-  #top_deal{
-    margin-left: 8%;
-    margin-top: 50px;
-    text-decoration: underline  rgb(242, 208, 12) ;
-  }
-  #top_deal>div>img{
-   
-    margin-left: 20px;
-    margin-bottom: 20px;
-   
-   }
- #top_brands_discount{
+  text-decoration: underline rgb(242, 208, 12);
+}
+/* top in deals */
+#top_deal {
   margin-left: 8%;
   margin-top: 50px;
-  text-decoration: underline  rgb(242, 208, 12) ;
- }
+  text-decoration: underline rgb(242, 208, 12);
+}
+#top_deal > div > img {
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+#top_brands_discount {
+  margin-left: 8%;
+  margin-top: 50px;
+  text-decoration: underline rgb(242, 208, 12);
+}
 
- #top_brands_discount img{
-   
+#top_brands_discount img {
   margin-left: 20px;
   margin-bottom: 20px;
   height: 20%;
   width: 13%;
   margin-left: 20px;
-  
- }
- #season_hotest_pic{
+}
+#season_hotest_pic {
   margin-left: 8%;
   margin-top: 50px;
-  text-decoration: underline  rgb(242, 208, 12) ;
- }
- #season_hotest_pic img{
-   border-radius: 10px;
+  text-decoration: underline rgb(242, 208, 12);
+}
+#season_hotest_pic img {
+  border-radius: 10px;
   margin-left: 20px;
   margin-bottom: 20px;
   height: 35%;
   width: 22%;
   margin-left: 20px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
- }
- #top_brands_we_love{
+}
+#top_brands_we_love {
   margin-left: 8%;
   margin-top: 50px;
-  text-decoration: underline  rgb(242, 208, 12) ;
- }
- #top_brands_we_love img{
+  text-decoration: underline rgb(242, 208, 12);
+}
+#top_brands_we_love img {
   border-radius: 10px;
- margin-left: 20px;
- margin-bottom: 20px;
- height: 35%;
- width: 14%;
- margin-left: 20px;
- box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  height: 35%;
+  width: 14%;
+  margin-left: 20px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
-#value_pics{
+#value_pics {
   margin-left: 8%;
   margin-top: 50px;
-  text-decoration: underline  rgb(242, 208, 12) ;
+  text-decoration: underline rgb(242, 208, 12);
 }
-#value_pics img{
+#value_pics img {
   margin: 15px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
-#subscribe{
-
+#subscribe {
   height: 300px;
   margin-left: 8%;
 }
-#subscribe{
+#subscribe {
   margin-top: 50px;
   display: flex;
   justify-content: space-between;
 }
-#email_subs{
-
- margin-top: 20px;
- margin-left: 20px;
+#email_subs {
+  margin-top: 20px;
+  margin-left: 20px;
 }
-#email_subs>p{
+#email_subs > p {
   margin-bottom: 30px;
 }
-#email_subs>input{
+#email_subs > input {
   width: 300px;
   height: 50px;
   margin-left: 10px;
 }
-#email_subs>button{
+#email_subs > button {
   width: 200px;
   height: 50px;
   background-color: black;
   color: white;
   border-radius: 5px;
-
 }
-#play_store{
+#play_store {
   margin-right: 80px;
   margin-top: 20px;
 }
-#play_store>p{
+#play_store > p {
   margin-bottom: 30px;
 }
-#play_store>button{
+#play_store > button {
   height: 60px;
   width: 150px;
   background-color: black;
   color: white;
   text-anchor: middle;
- font-size: larger;
- border-radius: 5px;
- margin-bottom: 20px;
-
+  font-size: larger;
+  border-radius: 5px;
+  margin-bottom: 20px;
 }
-#footer{
+#footer {
   margin-top: 50px;
- 
+
   height: 500px;
   display: grid;
-  grid-template-columns: repeat(5,1fr);
+  grid-template-columns: repeat(5, 1fr);
   margin-left: 8%;
   font-size: larger;
-  
 }
-#footer a{
+#footer a {
   text-decoration: none;
   color: rgb(158, 156, 156);
   margin-bottom: 5px;
-
 }
-#footer a:hover{
+#footer a:hover {
   color: orange;
 }
-#contact{
-
+#contact {
   display: flex;
   margin-top: 120px;
   margin-left: 8%;
   justify-content: space-evenly;
   font-size: larger;
 }
-#contact img{
+#contact img {
   width: 10%;
   margin-right: 20px;
 }
-
 
 #myBtn {
   display: none;
@@ -489,20 +441,15 @@
   cursor: pointer;
   padding: 15px;
   border-radius: 4px;
- 
 }
 
 #myBtn:hover {
   background-color: orange;
 }
 
-#logo1{
+#logo1 {
   display: none;
 }
-
-
-
-
 
 @media all and (min-width: 810px) and (max-width: 1280px) {
   /* <!----------------------------------------------- Header -----------------------------------------------> */
@@ -528,15 +475,13 @@
     width: 70%;
    
   } */
- 
-  #nav_bar{
-    
+
+  #nav_bar {
     display: grid;
     grid-template-columns: repeat(5, 20%);
-  column-gap: -150px;
-   
- 
-  font-size: small;
+    column-gap: -150px;
+
+    font-size: small;
   }
   #searchbar {
     display: none;
@@ -545,135 +490,123 @@
     background-color: #f7f4f4;
     padding: 10px;
   }
-  #drop_down{
+  #drop_down {
     display: none;
   }
-  #banner{
+  #banner {
     margin-top: 200px;
     margin-left: 10%;
-    
   }
-  
-  #offer_section_img{
+
+  #offer_section_img {
     width: 100%;
-   
   }
-  #our_benifit{
+  #our_benifit {
     margin-left: 5%;
   }
-  #our_benifit>h2{
+  #our_benifit > h2 {
     text-align: center;
   }
-  #our_benifit img{
+  #our_benifit img {
     width: 20%;
     margin-left: 10%;
   }
-  #unmissable h2{
-   text-align: center;
-
+  #unmissable h2 {
+    text-align: center;
   }
-  #unmissable>div img{
+  #unmissable > div img {
     width: 20%;
   }
 
-  .offer>img{
+  .offer > img {
     width: 90%;
   }
-  #Winterwear>h2{
+  #Winterwear > h2 {
     text-align: center;
   }
-  #Winterwear>div>img{
+  #Winterwear > div > img {
     width: 20%;
   }
-  #trending>h2{
+  #trending > h2 {
     text-align: center;
   }
-  #trending>div>img{
+  #trending > div > img {
     width: 20%;
   }
-  #watces>h2{
+  #watces > h2 {
     text-align: center;
   }
-  #watces>div>img{
+  #watces > div > img {
     width: 90%;
   }
-  #top-category1>h2{
+  #top-category1 > h2 {
     text-align: center;
   }
-  #top-category img{
+  #top-category img {
     width: 30%;
     height: 50%;
     margin-bottom: 20px;
-   
   }
-  #top-category{
-    margin-left: 20%
+  #top-category {
+    margin-left: 20%;
   }
-  #top_btn{
+  #top_btn {
     margin-right: 40px;
   }
-  #top_deal{
+  #top_deal {
     margin-top: 80px;
   }
-  #top_deal>h2{
-   text-align: center;
-   
+  #top_deal > h2 {
+    text-align: center;
   }
-  #top_deal>div>img{
+  #top_deal > div > img {
     width: 42%;
   }
-  #top_brands_discount>h2{
+  #top_brands_discount > h2 {
     text-align: center;
   }
-  #season_hotest_pic>h2{
+  #season_hotest_pic > h2 {
     text-align: center;
   }
-  #season_hotest_pic>div>img{
-   width: 20%;
-   
+  #season_hotest_pic > div > img {
+    width: 20%;
   }
-  #season_hotest_pic{
-   margin-left: 10%;
+  #season_hotest_pic {
+    margin-left: 10%;
   }
-  #top_brands_we_love>h2{
+  #top_brands_we_love > h2 {
     text-align: center;
   }
-  #top_brands_we_love>div>img{
+  #top_brands_we_love > div > img {
     width: 15%;
   }
-  #top_brands_we_love>div>img:last-child{
+  #top_brands_we_love > div > img:last-child {
     display: none;
   }
 
-  #value_pics>h2{
+  #value_pics > h2 {
     text-align: center;
   }
-  #value_pics>div>img{
+  #value_pics > div > img {
     width: 20%;
   }
-  #subscribe{
-   font-size: smaller;
+  #subscribe {
+    font-size: smaller;
   }
-  #subscribe input{
-   width: 250px;
+  #subscribe input {
+    width: 250px;
   }
-  #footer{
-    grid-template-columns: repeat(4,1fr);
-    font-size:medium;
+  #footer {
+    grid-template-columns: repeat(4, 1fr);
+    font-size: medium;
   }
-  #contact{
+  #contact {
     font-size: small;
   }
-  #contact img{
+  #contact img {
     width: 8%;
   }
 }
-
-
-
-
-
-
 
 /*?----------------------------Small Screen Sizes -------------------------------- */
 @media all and (min-width: 10px) and (max-width: 809px) {
@@ -698,7 +631,7 @@
     position: relative;
     top: 8px;
     left: 84px;
-   width: 80%;
+    width: 80%;
   }
   #nav-bar {
     flex-direction: column;
@@ -707,7 +640,7 @@
   #nav_bar {
     display: grid;
     grid-template-columns: repeat(3, 30%);
-   
+
     margin: auto;
     /* width: 70%;
     margin-left: 10%; */
@@ -719,174 +652,164 @@
     background-color: #f7f4f4;
     padding: 10px;
   }
- 
-  #drop_down{
+
+  #drop_down {
     display: none;
   }
-  #banner{
+  #banner {
     margin-top: 300px;
     margin-left: 25%;
-    
   }
- .off_section{
-  margin-left: 33%;
- }
-  #offer_section_img{
+  .off_section {
+    margin-left: 33%;
+  }
+  #offer_section_img {
     width: 100%;
     margin-left: 7%;
-
-   
   }
-  #our_benifit{
+  #our_benifit {
     margin-left: 25%;
   }
-  #our_benifit>h2{
+  #our_benifit > h2 {
     text-align: center;
     margin-left: 30%;
   }
-  #our_benifit img{
+  #our_benifit img {
     width: 90%;
     margin-left: 20%;
   }
-  #unmissable{
+  #unmissable {
     margin-left: 35%;
   }
-  #unmissable h2{
-   text-align: center;
-   margin-left: 7%;
-
-
+  #unmissable h2 {
+    text-align: center;
+    margin-left: 7%;
   }
-  #unmissable>div img{
+  #unmissable > div img {
     width: 35%;
     margin-left: 10%;
     margin-bottom: 10px;
-  
   }
-  .offer{
+  .offer {
     margin-left: 30%;
   }
-  .offer>img{
+  .offer > img {
     width: 100%;
   }
-  #Winterwear{
+  #Winterwear {
     margin-left: 25%;
   }
 
-  #Winterwear>h2{
+  #Winterwear > h2 {
     text-align: center;
   }
-  #Winterwear>div>img{
+  #Winterwear > div > img {
     width: 30%;
     margin-left: 15%;
     margin-bottom: 20px;
   }
-  #trending{
+  #trending {
     margin-left: 25%;
   }
-  #trending>h2{
+  #trending > h2 {
     text-align: center;
   }
-  #trending>div>img{
+  #trending > div > img {
     width: 30%;
     margin-left: 15%;
   }
-  #watces>h2{
+  #watces > h2 {
     text-align: center;
     margin-left: 25%;
   }
-  #watces>div>img{
+  #watces > div > img {
     width: 90%;
     margin-left: 20%;
   }
-  #top-category1{
+  #top-category1 {
     display: none;
   }
-  #top-category1>h2{
+  #top-category1 > h2 {
     text-align: center;
   }
-  #top-category img{
+  #top-category img {
     width: 30%;
     height: 50%;
     margin-bottom: 20px;
-   
   }
-  #top-category{
-    margin-left: 20%
+  #top-category {
+    margin-left: 20%;
   }
-  #top_btn{
+  #top_btn {
     margin-right: 40px;
   }
-  #top_deal{
+  #top_deal {
     margin-top: 80px;
     margin-left: 35%;
   }
-  #top_deal>h2{
-   text-align: center;
-   
+  #top_deal > h2 {
+    text-align: center;
   }
-  #top_deal>div>img{
+  #top_deal > div > img {
     width: 90%;
   }
-  #top_brands_discount>h2{
+  #top_brands_discount > h2 {
     text-align: center;
   }
-  #top_brands_discount{
+  #top_brands_discount {
     margin-left: 40%;
   }
-  #top_brands_discount>div>img{
+  #top_brands_discount > div > img {
     width: 45%;
-   
-  }
- 
-  #season_hotest_pic>h2{
-    text-align: center;
-  }
-  #season_hotest_pic>div>img{
-   width: 45%;
-   
-  }
-  #season_hotest_pic{
-   margin-left: 35%;
   }
 
-  #top_brands_we_love{
-    margin-left: 35%;
-  }
-  #top_brands_we_love>h2{
+  #season_hotest_pic > h2 {
     text-align: center;
   }
-  #top_brands_we_love>div>img{
+  #season_hotest_pic > div > img {
     width: 45%;
   }
- 
-  #value_pics{
-    margin-left: 30%;
+  #season_hotest_pic {
+    margin-left: 35%;
   }
-  #value_pics>h2{
+
+  #top_brands_we_love {
+    margin-left: 35%;
+  }
+  #top_brands_we_love > h2 {
     text-align: center;
   }
-  #value_pics>div>img{
+  #top_brands_we_love > div > img {
+    width: 45%;
+  }
+
+  #value_pics {
+    margin-left: 30%;
+  }
+  #value_pics > h2 {
+    text-align: center;
+  }
+  #value_pics > div > img {
     width: 35%;
     margin-left: 10%;
   }
-  #subscribe{
-   font-size: smaller;
-   margin-left: 35%;
-  }
-  #subscribe input{
-   width: 250px;
-  }
-  #footer{
-    grid-template-columns: repeat(4,1fr);
-    font-size:larger;
+  #subscribe {
+    font-size: smaller;
     margin-left: 35%;
   }
-  #contact{
+  #subscribe input {
+    width: 250px;
+  }
+  #footer {
+    grid-template-columns: repeat(4, 1fr);
+    font-size: larger;
+    margin-left: 35%;
+  }
+  #contact {
     font-size: small;
     margin-left: 35%;
   }
-  #contact img{
+  #contact img {
     width: 8%;
   }
 }
