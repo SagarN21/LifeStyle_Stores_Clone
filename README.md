@@ -26,7 +26,6 @@ For storing user data we also used localStorage.
 * Mens- 
 
 * Basket page
-![Uploading sty1.jpg…]()
 
 
 * Checkout page
