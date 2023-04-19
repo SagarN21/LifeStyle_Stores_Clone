@@ -1,6 +1,6 @@
 # StyleZilla.com
 
-## ![StyleZilla](https://user-images.githubusercontent.com/112753481/233223250-e2626e73-a2a7-4264-a8cd-6e049cf3114a.png)
+![StyleZilla](https://user-images.githubusercontent.com/112753481/233224008-2a5b997a-9dee-4b86-9848-74a9741ccf0a.png)
 
 # What is StyleZilla.com?
 
