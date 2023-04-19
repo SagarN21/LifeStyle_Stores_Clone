@@ -5,7 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>StyleZilla : Mens</title>
-    <link rel="stylesheet" href="mensAllProducts.css" />
+    <link rel="stylesheet" href="./CSS/MediaQ.css" />
+    <link rel="stylesheet" href="./CSS/HeaderFooter.css" />
+    <link rel="stylesheet" href="CSS/mensAllProducts.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
@@ -13,46 +15,70 @@
   </head>
 
   <body>
-    <!----------------------------------------------- Header HTML ----------------------------------------------->
-    <header>
-      <div id="top_bar">
-        <div id="left_top">
-          <h5>🚚 Free Shiping</h5>
-          <h5>🏬 Click & Collect</h5>
-          <h5>🏬 Return to store</h5>
-        </div>
-        <div id="right_top">
-          <h5>Download Our App</h5>
-          <h5>Store Locator</h5>
-          <h5>Help</h5>
-        </div>
-      </div>
+    <!--todo--------------------------------------------- <Header Start> ----------------------------------------------->
 
-      <div id="nav_bar">
-        <a href="index.html"
-          ><img src="image/styleZilla.png" alt="" id="logo"
-        /></a>
-        <div>
-          <a href="womens_Index.html"> <h4>Women</h4></a>
-          <a href="mens.html"> <h4>Men</h4></a>
-          <a href=""> <h4>Kids</h4></a>
-          <a href=""> <h4>Shoes</h4></a>
-          <a href=""> <h4>Bags</h4></a>
-          <a href=""><h4>Beauty</h4></a>
-          <input
-            oninput="searchProduct()"
-            type="text"
-            id="productName"
-            placeholder="🔍  What are you looking for ?"
-          />
-          <a href=""> <h4>More</h4></a>
-          <a href="signup.html"><h4 id="signin">SignUp/SignIn</h4></a>
-          <a href=""> <h4>Wishlist</h4></a>
-          <a href="checkout.html"><h4>Cart</h4></a>
-        </div>
+    <div id="top_bar">
+      <div id="left_top">
+        <h5>🚚 Free Shiping</h5>
+        <h5>🏬 Click & Collect</h5>
+        <h5>🏬 Return to store</h5>
       </div>
-    </header>
-    <!----------------------------------------------- Header HTML end ----------------------------------------------->
+      <div id="right_top">
+        <h5>Download Our App</h5>
+        <h5>Store Locator</h5>
+        <h5>Help</h5>
+      </div>
+    </div>
+
+    <div id="nav">
+      <div>
+        <a href="index.html">
+          <img src="./images/StyleZillaWIthoutBackground.png" alt="" id="logo"
+        /></a>
+      </div>
+      <div id="nav_bar">
+        <a href="womens_Index.html" id="women_list_head" class="nav_menu">
+          <h4>Women</h4>
+        </a>
+        <a href="mens.html" id="men_list_head" class="nav_menu">
+          <h4>Men</h4>
+        </a>
+        <a href="" id="kids_head" class="nav_menu">
+          <h4>Kids</h4>
+        </a>
+        <a href="" id="shoes_bag_head" class="nav_menu">
+          <h4>Shoes&Bags</h4>
+        </a>
+        <a href="" id="beauty_head" class="nav_menu">
+          <h4>Beauty</h4>
+        </a>
+        <input
+          type="text"
+          placeholder="🔍  What are you looking for ?"
+          id="searchbar"
+        />
+        <a href="" id="more_head">
+          <h4>More</h4>
+        </a>
+        <a href="signup.html" id="login_head" class="nav_menu">
+          <h4>SignUp/SignIn</h4>
+        </a>
+        <a href="" id="wish_head" class="nav_menu">
+          <h4>Wishlist</h4>
+        </a>
+        <a href="checkout.html" id="cart_head" class="nav_menu">
+          <h4>Cart</h4>
+        </a>
+      </div>
+    </div>
+
+    <div id="EmptyNavSpace"></div>
+
+    <div id="yellopatti">
+      Watches up to 40% off – Titan/ Fossil/Armani -
+      <span style="color: rgb(132, 10, 10)">Trending Offers !</span>
+    </div>
+    <!--todo--------------------------------------------- <Header End> ----------------------------------------------->
 
     <div id="container">
       <select name="" id="sortByPrice">

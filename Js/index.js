@@ -237,25 +237,4 @@ beauty_list_render.addEventListener("mouseenter", () => {
   women_list.style.display = "none";
 });
 
-// let pop_up =document.querySelector("#pop_up")
-// setInterval(() => {
-//   pop_up.style.display="none"
-// }, 2000);
 
-let mybutton = document.getElementById("myBtn");
-
-window.onscroll = function () {
-  scrollFunction();
-};
-
-function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    mybutton.style.display = "block";
-  } else {
-    mybutton.style.display = "none";
-  }
-}
-function topFunction() {
-  // window.location.href = "#main";
-  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-}

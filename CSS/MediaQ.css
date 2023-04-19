@@ -1,0 +1,13 @@
+/*todo ----------------------------Small Screen Sizes -------------------------------- */
+@media all and (min-width: 320px) and (max-width: 809px) {
+  * {
+    font-size: 12px;
+  }
+  div,
+  section {
+    border: 1px solid red !important;
+  }
+  #logo {
+    width: 200px !important;
+  }
+}

@@ -219,78 +219,78 @@ async function PatchObjMaker(id) {
 }
 function ChangingDetails(obj) {
   container2.innerHTML = `
-  <div class="edit-product-card">
-  <div>
-    <img
-    src=${obj.thumbnail}
-    alt=""
-  />
-  </div>
-  <div>
-    <div class="details">
-      <h4>${obj.title}</h4>
-  <p>Rating : ${obj.rating}⭐</p>
-  <p>Brand : ${obj.brand}</p>
-  <p>Stock : ${obj.stock}</p>
-  <p>Stock : ${obj.price}/-</p>
-  <p>${obj.description}</p>
-  <br>
-  <hr>
-    </div>
-    
-  <div class="changers">
-    <form id="changeDataForm">
-    <label>Change Product Title<br>
-  <textarea id="changetitle" type="text"  rows="2" cols="30" placeholder="Enter 
-  Product Title" required/>${obj.title}</textarea>
-  </label>
-<label>Change Product Description<br>
-<textarea id="changedescription" type="text" rows="2" cols="30" 
-placeholder="Enter Product Description" required/>${obj.description}</textarea>
-</label>
-</label>
-<label>Change Product Price<br>
-<input id="changeprice" type="number" data-id=${obj.id} value=${obj.price}
- placeholder="Enter Product Price" required />
-</label>
-<label>Change Product Discount<br>
-<input id="changediscountPercentage" value=${obj.discountPercentage} type="number"
- placeholder="Enter Product DiscountPercentage" required />
-</label>
-<label>Change Product Rating<br>
-<input id="changerating" type="number" value=${obj.rating} min="0" step="0.1" 
-placeholder="Enter Product Rating" required />
-</label>
-<label>Change Product Stock<br>
-<input id="changestock" type="number" value=${obj.stock} 
-placeholder="Enter Product Stock" required />
-</label>
-<label>Change Product Brand<br>
-<input id="changebrand" type="text" value=${obj.brand} 
-placeholder="Enter Product Brand" required/>
-</label>
-<label>Change Product Category<br>
-<input id="changecategory" type="text" value=${obj.category} 
-placeholder="Enter Product Category" required/>
-</label>
-<label>Change Product Thumbnail<br>
-<input id="changethumbnail" type="text" value=${obj.thumbnail} 
-placeholder="Enter ThumbnailURL" required />
-</label>
-<label>Change Product Image 1<br>
-<input id="changeimage1" type="text" value=${obj.images[0]} 
-placeholder="Enter ImageUrl" required />
-</label>
-<label>Change Product Image 2<br>
-  <input id="changeimage2" type="text" value=${obj.images[1]} 
-  placeholder="Enter ImageUrl" required />
-  </label>
-  <input type="submit" data-id=${obj.id} class="cardbutton" 
-  id="viewproduct" value="Save Changes">
-</form>
-</div>
-  </div>
-</div>`;
+            <div class="edit-product-card">
+            <div>
+              <img
+              src=${obj.thumbnail}
+              alt=""
+            />
+            </div>
+            <div>
+              <div class="details">
+                <h4>${obj.title}</h4>
+            <p>Rating : ${obj.rating}⭐</p>
+            <p>Brand : ${obj.brand}</p>
+            <p>Stock : ${obj.stock}</p>
+            <p>Stock : ${obj.price}/-</p>
+            <p>${obj.description}</p>
+            <br>
+            <hr>
+              </div>
+              
+            <div class="changers">
+              <form id="changeDataForm">
+              <label>Change Product Title<br>
+            <textarea id="changetitle" type="text"  rows="2" cols="30" placeholder="Enter 
+            Product Title" required/>${obj.title}</textarea>
+            </label>
+          <label>Change Product Description<br>
+          <textarea id="changedescription" type="text" rows="2" cols="30" 
+          placeholder="Enter Product Description" required/>${obj.description}</textarea>
+          </label>
+          </label>
+          <label>Change Product Price<br>
+          <input id="changeprice" type="number" data-id=${obj.id} value=${obj.price}
+           placeholder="Enter Product Price" required />
+          </label>
+          <label>Change Product Discount<br>
+          <input id="changediscountPercentage" value=${obj.discountPercentage} type="number"
+           placeholder="Enter Product DiscountPercentage" required />
+          </label>
+          <label>Change Product Rating<br>
+          <input id="changerating" type="number" value=${obj.rating} min="0" step="0.1" 
+          placeholder="Enter Product Rating" required />
+          </label>
+          <label>Change Product Stock<br>
+          <input id="changestock" type="number" value=${obj.stock} 
+          placeholder="Enter Product Stock" required />
+          </label>
+          <label>Change Product Brand<br>
+          <input id="changebrand" type="text" value=${obj.brand} 
+          placeholder="Enter Product Brand" required/>
+          </label>
+          <label>Change Product Category<br>
+          <input id="changecategory" type="text" value=${obj.category} 
+          placeholder="Enter Product Category" required/>
+          </label>
+          <label>Change Product Thumbnail<br>
+          <input id="changethumbnail" type="text" value=${obj.thumbnail} 
+          placeholder="Enter ThumbnailURL" required />
+          </label>
+          <label>Change Product Image 1<br>
+          <input id="changeimage1" type="text" value=${obj.images[0]} 
+          placeholder="Enter ImageUrl" required />
+          </label>
+          <label>Change Product Image 2<br>
+            <input id="changeimage2" type="text" value=${obj.images[1]} 
+            placeholder="Enter ImageUrl" required />
+            </label>
+            <input type="submit" data-id=${obj.id} class="cardbutton" 
+            id="viewproduct" value="Save Changes">
+          </form>
+          </div>
+            </div>
+          </div>`;
   loader.style.display = "none";
   let savebutton = document.getElementById("viewproduct");
   savebutton.addEventListener("click", function (event) {
