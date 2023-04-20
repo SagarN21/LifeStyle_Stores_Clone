@@ -31,7 +31,7 @@ In this project we have tried to manipulate dom elements, styling using css and 
 
 - Landing page (Home page)
 
-![Landing page (Home page)] https://drive.google.com/file/d/1qLic44ZS7QBENQB8d8y3N2vJk2evhhpx/view?usp=sharing
+<img src="https://github.com/SagarN21/urbane-look-6820/blob/Kunal_Rework/Website%20Snapshots/HomePage.png" alt=""/>
 
 - Product page
   ![Product page]
