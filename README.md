@@ -13,14 +13,19 @@ Cloned-Website: https://stylezillajs201.netlify.app/
 This is an E-Commerce website which speciaizes in selling clothes and styling products. The website provides 800 brands and 33,000 products of different types of clothes, watches, sunglasses, shoes etc.
 In this project we have tried to manipulate dom elements, styling using css and tried to make website more dynamic and responsive. With our efforts and the technology stack, that we have learned till now in Unit-2 in the masai school, we were able to clone the whole website with same looking & features.
 
-# Technology Stack Used :star2:
+# Techstack Used :-
 
-- HTML
-- CSS
-- JavaScript
-- Mock API
+## Frontend :-
 
-For storing user data we also used localStorage.
+| HTML                                                                                                                           | CSS                                                                                                                            | JavaScript                                                                                                                     |
+| ------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------ |
+| <img width="75px" src="https://user-images.githubusercontent.com/25181517/192158954-f88b5814-d510-4564-b285-dff7d6400dad.png"> | <img width="75px" src="https://user-images.githubusercontent.com/25181517/183898674-75a4a1b1-f960-4ea9-abcb-637170a00a75.png"> | <img width="70px" src="https://user-images.githubusercontent.com/25181517/117447155-6a868a00-af3d-11eb-9cfe-245df15c9f3f.png"> |
+
+## Backend :-
+
+> ### Local Storage
+>
+> ### Mock API
 
 # Snapshots :camera:
 
