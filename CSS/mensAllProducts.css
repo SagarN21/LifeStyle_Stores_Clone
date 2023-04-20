@@ -77,10 +77,7 @@
   color: grey;
   margin: 25px;
 }
-div,
-section {
-  border: 1px solid red;
-}
+
 /*? ----------------------------Medium Screen Sizes -------------------------------- */
 @media all and (min-width: 810px) and (max-width: 1200px) {
   /*===========my media==========*/
