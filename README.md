@@ -1,8 +1,8 @@
-# StyleZilla.com
+# 🛍️ Introducing StyleZilla.com.
 
 ![StyleZilla](https://user-images.githubusercontent.com/112753481/233224008-2a5b997a-9dee-4b86-9848-74a9741ccf0a.png)
 
-# What is StyleZilla.com?
+# 🛍️What is StyleZilla.com?
 
 Project: make a clone of Lifestylestores website.
 
@@ -13,7 +13,7 @@ Cloned-Website: https://stylezillajs201.netlify.app/
 This is an E-Commerce website which speciaizes in selling clothes and styling products. The website provides 800 brands and 33,000 products of different types of clothes, watches, sunglasses, shoes etc.
 In this project we have tried to manipulate dom elements, styling using css and tried to make website more dynamic and responsive. With our efforts and the technology stack, that we have learned till now in Unit-2 in the masai school, we were able to clone the whole website with same looking & features.
 
-# Techstack Used :-
+# 🛍️Techstack Used :-
 
 ## Frontend :-
 
@@ -27,7 +27,7 @@ In this project we have tried to manipulate dom elements, styling using css and 
 >
 > ### Mock API
 
-# Snapshots :camera:
+# 🛍️Snapshots :camera:
 
 - Landing page (Home page)
   ![HomePage](https://user-images.githubusercontent.com/112753481/233240732-adbdfed7-c794-4b73-bccb-0ba0c0dce110.png)
@@ -60,17 +60,21 @@ In this project we have tried to manipulate dom elements, styling using css and 
 - Admin Edit Product:-
   ![edit product](https://user-images.githubusercontent.com/112753481/233241720-c3978118-df53-482c-9bf1-bded0532fec6.jpg)
 
-## How to run the Project
+## 🛍️How to run the Project
 
 - Open pages directory.
 - Open index.html using live server.
 
-## End Notes :bookmark_tabs:
+## 🛍️End Notes :bookmark_tabs:
 
 In this project we were tried to achieve a near to perfect clone of the original website as much as possible. This entire journey of this construct week has given us experiences and we have learned lots of things by applying to the real website and it gave us a lot of confidence. Most of the features are added and functionality of the website is achieved.
 
-## Limitations
-
-All pages are not responsive yet , those pages are might not be properly visible on small screen devices.
-
 ### For Educational And Learning Purpose\*
+
+## 🛍️Limitations
+
+## All pages are not responsive yet , those pages are might not be properly visible on small screen devices.
+
+---
+
+# <p align="center">Thankyou for your Time💝</p>
