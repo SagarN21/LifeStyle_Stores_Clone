@@ -11,28 +11,47 @@
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   </head>
   <body>
-    <!----------------------------------------------- Header ----------------------------------------------->
-    <header>
-      <div id="nav_bar">
-        <img src="./Images/StyleZillaWIthoutBackground.png" alt="" id="logo" />
-        <div>
-          <a href=""> <h4>Women</h4></a>
-          <a href=""> <h4>Men</h4></a>
-          <a href=""> <h4>Kids</h4></a>
-          <a href=""> <h4>Shoes</h4></a>
-          <a href=""> <h4>Bags</h4></a>
-          <a href=""><h4>Beauty</h4></a>
-          <a href="" id="searchbar"
-            ><input type="text" placeholder="🔍  What are you looking for ?"
-          /></a>
-          <a href=""> <h4>More</h4></a>
-          <a href=""><h4 id="signin">👤 Admin</h4></a>
-          <a href=""> <h4>Wishlist</h4></a>
-          <a href=""><h4>Cart</h4></a>
-        </div>
-      </div>
-      <!-- ? Nav Bar will come here  -->
-    </header>
+<!--todo--------------------------------------------- <Header Start> ----------------------------------------------->
+  <header>
+  <div id="nav">
+   
+    <div><a href="index.html"> <img src="./images/StyleZillaWIthoutBackground.png" alt="" id="logo"></a></div>
+    <div id="nav_bar">
+     
+    
+      <a href="womens_Index.html" id="women_list_head" class="nav_menu">
+        <h4>Women</h4>
+      </a>
+      <a href="mens.html" id="men_list_head" class="nav_menu">
+        <h4>Men</h4>
+      </a>
+      <a href="" id="kids_head" class="nav_menu">
+        <h4>Kids</h4>
+      </a>
+      <a href="" id="shoes_bag_head" class="nav_menu">
+        <h4>Shoes&Bags</h4>
+      </a>
+      <a href="" id="beauty_head" class="nav_menu">
+        <h4>Beauty</h4>
+      </a>
+      <input type="text" placeholder="🔍  What are you looking for ?" id="searchbar">
+      <a href="" id="more_head">
+        <h4>More</h4>
+      </a>
+      <div id="login_head" class="nav_menu">
+      <h4 id="CredsName">SignUp/SignIn</h4>
+    </div>
+      <a href="" id="wish_head" class="nav_menu">
+        <h4>Wishlist</h4>
+      </a>
+      <a href="checkout.html" id="cart_head" class="nav_menu">
+        <h4>Cart</h4>
+      </a>
+    </div>
+  </div>
+  </header>
+  <!--todo--------------------------------------------- <Header End> ----------------------------------------------->
+  
     <!----------------------------------------------- Main Body ----------------------------------------------->
     <!-- ḷoader -->
     <img id="loader" src="./Images/spinner1.gif" id="loader" alt=""> 
@@ -145,7 +164,6 @@
 <br><br>
 </main>
     <!----------------------------------------------- Footer ----------------------------------------------->
-    <footer></footer>
   </body>
 </html>
 <script src="JS/Admin.js"></script>

@@ -1,287 +1,212 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>StyleZilla : Address</title>
-  </head>
-  <link rel="stylesheet" href="CSS/address.css">
-  <link rel="stylesheet" href="CSS/MediaQ.css">
-  <body>
-    
 
-    <!-- ******************************************************************************nav bar***********8 -->
-        <header class="header sticky">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>StyleZilla : Address</title>
+</head>
+<link rel="stylesheet" href="CSS/address.css">
+<link rel="stylesheet" href="CSS/MediaQ.css">
+
+<body>
+
+
+  <!--todo--------------------------------------------- <Navbar> ----------------------------------------------->
+  <header class="header sticky">
     <div class="navbar">
       <div>
-        <img  width=100% height="75px"
-        src="images\logo.png" />
+        <img width=100% height="75px" src="images\logo.png" />
       </div>
 
       <div class="phone-logo">
         <div>
-          <p>  &#9742 Call 1800-123-1555</p>
+          <p> &#9742 Call 1800-123-1555</p>
         </div>
         <div>
-            <p>
-                Monday - Saturday, 09:00 AM - 07:00 PM
-            </p>
+          <p>
+            Monday - Saturday, 09:00 AM - 07:00 PM
+          </p>
         </div>
       </div>
     </div>
-</header>
+  </header>
 
+  <!--todo--------------------------------------------- <Shipping> ----------------------------------------------->
+  <div class="shopping">
+    <h1>Shipping & Payment</h1>
+  </div>
+  <div class="line">
+    <hr />
+  </div>
+  <!--todo--------------------------------------------- <Bottom> ----------------------------------------------->
 
-    <!-- ***************************************shipping*************** -->
-
-    <div class="shopping">
-        <h1>Shipping & Payment</h1>
-      </div>
-
-
-      <!-- **********************line*************** -->
-      <div class="line"><hr /></div>
-
-<!-- ************************************************bottom**********************888 -->
-    
   <div class="bottom">
 
- <!-- ************************************************************** -->
-
- <div class="address">
-
-    <!-- ************************heading******* -->
-       <div class="shipping">
+    <div class="address">
+      <!--todo--------------------------------------------- <Heading> ----------------------------------------------->
+      <div class="shipping">
         <h4>Shipping method</h4>
         <div>
-        <h3>Home Delivery</h3>
-        <p>(Get your product delivered to your home)</p>
-    </div>
-    </div>
+          <h3>Home Delivery</h3>
+          <p>(Get your product delivered to your home)</p>
+        </div>
+      </div>
 
-    <!-- ***********************************form****************** -->
-     <div class="add_new_adress">
-            <div style="padding-left:20px ;"><h3>Add new address</h3></div>
-                     <form id="form">
-            <div class="main_div">
-           <div class="name">
-            <label for="">Full Name<span class="required">*</span></label
-                ><br />
-                <input
-                  type="text"
-                  placeholder="Enter your name"
-                  id="name"
-                  required=""
-                />
+      <!--?-------------------------- <Form> --------------------------------->
+      <div class="add_new_adress">
+        <div style="padding-left:20px ;">
+          <h3>Add new address</h3>
+        </div>
+        <form id="form">
+          <div class="main_div">
+            <div class="name">
+              <label for="">Full Name<span class="required">*</span></label><br />
+              <input type="text" placeholder="Enter your name" id="name" required="" />
+              <label for="">Pincode<span class="required">*</span></label><br />
+              <input type="number" placeholder="Enter your Pincode" id="pincode" required="" />
 
-
-
-                <label for="">Pincode<span class="required">*</span></label
-                    ><br />
-                    <input
-                      type="number"
-                      placeholder="Enter your Pincode"
-                      id="pincode"
-                      required=""
-                    />
-
-                    <label for="">State<span class="required">*</span></label
-                        ><br />
-                        <input
-                          type="text"
-                          placeholder="Enter your State"
-                          id="State"
-                          required=""
-                        />
-
-
-
-                        <label for="">Street name or number<span class="required">*</span></label
-                            ><br />
-                            <input
-                              type="text"
-                              placeholder="Enter your Street details"
-                              id="Street"
-                              required=""
-                            />
-                            
-
-
-
-             
-
-
-
-           </div>
-           <div class="city">
-
-            <label for="">Mobile Number<span class="required">*</span></label
-                ><br />
-                <input
-                  type="number"
-                  placeholder=" +91 Enter mobile number"
-                  id="number"
-                  required=""
-                />
-
-
-
-                <label for="">City<span class="required">*</span></label
-                    ><br />
-                    <input
-                      type="text"
-                      placeholder="Enter your city or town"
-                      id="City"
-                      required=""
-                    />
-
-                    <label for="">Building name or number<span class="required">*</span></label
-                        ><br />
-                        <input
-                          type="text"
-                          placeholder="Enter building details"
-                          id="building"
-                          required=""
-                        />
-
-
-
-                        <label for="">Landmark (Optional)<span class="required"></span></label
-                            ><br />
-                            <input
-                              type="text"
-                              placeholder="Enter landmark details"
-                              id="Landmark"
-                              required=""
-                            />
-                            
-
-
-
-           </div>
+              <label for="">State<span class="required">*</span></label><br />
+              <input type="text" placeholder="Enter your State" id="State" required="" />
+              <label for="">Street name or number<span class="required">*</span></label><br />
+              <input type="text" placeholder="Enter your Street details" id="Street" required="" />
+            </div>
+            <div class="city">
+              <label for="">Mobile Number<span class="required">*</span></label><br />
+              <input type="number" placeholder=" +91 Enter mobile number" id="number" required="" />
+              <label for="">City<span class="required">*</span></label><br />
+              <input type="text" placeholder="Enter your city or town" id="City" required="" />
+              <label for="">Building name or number<span class="required">*</span></label><br />
+              <input type="text" placeholder="Enter building details" id="building" required="" />
+              <label for="">Landmark (Optional)<span class="required"></span></label><br />
+              <input type="text" placeholder="Enter landmark details" id="Landmark" required="" />
+            </div>
         </form>
 
-       
 
+
+      </div>
+      <!--todo--------------------------------------------- <Optional Address> ----------------------------------------------->
+      <div class="optional">
+
+        <p>Address Type (Optional)</p>
+        <div class="round_button">
+            <input type="radio" id="home_address" name="fav_language" value="0">
+            <label for="html">Home</label><br>
+            <input type="radio" id="office" name="fav_language" value="0">
+            <label for="css">office</label><br>
+
+        </div>
+      </div>
+
+
+      <!--todo--------------------------------------------- <Continue Button> ----------------------------------------------->
+
+      <div class="continue">
+        <button id="continue_button">
+          <h3>ADD ADDRESS & CONTINUE</h3>
+        </button>
+      </div>
     </div>
-    <!-- *********************************optional home address####### -->
-    <div class="optional">
-
-    <p>Address Type (Optional)</p>
-    <div class="round_button">
-          <input type="radio" id="home_address" name="fav_language" value="0">
-  <label for="html">Home</label><br>
-  <input type="radio" id="office" name="fav_language" value="0" >
-  <label for="css">office</label><br>
-
-    </div>
-</div>
 
 
-<!-- **********************************button***************** -->
-
-     <div class="continue">
-       <button id="continue_button" >
-             <h3>ADD ADDRESS & CONTINUE</h3>
-        </button> 
-     </div>
-     </div>
-
- 
 
 
- 
- </div>
+
+  </div>
 
 
   <div class="price">
-    <!-- *****************************total mrp -->
+    <!--?-------------------------- <Total MRP> --------------------------------->
     <div class="mrp">
       <p>Total MRP</p>
-      <div
-        style="
+      <div style="
           height: 30px;
           width: 74px;
           margin-right: 30px;
           /* border: 1px solid red; */
-        "
-      >
-      &#8377 99999.9
+        ">
+        &#8377 99999.9
       </div>
     </div>
-    <!-- *********************************************discount -->
+    <!--?-------------------------- <Discount> --------------------------------->
     <div class="discount">
       <p>Offer discount</p>
-      <div
-        style="
+      <div style="
           color: #46b275;
           height: 30px;
           width: 74px;
           margin-right: 30px;
           /* border: 1px solid red; */
-        "
-      >
-      &#8377 99
+        ">
+        &#8377 99
       </div>
     </div>
 
-    <!-- *****************************************Shipping charge -->
+    <!--?-------------------------- <Shipping Charge> --------------------------------->
+
     <div class="charge">
       <p>Shipping charge</p>
-      <div
-        style="
+      <div style="
           height: 30px;
           width: 74px;
           margin-right: 30px;
           /* border: 1px solid red; */
-        "
-      >
+        ">
         Free
       </div>
     </div>
-    <!-- *************************line****** -->
-    <div style="width: 400px; margin: auto"><hr /></div>
-    <!-- ******************total -->
+
+    <div style="width: 400px; margin: auto">
+      <hr />
+    </div>
+
+    <!--?-------------------------- <Total> --------------------------------->
+
     <div class="total">
       <h3>Total</h3>
-      <div
-        style="
+      <div style="
           height: 30px;
           width: 74px;
           margin-right: 30px;
          
-        "
-      >
-      &#8377 99999
+        ">
+        &#8377 99999
       </div>
     </div>
-    <!-- ****************************************button checkout***** -->
+    <!--?-------------------------- <Checkout Button> --------------------------------->
+
     <div class="checkout_button">
-        <!-- *************************line****** -->
-    <div style="width: 400px; margin: auto"><hr /></div>
+
+      <div style="width: 400px; margin: auto">
+        <hr />
+      </div>
     </div>
-       <div class="discription">
-        <img src="https://i1.lmsin.net/website_images/in/checkout/comodo-secure-icon.svg">
-        <p>
-            Your credit card details are securely encrypted and passed directly to our PCI DSS compliant Payment Gateway for processing. We only store your credit card's last 4 digits and the expiration date. Your traffic to this page is secured using either a 256-bit or 128-bit SSL certificate depending on your browser version.
-.</p>
-     <p>© 2021 RNA Intellectual Property Limited Privacy Policy</p>
+    <div class="discription">
+      <img src="https://i1.lmsin.net/website_images/in/checkout/comodo-secure-icon.svg">
+      <p>
+        Your credit card details are securely encrypted and passed directly to our PCI DSS compliant Payment Gateway for
+        processing. We only store your credit card's last 4 digits and the expiration date. Your traffic to this page is
+        secured using either a 256-bit or 128-bit SSL certificate depending on your browser version.
+        .</p>
+      <p>© 2021 RNA Intellectual Property Limited Privacy Policy</p>
 
-<p>Privacy Policy
-    -
-    Terms of Use
-    -
-    Terms & Conditions</p>
+      <p>Privacy Policy
+        -
+        Terms of Use
+        -
+        Terms & Conditions</p>
 
 
-        
-       </div>
-    
+
+    </div>
+
   </div>
-</div>
+  </div>
 
-  </body>
+</body>
+
 </html>
 <script src="JS/common.js"></script>
 <script src="JS/address.js"></script>
