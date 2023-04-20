@@ -37,8 +37,6 @@ In this project we have tried to manipulate dom elements, styling using css and 
 - Womens Page :-
 ![Womens](https://user-images.githubusercontent.com/112753481/233241181-67272736-64c0-4199-a020-d277a742da40.png)
 
-
-
 - Mens Page :-
 ![Mens](https://user-images.githubusercontent.com/112753481/233241218-e95fe2c4-656d-4421-93e9-0495e28b4482.png)
 ![products](https://user-images.githubusercontent.com/112753481/233241793-e1f53c1d-9fa1-44fc-979e-8580e251add7.jpg)
@@ -47,12 +45,14 @@ In this project we have tried to manipulate dom elements, styling using css and 
 
 ![BasketPage](https://user-images.githubusercontent.com/112753481/233241585-228e0dc7-faa5-42b2-9f21-9f7ae19f5353.png)
 
-- Checkout page
-
-![Checkout page] https://drive.google.com/file/d/11NBpvmtrdlYckNjFTSG4mNeRB4pH-RXT/view?usp=sharing
-
 - Signin page
 ![signup](https://user-images.githubusercontent.com/112753481/233241690-378c2578-4174-4ea9-bb2d-2a03f76c4884.jpg)
+
+- Checkout Page
+![CheckoutPage](https://user-images.githubusercontent.com/112753481/233242027-26f6b043-baa8-48d1-a0c8-82585b92f47e.png)
+
+- Payment Page
+![PaymentPage](https://user-images.githubusercontent.com/112753481/233242041-eb293009-1212-489c-a352-1aa71d39ab12.png)
 
 
 - Admin page
