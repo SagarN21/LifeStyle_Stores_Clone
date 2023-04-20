@@ -30,9 +30,7 @@ In this project we have tried to manipulate dom elements, styling using css and 
 # Snapshots :camera:
 
 - Landing page (Home page)
-
-![Landing page (Home page)] https://drive.google.com/file/d/1qLic44ZS7QBENQB8d8y3N2vJk2evhhpx/view?usp=sharing
-
+![HomePage](https://user-images.githubusercontent.com/112753481/233240732-adbdfed7-c794-4b73-bccb-0ba0c0dce110.png)
 - Product page
   ![Product page]
 
