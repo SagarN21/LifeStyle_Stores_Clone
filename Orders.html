@@ -17,33 +17,97 @@
     />
   </head>
   <body>
-    <!--?--------------------------------------------- Header ----------------------------------------------->
-    <header>
-      <div id="nav_bar">
-        <a href="index.html"><img src="./Images/StyleZillaWIthoutBackground.png" alt="" id="logo" /></a>
-        <div>
-          <a href="womens_Index.html"> <h4>Women</h4></a>
-          <a href="mens.html"> <h4>Men</h4></a>
-          <a href=""> <h4>Kids</h4></a>
-          <a href=""> <h4>Shoes</h4></a>
-          <a href=""> <h4>Bags</h4></a>
-          <a href=""><h4>Beauty</h4></a>
-          <a href="" id="searchbar"
-            ><input type="text" placeholder="🔍  Search for Products"
-          /></a>
-          <a href=""> <h4>More</h4></a>
-          <a href=""><h4 id="signin">👤 Admin</h4></a>
-          <a href=""> <h4>Wishlist</h4></a>
-          <a href="checkout.html"><h4>Cart</h4></a>
-        </div>
+<!--todo--------------------------------------------- <Header Start> ----------------------------------------------->
+  <header>
+    <div id="top_bar">
+      <div id="left_top">
+        <h5>🚚 Free Shiping</h5>
+        <h5>🏬 Click & Collect</h5>
+        <h5>🏬 Return to store</h5>
       </div>
-    </header>
+      <div id="right_top">
+        <h5>Download Our App</h5>
+        <h5>Store Locator</h5>
+        <h5>Help</h5>
+      </div>
+    </div>
+  
+  
+  <div id="nav">
+   
+    <div><a href="index.html"> <img src="./images/StyleZillaWIthoutBackground.png" alt="" id="logo"></a></div>
+    <div id="nav_bar">
+     
+    
+      <a href="womens_Index.html" id="women_list_head" class="nav_menu">
+        <h4>Women</h4>
+      </a>
+      <a href="mens.html" id="men_list_head" class="nav_menu">
+        <h4>Men</h4>
+      </a>
+      <a href="" id="kids_head" class="nav_menu">
+        <h4>Kids</h4>
+      </a>
+      <a href="" id="shoes_bag_head" class="nav_menu">
+        <h4>Shoes&Bags</h4>
+      </a>
+      <a href="" id="beauty_head" class="nav_menu">
+        <h4>Beauty</h4>
+      </a>
+      <input type="text" placeholder="🔍  What are you looking for ?" id="searchbar">
+      <a href="" id="more_head">
+        <h4>More</h4>
+      </a>
+      <div id="login_head" class="nav_menu">
+      <h4 id="CredsName">SignUp/SignIn</h4>
+      </div>
+      <a href="" id="wish_head" class="nav_menu">
+        <h4>Wishlist</h4>
+      </a>
+      <a href="checkout.html" id="cart_head" class="nav_menu">
+        <h4>Cart</h4>
+      </a>
+    </div>
+  </div>
+  
+  <div id="EmptyNavSpace"></div>
+<!--   
+  <div id="yellopatti">
+    Watches up to 40% off – Titan/ Fossil/Armani - <span style="color: rgb(132, 10, 10);">Trending Offers !</span>
+  </div> -->
+  <!-- drop down list -->
+
+  </header>
+  <!--todo--------------------------------------------- <Header End> ----------------------------------------------->
+  
+  
     <!--?--------------------------------------------- Main Body ----------------------------------------------->
     <img id="loader" src="./Images/spinner1.gif" id="loader" alt="" />
     <main>
       <section class="mainsect1">
         <div id="tophead">
-          <h1 class="manage-order"> Manage Orders🛍️</h1>
+          <div id="Secondtopheadd">
+       <div>     <h1 class="manage-order"> Manage Orders🛍️</h1></div>
+    
+              <div class="showproducttop">
+                <h1>
+                  Show All Products🛍️ <br />
+                  <select name="Select Database" class="select">
+                    <option value="">Select Category</option>
+                    <option value="https://63984241fe03352a94ca27c3.mockapi.io/lifestyleApi/womensTopWear">Womens Top Wear</option>
+                    <option value="https://63984241fe03352a94ca27c3.mockapi.io/lifestyleApi/WomensEthnicWear">Women Ethnic Wear</option>
+                    <option value="https://63984241fe03352a94ca27c3.mockapi.io/lifestyleApi/MensFormals">Mens Formals</option>
+                    <option value="https://63984241fe03352a94ca27c3.mockapi.io/lifestyleApi/MensCasuals">Mens Casuals</option>
+                    <option value="https://63987962044fa481d69ed8cc.mockapi.io/stylezilla/KidsWear">KidsWear</option>
+                    <option value="https://63987962044fa481d69ed8cc.mockapi.io/stylezilla/BeautyProducts">Beauty Products</option>
+                    <option value="https://63987962044fa481d69ed8cc.mockapi.io/stylezilla/Shoes">Shoes</option>
+                    <option value="https://63987962044fa481d69ed8cc.mockapi.io/stylezilla/Bags">Bags</option>
+                  </select>
+                </h1>
+                <a href="Admin.html" id="adminspagebutton">Admins Page</a>
+              </div>
+          
+          </div>
           <div class="orders-container">
             <label>No orders to manage</label>
            </div>
@@ -51,32 +115,35 @@
       </section>
       <section>
         <div id="tophead" class="allproducts">
-          <h1 class="manage-order"> All Products 🛍️</h1>
+          <div id="Secondtopheadd">
+            <div>     <h1 class="manage-order"> All Products🛍️</h1></div>
+         
+                   <div class="showproducttop">
+                     <h1>
+                       Show All Products🛍️ <br />
+                       <select name="Select Database" class="select">
+                         <option value="">Select Category</option>
+                         <option value="https://63984241fe03352a94ca27c3.mockapi.io/lifestyleApi/womensTopWear">Womens Top Wear</option>
+                         <option value="https://63984241fe03352a94ca27c3.mockapi.io/lifestyleApi/WomensEthnicWear">Women Ethnic Wear</option>
+                         <option value="https://63984241fe03352a94ca27c3.mockapi.io/lifestyleApi/MensFormals">Mens Formals</option>
+                         <option value="https://63984241fe03352a94ca27c3.mockapi.io/lifestyleApi/MensCasuals">Mens Casuals</option>
+                         <option value="https://63987962044fa481d69ed8cc.mockapi.io/stylezilla/KidsWear">KidsWear</option>
+                         <option value="https://63987962044fa481d69ed8cc.mockapi.io/stylezilla/BeautyProducts">Beauty Products</option>
+                         <option value="https://63987962044fa481d69ed8cc.mockapi.io/stylezilla/Shoes">Shoes</option>
+                         <option value="https://63987962044fa481d69ed8cc.mockapi.io/stylezilla/Bags">Bags</option>
+                       </select>
+                     </h1>
+                     <a href="Admin.html" id="adminspagebutton">Admins Page</a>
+                   </div>
+               
+               </div>
           <div class="container">
     
             <!-- ? Append Data Here -->
           </div>
         </div>
       </section>
-      <section>
-        <div class="showproducttop">
-          <h1>
-            Show All Products🛍️ <br />
-            <select name="Select Database" id="select">
-              <option value="">Select Category</option>
-              <option value="https://63984241fe03352a94ca27c3.mockapi.io/lifestyleApi/womensTopWear">Womens Top Wear</option>
-              <option value="https://63984241fe03352a94ca27c3.mockapi.io/lifestyleApi/WomensEthnicWear">Women Ethnic Wear</option>
-              <option value="https://63984241fe03352a94ca27c3.mockapi.io/lifestyleApi/MensFormals">Mens Formals</option>
-              <option value="https://63984241fe03352a94ca27c3.mockapi.io/lifestyleApi/MensCasuals">Mens Casuals</option>
-              <option value="https://63987962044fa481d69ed8cc.mockapi.io/stylezilla/KidsWear">KidsWear</option>
-              <option value="https://63987962044fa481d69ed8cc.mockapi.io/stylezilla/BeautyProducts">Beauty Products</option>
-              <option value="https://63987962044fa481d69ed8cc.mockapi.io/stylezilla/Shoes">Shoes</option>
-              <option value="https://63987962044fa481d69ed8cc.mockapi.io/stylezilla/Bags">Bags</option>
-            </select>
-          </h1>
-          <a href="Admin.html" id="adminspagebutton">Admins Page</a>
-        </div>
-      </section>
+    
     </main>
     <!--?--------------------------------------------- Footer ----------------------------------------------->
     <footer></footer>

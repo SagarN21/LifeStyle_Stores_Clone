@@ -14,7 +14,7 @@ img,
 input,
 select,
 button {
-  cursor: pointer;
+  cursor: pointer !important;
 }
 a {
   text-decoration: none !important;
