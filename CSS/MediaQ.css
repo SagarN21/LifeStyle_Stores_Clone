@@ -1,8 +1,21 @@
 .swal-modal * {
   filter: saturate(1.4) !important;
 }
+/*todo ----------------------------Medium Screen Sizes -------------------------------- */
+@media all and (min-width: 810px) and (max-width: 1079px) {
+  * {
+    font-size: 12px;
+  }
+  img {
+    width: 100% !important;
+  }
+  body,
+  html {
+    overflow-x: hidden !important;
+  }
+}
 /*todo ----------------------------Small Screen Sizes -------------------------------- */
-@media all and (min-width: 320px) and (max-width: 809px) {
+@media all and (min-width: 10px) and (max-width: 809px) {
   * {
     font-size: 12px;
   }
