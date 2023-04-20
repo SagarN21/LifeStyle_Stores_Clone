@@ -6,11 +6,154 @@
   * {
     font-size: 12px;
   }
-  div,
-  section {
-    border: 1px solid red !important;
+  img {
+    width: 100%;
+  }
+  body,
+  html {
+    overflow-x: hidden;
+  }
+  #nav_bar > input {
+    display: none;
   }
   #logo {
-    width: 200px !important;
+    width: 150px !important;
+  }
+  #nav {
+    padding: 3px !important;
+    flex-direction: column;
+    gap: 5px !important;
+  }
+  #nav_bar {
+    padding: 0px;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  #nav_bar a {
+    margin: 3px 10px;
+  }
+  #nav_bar h4 {
+    font-size: 14px !important;
+  }
+  .CredsName2 {
+    margin: 2px;
+    padding: 2px;
+  }
+  #yellopatti {
+    font-size: 10px !important;
+  }
+  #top_bar h5 {
+    font-size: 7px;
+  }
+  #footer {
+    grid-template-columns: repeat(3, 1fr);
+    padding: 10px;
+  }
+  #footer > div {
+    padding: 0px 7px;
+  }
+  #contact {
+    flex-direction: column;
+  }
+  #contact > div {
+    text-align: center;
+    margin: 3px;
+  }
+  #subscribe {
+    flex-direction: column;
+    height: fit-content;
+  }
+  #email_subs,
+  #play_store {
+    margin: 5px;
+    text-align: center;
+  }
+  /*todo <!----------------------------------------------- < end footer header > -----------------------------------------------> */
+
+  #banner {
+    margin: 10px;
+    width: 97%;
+  }
+  .container {
+    padding: 0px !important;
+  }
+  #our_benifit {
+    margin: 10px;
+  }
+  #unmissable {
+    margin: 10px;
+  }
+  #unmissable > div {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  #Winterwear > div {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0px;
+  }
+  #unmissable img {
+    width: 45%;
+  }
+  .offer {
+    margin: 5px;
+  }
+  #Winterwear {
+    margin: 10px;
+  }
+  #top-category {
+    flex-direction: column;
+  }
+  #top_btn {
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  #top_btn button {
+    padding: 10px;
+  }
+  #mens_in_top_category {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 00px;
+  }
+  #top-category img {
+    width: 95% !important;
+    margin: 2px;
+  }
+  #value_pics div {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  #value_pics img {
+    width: 97%;
+    text-align: center;
+    margin: 2px;
+  }
+  #top_deal img {
+    width: 98%;
+  }
+  #Winterwear > div > img {
+    margin: 2px;
+    width: 97%;
+  }
+  #season_hotest_pic > div,
+  #top_brands_we_love > div {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+  #season_hotest_pic img,
+  #top_brands_we_love img {
+    width: 97%;
+    margin: 2px;
+    height: 100%;
   }
 }
