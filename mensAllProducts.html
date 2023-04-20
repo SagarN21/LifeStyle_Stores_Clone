@@ -5,7 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>StyleZilla : Mens</title>
-    <link rel="stylesheet" href="mensAllProducts.css" />
+    <link rel="stylesheet" href="./CSS/HeaderFooter.css" />
+    <link rel="stylesheet" href="./CSS/MediaQ.css" />
+    <link rel="stylesheet" href="CSS/mensAllProducts.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
@@ -13,47 +15,350 @@
   </head>
 
   <body>
-    <!----------------------------------------------- Header HTML ----------------------------------------------->
-    <header>
-      <div id="top_bar">
-        <div id="left_top">
-          <h5>🚚 Free Shiping</h5>
-          <h5>🏬 Click & Collect</h5>
-          <h5>🏬 Return to store</h5>
-        </div>
-        <div id="right_top">
-          <h5>Download Our App</h5>
-          <h5>Store Locator</h5>
-          <h5>Help</h5>
-        </div>
+<!--todo--------------------------------------------- <Header Start> ----------------------------------------------->
+  <header>
+    <div id="top_bar">
+      <div id="left_top">
+        <h5>🚚 Free Shiping</h5>
+        <h5>🏬 Click & Collect</h5>
+        <h5>🏬 Return to store</h5>
       </div>
-
-      <div id="nav_bar">
-        <a href="index.html"
-          ><img src="image/styleZilla.png" alt="" id="logo"
-        /></a>
-        <div>
-          <a href="womens_Index.html"> <h4>Women</h4></a>
-          <a href="mens.html"> <h4>Men</h4></a>
-          <a href=""> <h4>Kids</h4></a>
-          <a href=""> <h4>Shoes</h4></a>
-          <a href=""> <h4>Bags</h4></a>
-          <a href=""><h4>Beauty</h4></a>
-          <input
-            oninput="searchProduct()"
-            type="text"
-            id="productName"
-            placeholder="🔍  What are you looking for ?"
-          />
-          <a href=""> <h4>More</h4></a>
-          <a href="signup.html"><h4 id="signin">SignUp/SignIn</h4></a>
-          <a href=""> <h4>Wishlist</h4></a>
-          <a href="checkout.html"><h4>Cart</h4></a>
-        </div>
+      <div id="right_top">
+        <h5>Download Our App</h5>
+        <h5>Store Locator</h5>
+        <h5>Help</h5>
       </div>
-    </header>
-    <!----------------------------------------------- Header HTML end ----------------------------------------------->
-
+    </div>
+  
+  
+  <div id="nav">
+   
+    <div><a href="index.html"> <img src="./images/StyleZillaWIthoutBackground.png" alt="" id="logo"></a></div>
+    <div id="nav_bar">
+     
+    
+      <a href="womens_Index.html" id="women_list_head" class="nav_menu">
+        <h4>Women</h4>
+      </a>
+      <a href="mens.html" id="men_list_head" class="nav_menu">
+        <h4>Men</h4>
+      </a>
+      <a href="" id="kids_head" class="nav_menu">
+        <h4>Kids</h4>
+      </a>
+      <a href="" id="shoes_bag_head" class="nav_menu">
+        <h4>Shoes&Bags</h4>
+      </a>
+      <a href="" id="beauty_head" class="nav_menu">
+        <h4>Beauty</h4>
+      </a>
+      <input type="text" placeholder="🔍  What are you looking for ?" id="searchbar">
+      <a href="" id="more_head">
+        <h4>More</h4>
+      </a>
+      <div id="login_head" class="nav_menu">
+      <h4 id="CredsName">SignUp/SignIn</h4>
+      </div>
+      <a href="" id="wish_head" class="nav_menu">
+        <h4>Wishlist</h4>
+      </a>
+      <a href="checkout.html" id="cart_head" class="nav_menu">
+        <h4>Cart</h4>
+      </a>
+    </div>
+  </div>
+  
+  <div id="EmptyNavSpace"></div>
+  
+  <div id="yellopatti">
+    Watches up to 40% off – Titan/ Fossil/Armani - <span style="color: rgb(132, 10, 10);">Trending Offers !</span>
+  </div>
+  <!-- drop down list -->
+  
+    <div id="drop_down">
+    <!-- women list -->
+  
+    <div id="women_list">
+      <div>
+        <a href="">Ethnic & Fusion Wear</a><br>
+        <a href="">Kurtas & Kurtis</a><br>
+        <a href="">Kurta Sets</a><br>
+        <a href="">Ethnic Dresses</a><br>
+        <a href="">Tops & Tunics</a><br>
+        <a href="">Leggings & Churidars</a><br>
+        <a href="">Pants & Palazzos</a><br>
+        <a href="">Skirts</a><br>
+        <a href="">Dupattas & Stoles</a><br>
+      </div>
+      <div>
+        <a href="">Western Wear</a><br>
+        <a href="">Dresses & Jumpsuits</a><br>
+        <a href="">Jeans & Jeggings</a><br>
+        <a href="">Shorts & Skirts</a><br>
+        <a href="">Trousers</a><br>
+        <a href="">Jackets & Shrugs</a><br>
+  
+      </div>
+      <div>
+        <a href="">Lingerie/Sleepwear</a><br>
+        <a href="">Bras</a><br>
+        <a href="">Briefs/Panties</a><br>
+        <a href="">Cami & Slips</a><br>
+        <a href="">Shapewear</a><br>
+        <a href="">Nightwear</a><br>
+      </div>
+      <div>
+        <a href="">SportsWear</a><br>
+        <a href="">Tops & Tees</a><br>
+        <a href="">Sports Bra</a><br>
+        <a href="">Leggings</a><br>
+        <a href="">Joggers & Tracks</a><br>
+        <a href="">Sweatshirts & Jackets</a><br>
+      </div>
+      <div>
+        <a href="">Top Brands</a><br>
+        <a href="">Melange</a><br>
+        <a href="">Ginger</a><br>
+        <a href="">Code</a><br>
+        <a href="">Fame Forever</a><br>
+        <a href="">Kappa</a><br>
+        <a href="">Kappa</a><br>
+        <a href=""></a><br>
+      </div>
+      <div id="womin_list_last">
+        <a href="">Winter wear</a><br>
+        <a href="">Beauty</a><br>
+        <a href="">Footwear/Bags</a><br>
+        <a href="">Watches</a><br>
+        <a href="">Jewellery</a><br>
+        <a href="">Fragrances</a><br>
+      </div>
+    </div>
+    <!-- mens list -->
+    <div id="mens_list">
+      <div>
+        <a href="">Topwear</a><br>
+        <a href="">Casual Shirts</a><br>
+        <a href="">Formal Shirts</a><br>
+        <a href="">Polos</a><br>
+        <a href="">T-Shirts</a><br>
+        <a href="">Jackets</a><br>
+        <a href="">Hoodies & Sweatshirts</a><br>
+  
+      </div>
+      <div>
+        <a href="">Bottomwear</a><br>
+        <a href="">Casual Trousers</a><br>
+        <a href="">Formal Trousers</a><br>
+        <a href="">Jeans</a><br>
+  
+        <a href="">Track Pants</a><br>
+        <a href="">Shorts & 3/4ths</a><br>
+      </div>
+      <div>
+        <a href="">Activewear</a><br>
+        <a href="">Poloss</a><br>
+        <a href="">Sports T-Shirts</a><br>
+        <a href="">Track Pants</a><br>
+        <a href="">Sports shoes</a><br>
+      </div>
+  
+      <div>
+        <a href="">Ethnic</a><br>
+        <a href="">Kurtas</a><br>
+        <a href="">Waistcoats</a><br>
+        <a href="">Pyjamas</a><br>
+        <a href="">shoes</a><br>
+      </div>
+  
+      <div>
+        <a href="">Winterwear</a><br>
+        <a href="">Hoodies & Sweatshirts</a><br>
+        <a href="">Waistcoats</a><br>
+        <a href="">Sweaters & Cardigans</a><br>
+        <a href="">Jackets</a><br>
+      </div>
+      <div>
+        <a href="">Innerwear</a><br>
+        <a href="">Boxers</a><br>
+        <a href="">Briefs</a><br>
+        <a href="">Vests</a><br>
+        <a href="">Loungewear</a><br>
+      </div>
+      <div>
+        <a href="">Top Brands</a><br>
+        <a href="">US Polo</a><br>
+        <a href="">Fahrenheit</a><br>
+        <a href="">United Color of Benetton</a><br>
+        <a href="">Jack & Jones/a><br>
+          <a href="">Celio</a><br>
+          <a href="">FameForever</a><br>
+      </div>
+    </div>
+    <!-- kids -->
+    <div id="kids_list">
+      <div>
+        <a href="">Boys</a><br>
+        <a href="">T-Shirts/Polos</a><br>
+        <a href="">Shirts</a><br>
+        <a href="">Jeans</a><br>
+        <a href="">Shorts</a><br>
+        <a href="">Trackpants & Joggers</a><br>
+        <a href="">Sweatshirts & hoodies</a><br>
+        <a href="">Pants</a><br>
+        <a href="">Clothing Sets</a><br>
+      </div>
+      <div>
+        <a href="">Girls</a><br>
+        <a href="">Tops & Tees</a><br>
+        <a href="">Dresses/Jumpsuits</a><br>
+        <a href="">Clothing Sets</a><br>
+        <a href="">Jeans</a><br>
+        <a href="">Knit Bottoms</a><br>
+        <a href="">Innerwear</a><br>
+        <a href="">Shorts & Skirts</a><br>
+        <a href="">TrackPants/Joggers</a><br>
+      </div>
+  
+      <div>
+        <a href="">Top Brands</a><br>
+        <a href="">Fame forever</a><br>
+        <a href="">Juniors</a><br>
+        <a href="">Melange</a><br>
+        <a href="">Bossini</a><br>
+        <a href="">Mini Klub</a><br>
+        <a href="">Allen Solly</a><br>
+        <a href="">United Colors Of Benetton</a><br>
+        <a href="">Lee Cooper Juniors</a><br>
+        <a href="">Pepe Jeans</a><br>
+        <a href="">U.S. Polo Assn.</a><br>
+        <a href="">Peppermint</a><br>
+      </div>
+      <div>
+        <a href="">Age Store</a><br>
+        <a href="">0-2yrs</a><br>
+        <a href="">2-4yrs</a><br>
+        <a href="">4-6yrs</a><br>
+        <a href="">6-9yrs</a><br>
+        <a href="">9-12yrs</a><br>
+        <a href="">12-15yrs</a><br>
+        <a href="">15-17yrs</a><br>
+  
+      </div>
+    </div>
+    <!-- shoes & bag list -->
+    <div id="shoes_bag_list">
+      <div>
+        <a href="">Women</a><br>
+        <a href="">Ballerinas</a><br>
+        <a href="">Flip flops & Sliders</a><br>
+        <a href="">Flat Sandals</a><br>
+        <a href="">Flat Casual Shoes</a><br>
+        <a href="">Heel Sandals</a><br>
+        <a href="">Heel Shoesy</a><br>
+  
+        <a href="">Peppermint</a><br>
+      </div>
+      <div>
+        <a href="">Men</a><br>
+        <a href="">Loafers & Moccasin</a><br>
+        <a href="">Slip-Ons</a><br>
+        <a href="">Lace up</a><br>
+        <a href="">Flat Casual Shoes</a><br>
+        <a href="">Sports Shoes</a><br>
+        <a href="">Boots</a><br>
+  
+        <a href="">Floaters & Sandals</a><br>
+      </div>
+      <div>
+        <a href="">Boys</a><br>
+        <a href="">Loafers & Moccasin</a><br>
+        <a href="">Slip-Ons</a><br>
+        <a href="">Lace up</a><br>
+        <a href="">Flat Casual Shoes</a><br>
+        <a href="">Sports Shoes</a><br>
+        <a href="">Boots</a><br>
+  
+        <a href="">Floaters & Sandals</a><br>
+      </div>
+      <div>
+        <a href="">Girls</a><br>
+        <a href="">Ballerinas</a><br>
+        <a href="">Flip flops & Sliders</a><br>
+        <a href="">Flat Sandals</a><br>
+        <a href="">Flat Casual Shoes</a><br>
+        <a href="">Heel Sandals</a><br>
+        <a href="">Heel Shoesy</a><br>
+  
+        <a href="">Peppermint</a><br>
+      </div>
+      <div>
+        <a href="">Price Store</a><br>
+        <a href="">Men Footwear under 999</a><br>
+        <a href="">Women Footwear under 799</a><br>
+        <a href="">Women Bags under 699</a><br>
+        <a href="">Boys Footwear Under 599</a><br>
+        <a href="">Girls Footwear Under 599</a><br>
+        <a href="">Men Footwear under 99</a><br>
+  
+        <a href="">Boys Footwear Under 199</a><br>
+      </div>
+    </div>
+    <!-- beauty -->
+    <div id="beauty_list">
+      <div>
+        <a href="">Lips</a><br>
+        <a href="">Lipstick</a><br>
+        <a href="">Liquid Lipstick</a><br>
+        <a href="">Lip Crayon</a><br>
+        <a href="">Lip Gloss</a><br>
+        <a href="">Lip Liner</a><br>
+        <a href="">Lip Balm</a><br>
+  
+        <a href="">Lip Stain</a><br>
+      </div>
+  
+      <div>
+        <a href="">Face</a><br>
+        <a href="">Face Primer</a><br>
+        <a href="">Concealer</a><br>
+        <a href="">Foundation</a><br>
+        <a href="">Compact Powder</a><br>
+        <a href="">Blush & Highlighter</a><br>
+        <a href="">BB & CC Cream</a><br>
+  
+        <a href="">Makeup Remover</a><br>
+      </div>
+      <div>
+        <a href="">Skin Care</a><br>
+        <a href="">Moisturizer</a><br>
+        <a href="">Sunscreen</a><br>
+        <a href="">Face Wash</a><br>
+        <a href="">Masks</a><br>
+        <a href="">Serum</a><br>
+        <a href="">BEye Cream</a><br>
+  
+        <a href="">Hand Carer</a><br>
+      </div>
+      <div>
+        <a href="">Men Grooming</a><br>
+        <a href="">Moisturizer</a><br>
+        <a href="">Sunscreen</a><br>
+        <a href="">Face Wash</a><br>
+        <a href="">Masks</a><br>
+        <a href="">Serum</a><br>
+        <a href="">BEye Cream</a><br>
+  
+        <a href="">Hand Carer</a><br>
+      </div>
+  
+    </div>
+  </div>
+  </header>
+  <!--todo--------------------------------------------- <Header End> ----------------------------------------------->
+  
+  
+  <center>  <h1 id="PageHeadX">Mens Top-Wear</h1></center>
     <div id="container">
       <select name="" id="sortByPrice">
         <option value="">Price</option>
@@ -166,146 +471,158 @@
     </div>
 
     <!-- Api show image -->
-    <p class="showCount"></p>
-    <div id="showProducts"></div>
+    
+    <p class="showCount">
 
-    <!----------------------------------------------- Footer HTML Start ----------------------------------------------->
-    <!-- subscribe section -->
-    <div id="subscribe">
-      <div id="email_subs">
-        <h1>Subscribe to our awesome emails.</h1>
-        <p>Get our latest offers and news straight in your inbox.</p>
-        <input type="email" placeholder="Please Enter Your Email Address" />
-        <button>SUBSCRIBE</button>
-      </div>
-      <div id="play_store">
-        <h1>Download our apps</h1>
-        <p>Shop our products and offers on-the-go.</p>
-        <button>Download on the App Store</button>
-        <button>Get It On Google Play</button>
-      </div>
+    </p>
+    <div id="showProducts">
+   
+       <div class="LoadingBox">
+         <h1>Loading Products..</h1>
+        <img width="20%" src="Images/loading.gif" alt=""><br>
+       </div>
+    
     </div>
+    <br><br><br>
+    <!--todo--------------------------------------------- <Footer Start> ----------------------------------------------->
+    <section id="FooterSection">
+      <div id="subscribe">
+        <div id="email_subs">
+          <h1>Subscribe to our awesome emails.</h1>
+          <p>Get our latest offers and news straight in your inbox.</p>
+          <input type="email" placeholder="Please Enter Your Email Address" />
+          <button>SUBSCRIBE</button>
+        </div>
+        <div id="play_store">
+          <h1>Download our apps</h1>
+          <p>Shop our products and offers on-the-go.</p>
+          <button>Download on the App Store</button>
+          <button>Get It On Google Play</button>
+        </div>
+      </div>
 
-    <!--Footer  -->
-    <div id="footer">
-      <div>
-        <h5>Womens</h5>
-        <a href="">Tops</a><br />
-        <a href="">Ethnicwear</a><br />
-        <a href="">Bottoms</a><br />
-        <a href="">Dresses & Jumpsuits</a><br />
-        <a href="">Winterwear</a><br />
-        <a href="">Lingerie</a><br />
-        <a href="">Nightwear</a><br />
-        <a href="">Sportswear</a><br />
-        <a href="">Beauty</a><br />
-        <a href="">Watches & Sunglasses</a><br />
-      </div>
-      <div>
-        <h5>Mens</h5>
-        <a href="">Tops</a><br />
-        <a href="">Ethnicwear</a><br />
-        <a href="">Bottoms</a><br />
-        <a href="">Sportswear</a><br />
-        <a href="">Winterwear</a><br />
-        <a href="">Innerwear</a><br />
-        <a href="">Grooming</a><br />
-        <a href="">Sportswear</a><br />
+      <!--Footer  -->
+      <div id="footer">
+        <div>
+          <h5>Womens</h5>
+          <a href="">Tops</a><br />
+          <a href="">Ethnicwear</a><br />
+          <a href="">Bottoms</a><br />
+          <a href="">Dresses & Jumpsuits</a><br />
+          <a href="">Winterwear</a><br />
+          <a href="">Lingerie</a><br />
+          <a href="">Nightwear</a><br />
+          <a href="">Sportswear</a><br />
+          <a href="">Beauty</a><br />
+          <a href="">Watches & Sunglasses</a><br />
+        </div>
+        <div>
+          <h5>Mens</h5>
+          <a href="">Tops</a><br />
+          <a href="">Ethnicwear</a><br />
+          <a href="">Bottoms</a><br />
+          <a href="">Sportswear</a><br />
+          <a href="">Winterwear</a><br />
+          <a href="">Innerwear</a><br />
+          <a href="">Grooming</a><br />
+          <a href="">Sportswear</a><br />
 
-        <a href="">Watches & Sunglasses</a><br />
+          <a href="">Watches & Sunglasses</a><br />
+        </div>
+        <div>
+          <h5>Kids</h5>
+          <a href="">Girls Clothing</a><br />
+          <a href="">Boys Clothing</a><br />
+          <a href="">Infants Girls</a><br />
+          <a href="">Infants Boys</a><br />
+          <a href="">Winterwear</a><br />
+          <a href="">Add ons</a><br />
+          <a href="">The Teen Shop</a><br />
+        </div>
+        <div>
+          <h5>Shops&Bags</h5>
+          <a href="">Girls</a><br />
+          <a href="">Boys</a><br />
+          <a href="">Women</a><br />
+          <a href="">Mens</a><br />
+          <a href="">Women Accessories</a><br />
+          <a href="">Men Accessories</a><br />
+          <a href="">Essential</a><br />
+        </div>
+        <div>
+          <h5>Beauty</h5>
+          <a href="">Makeup Eyes</a><br />
+          <a href="">Makeup Face</a><br />
+          <a href="">Makeup Nails</a><br />
+          <a href="">Mens</a><br />
+          <a href="">Perfumes</a><br />
+        </div>
+        <div>
+          <h5>Explore</h5>
+          <a href="">Online Offers</a><br />
+          <a href="">Store Offers</a><br />
+          <a href="">Online Gift Card</a><br />
+          <a href="">Store Gift Card</a><br />
+          <a href="">Stores Nearby</a><br />
+          <a href="">EDGE Membership</a><br />
+          <a href="">Shop on WhatsApp</a><br />
+          <a href="">Fashion VLOG</a><br />
+          <a href="">Join CIRCLEMAG</a><br />
+          <a href="">SBI Offers</a><br />
+          <a href="">Homecentre</a><br />
+        </div>
+        <div>
+          <h5>About Us</h5>
+          <a href="">About us</a><br />
+          <a href="">Careers</a><br />
+          <a href="">Take a Tour</a><br />
+          <a href="">Blog</a><br />
+          <a href="">Store Locator</a><br />
+          <a href="">Landmark Cares</a><br />
+        </div>
+        <div>
+          <h5>Help</h5>
+          <a href="">Contact us</a><br />
+          <a href="">Shipping</a><br />
+          <a href="">Returns Process</a><br />
+          <a href="">Returns Policy</a><br />
+          <a href="">Help Centre</a><br />
+        </div>
       </div>
-      <div>
-        <h5>Kids</h5>
-        <a href="">Girls Clothing</a><br />
-        <a href="">Boys Clothing</a><br />
-        <a href="">Infants Girls</a><br />
-        <a href="">Infants Boys</a><br />
-        <a href="">Winterwear</a><br />
-        <a href="">Add ons</a><br />
-        <a href="">The Teen Shop</a><br />
+      <!-- contact option -->
+      <div id="contact">
+        <div>
+          <p>You can talk to us</p>
+          <p>📞1800-123-1555</p>
+        </div>
+        <div>
+          <p>Help center</p>
+          <p>📧 stylezilla.info@mail.com</p>
+        </div>
+        <div>
+          <p>Write to us</p>
+          <p>🗃️ help.stylezilla.com</p>
+        </div>
+        <div>
+          <img
+            src="https://cdn-icons-png.flaticon.com/128/3488/3488299.png"
+            alt=""
+          />
+          <img
+            src="https://cdn-icons-png.flaticon.com/128/733/733558.png"
+            alt=""
+          />
+          <img
+            src="https://cdn-icons-png.flaticon.com/128/2504/2504947.png"
+            alt=""
+          />
+        </div>
       </div>
-      <div>
-        <h5>Shops&Bags</h5>
-        <a href="">Girls</a><br />
-        <a href="">Boys</a><br />
-        <a href="">Women</a><br />
-        <a href="">Mens</a><br />
-        <a href="">Women Accessories</a><br />
-        <a href="">Men Accessories</a><br />
-        <a href="">Essential</a><br />
-      </div>
-      <div>
-        <h5>Beauty</h5>
-        <a href="">Makeup Eyes</a><br />
-        <a href="">Makeup Face</a><br />
-        <a href="">Makeup Nails</a><br />
-        <a href="">Mens</a><br />
-        <a href="">Perfumes</a><br />
-      </div>
-      <div>
-        <h5>Explore</h5>
-        <a href="">Online Offers</a><br />
-        <a href="">Store Offers</a><br />
-        <a href="">Online Gift Card</a><br />
-        <a href="">Store Gift Card</a><br />
-        <a href="">Stores Nearby</a><br />
-        <a href="">EDGE Membership</a><br />
-        <a href="">Shop on WhatsApp</a><br />
-        <a href="">Fashion VLOG</a><br />
-        <a href="">Join CIRCLEMAG</a><br />
-        <a href="">SBI Offers</a><br />
-        <a href="">Homecentre</a><br />
-      </div>
-      <div>
-        <h5>About Us</h5>
-        <a href="">About us</a><br />
-        <a href="">Careers</a><br />
-        <a href="">Take a Tour</a><br />
-        <a href="">Blog</a><br />
-        <a href="">Store Locator</a><br />
-        <a href="">Landmark Cares</a><br />
-      </div>
-      <div>
-        <h5>Help</h5>
-        <a href="">Contact us</a><br />
-        <a href="">Shipping</a><br />
-        <a href="">Returns Process</a><br />
-        <a href="">Returns Policy</a><br />
-        <a href="">Help Centre</a><br />
-      </div>
-    </div>
-    <!-- contact option -->
-    <div id="contact">
-      <div>
-        <p>You can talk to us</p>
-        <p>📞1800-123-1555</p>
-      </div>
-      <div>
-        <p>Help center</p>
-        <p>📧 stylezilla.info@mail.com</p>
-      </div>
-      <div>
-        <p>Write to us</p>
-        <p>🗃️ help.stylezilla.com</p>
-      </div>
-      <div>
-        <img
-          src="https://cdn-icons-png.flaticon.com/128/3488/3488299.png"
-          alt=""
-        />
-        <img
-          src="https://cdn-icons-png.flaticon.com/128/733/733558.png"
-          alt=""
-        />
-        <img
-          src="https://cdn-icons-png.flaticon.com/128/2504/2504947.png"
-          alt=""
-        />
-      </div>
-    </div>
+    </section>
     <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
-    <!----------------------------------------------- Footer HTML End ----------------------------------------------->
+    <!--todo--------------------------------------------- <Footer End> ----------------------------------------------->
   </body>
 </html>
-<script src="mensAllProducts.js"></script>
+<script src="JS/common.js"></script>
+<script src="JS/mensAllProducts.js"></script>
 <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>

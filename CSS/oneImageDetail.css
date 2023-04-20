@@ -1,0 +1,290 @@
+.margin,
+hr,
+.anchor {
+  margin: 10px 0px;
+}
+
+#container {
+  /* border: 1px solid blue; */
+  display: flex;
+  width: 98%;
+  margin: 20px auto;
+}
+
+.image {
+  /* border: 1px solid red; */
+  width: 65%;
+}
+
+.image > img {
+  width: 48%;
+}
+
+.checkBox {
+  /* border: 1px solid green; */
+  width: 35%;
+}
+
+.ship {
+  color: orange;
+  text-decoration: underline;
+}
+
+.smallImage > img {
+  width: 10%;
+  border: 2px solid teal;
+}
+
+.smallImage + p {
+  margin: 10px 0px;
+}
+
+.size {
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: space-between;
+  margin: 5px 0px;
+  width: 400px;
+}
+
+.sizeButton > button {
+  background-color: white;
+  border: 2px solid lightgrey;
+  height: 45px;
+  width: 63px;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 10px 0px;
+}
+
+.basket {
+  background-color: orange;
+  color: white;
+  border: 1px solid orange;
+  border-radius: 5px;
+  width: 406px;
+  height: 50px;
+  font-size: 17px;
+}
+
+.favourite {
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: space-between;
+  width: 400px;
+}
+
+hr {
+  width: 400px;
+  background-color: lightgray;
+}
+
+hr + button {
+  color: rgb(210, 94, 113);
+  background-color: pink;
+  border: 1px solid pink;
+  font-weight: bold;
+  margin: 10px 0px;
+  padding: 5px 5px;
+  border-radius: 3px;
+}
+
+.anchor > a {
+  color: black;
+}
+
+.moreshirt {
+  color: blue;
+  margin-left: -50px;
+}
+a {
+  color: orange;
+}
+
+.fa-solid {
+  margin-right: 15px;
+}
+
+.text {
+  margin: 10px 30px;
+}
+
+.arrow {
+  margin: 20px 0px;
+  margin-right: 11px;
+}
+
+.truck {
+  margin: 20px 0px;
+  margin-right: 9px;
+}
+
+.pinCode {
+  margin-left: 30px;
+  font-size: 17px;
+  height: 50px;
+  width: 250px;
+}
+
+.pinCode + button {
+  height: 55px;
+  width: 80px;
+  background-color: orange;
+  color: white;
+  border: 1px solid orange;
+  margin-left: 5px;
+  border-radius: 5px;
+}
+
+.list {
+  margin: 20px;
+}
+
+.likeMoreProducts {
+  /* border: 1px solid red; */
+  color: cadetblue;
+  margin-left: 25px;
+  font-size: 40px;
+}
+
+.likeMoreProducts:hover {
+  color: crimson;
+}
+
+#someImage {
+  /* border: 1px solid red; */
+  width: 98%;
+  margin: 20px auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.individula {
+  /* border: 1px solid green; */
+  padding: 10px;
+}
+
+.individula:hover {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.individula > img {
+  width: 100%;
+}
+
+.price {
+  margin-left: -18px;
+  margin-right: 10px;
+}
+
+/*? ----------------------------Medium Screen Sizes -------------------------------- */
+@media all and (min-width: 810px) and (max-width: 1000px) {
+  #searchbar {
+    display: none;
+  }
+
+  #signin {
+    background-color: #f7f4f4;
+    padding: 10px;
+  }
+
+  #someImage {
+    /* border: 1px solid red; */
+    width: 98%;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+  .image > img {
+    display: block;
+    width: 95%;
+    margin: 10px;
+  }
+  .basket {
+    width: 265px;
+  }
+  .size {
+    width: 270px;
+  }
+  .favourite {
+    width: 270px;
+  }
+  hr {
+    width: 270px;
+  }
+  .pinCode {
+    margin-left: 30px;
+    font-size: 17px;
+    height: 50px;
+    width: 250px;
+    display: block;
+    border: 1px solid black;
+  }
+
+  .pinCode + button {
+    margin: 25px;
+    width: 150px;
+  }
+}
+
+/*?----------------------------Small Screen Sizes -------------------------------- */
+@media all and (min-width: 10px) and (max-width: 809px) {
+  * {
+    font-size: 12px;
+  }
+
+  /*=============my media query============*/
+  #container {
+    /* border: 1px solid red; */
+    width: 92%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .image {
+    /* border: 1px solid blue; */
+    width: 99%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+  .image > img {
+    width: 100%;
+  }
+  .checkBox {
+    /* border: 1px solid gold; */
+    width: 99%;
+  }
+  i,
+  p,
+  a,
+  span,
+  li,
+  h3 {
+    font-size: 20px;
+  }
+  .size {
+    /* border: 1px solid red; */
+    width: 85%;
+  }
+  .basket {
+    width: 85%;
+  }
+  .favourite {
+    width: 85%;
+  }
+  hr {
+    width: 85%;
+  }
+  hr + button {
+    font-size: 20px;
+  }
+  .pinCode {
+    border: 1px solid black;
+    margin-left: 15px;
+    padding-left: 5px;
+  }
+}

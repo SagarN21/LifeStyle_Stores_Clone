@@ -1,0 +1,144 @@
+#productName {
+  padding-left: 12px;
+  height: 40px;
+  width: 20%;
+  border: 1px solid grey;
+}
+
+#container {
+  /* border: 1px solid red; */
+  background-color: lightgray;
+  width: 95%;
+  margin: 12px 40px auto;
+  display: grid;
+  grid-template-columns: repeat(5, 200px);
+  gap: 20px;
+  padding: 15px;
+  border-radius: 5px;
+}
+#container > select {
+  height: 35px;
+  border-radius: 5px;
+}
+
+#showProducts {
+  /* border: 1px solid red; */
+  width: 98%;
+  margin: auto;
+  display: flex;
+  /* display: grid; */
+  grid-template-columns: repeat(4, 1fr);
+  gap: 5px;
+}
+#product {
+  /* border: 1px solid red; */
+  padding: 15px;
+  font-size: 14px;
+}
+#product > img {
+  width: 100%;
+}
+
+.basket {
+  /* border: 1px solid green; */
+  background-color: white;
+  width: 24.3%;
+  margin-left: -15px;
+  height: 100px;
+  text-align: center;
+  display: none;
+  position: absolute;
+}
+.basket > button {
+  color: white;
+  background-color: orange;
+  border: 0px;
+  font-size: 15px;
+  width: 90%;
+  height: 50px;
+  margin-top: 40px;
+}
+#product:hover {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+#product:hover .basket {
+  display: block;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.price {
+  margin: 10px 0px;
+  font-weight: bold;
+  font-size: 16px;
+}
+.price > i {
+  margin-right: 5px;
+}
+.showCount {
+  color: grey;
+  margin: 25px;
+}
+
+/*? ----------------------------Medium Screen Sizes -------------------------------- */
+@media all and (min-width: 810px) and (max-width: 1200px) {
+  /*===========my media==========*/
+  #container {
+    display: grid;
+    grid-template-columns: repeat(3, 200px);
+    gap: 20px;
+  }
+  #container > select {
+    height: 45px;
+    width: 210px;
+    border-radius: 5px;
+  }
+
+  #showProducts {
+    /* border: 1px solid red; */
+    width: 98%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+  }
+}
+/*?----------------------------Small Screen Sizes -------------------------------- */
+@media all and (min-width: 10px) and (max-width: 809px) {
+  * {
+    font-size: 12px;
+  }
+
+  #container {
+    display: grid;
+    grid-template-columns: repeat(2, 200px);
+    gap: 10px;
+  }
+  #container > select {
+    height: 45px;
+    width: 180px;
+    border-radius: 5px;
+  }
+
+  #showProducts {
+    /* border: 1px solid red; */
+    width: 98%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
+  }
+  #product {
+    /* border: 1px solid red; */
+    padding: 10px;
+    font-size: 14px;
+  }
+  #product > img {
+    width: 100%;
+  }
+  .basket {
+    /* border: 1px solid green; */
+    width: 49.8%;
+    margin-left: -15px;
+    display: none;
+    position: absolute;
+  }
+}
