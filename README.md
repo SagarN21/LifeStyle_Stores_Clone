@@ -1,3 +1,4 @@
+
 # 🛍️ Introducing StyleZilla.com.
 
 ![StyleZilla](https://user-images.githubusercontent.com/112753481/233224008-2a5b997a-9dee-4b86-9848-74a9741ccf0a.png)
@@ -21,6 +22,7 @@ In this project we have tried to manipulate dom elements, styling using css and 
 | ------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------ |
 | <img width="75px" src="https://user-images.githubusercontent.com/25181517/192158954-f88b5814-d510-4564-b285-dff7d6400dad.png"> | <img width="75px" src="https://user-images.githubusercontent.com/25181517/183898674-75a4a1b1-f960-4ea9-abcb-637170a00a75.png"> | <img width="70px" src="https://user-images.githubusercontent.com/25181517/117447155-6a868a00-af3d-11eb-9cfe-245df15c9f3f.png"> |
 
+
 ## Backend :-
 
 > ### Local Storage
@@ -34,16 +36,21 @@ In this project we have tried to manipulate dom elements, styling using css and 
 - Product page :-
   ![Productspage](https://user-images.githubusercontent.com/112753481/233241344-ae398ed0-614e-4078-a9e1-ed304618584d.png)
 
+
 - Womens Page :-
   ![Womens](https://user-images.githubusercontent.com/112753481/233241181-67272736-64c0-4199-a020-d277a742da40.png)
+
 
 - Mens Page :-
   ![Mens](https://user-images.githubusercontent.com/112753481/233241218-e95fe2c4-656d-4421-93e9-0495e28b4482.png)
   ![products](https://user-images.githubusercontent.com/112753481/233241793-e1f53c1d-9fa1-44fc-979e-8580e251add7.jpg)
 
+
 - Basket page
 
+
 ![BasketPage](https://user-images.githubusercontent.com/112753481/233241585-228e0dc7-faa5-42b2-9f21-9f7ae19f5353.png)
+
 
 - Signin page
   ![signup](https://user-images.githubusercontent.com/112753481/233241690-378c2578-4174-4ea9-bb2d-2a03f76c4884.jpg)
@@ -59,6 +66,7 @@ In this project we have tried to manipulate dom elements, styling using css and 
   ![Admin portal](https://user-images.githubusercontent.com/112753481/233241680-c0af33db-7721-4586-b3cd-c5d25753a6f1.jpg)
 - Admin Edit Product:-
   ![edit product](https://user-images.githubusercontent.com/112753481/233241720-c3978118-df53-482c-9bf1-bded0532fec6.jpg)
+
 
 ## 🛍️How to run the Project
 
