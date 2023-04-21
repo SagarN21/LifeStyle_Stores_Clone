@@ -7,7 +7,7 @@ function login(event) {
   let password = document.querySelector("#pass").value.trim();
   if (name === "admin" && password === "admin") {
     // "warning","success","error","info"
-    swal("Login Succss!", "", "success");
+    swal("Login Success!", "", "success");
 
     setTimeout(() => {
       window.location.href = "Admin.html";

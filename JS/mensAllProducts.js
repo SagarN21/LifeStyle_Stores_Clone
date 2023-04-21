@@ -97,11 +97,12 @@ function showDataOnPage(allClothes) {
   });
   //    console.log(data)
   let show = document.querySelector("#showProducts");
+  show.style.display = "grid"
   show.innerHTML = data.join("");
 
   //count of all products
   let showCount = document.querySelector(".showCount");
-  showCount.innerText = `${data.length} Products`;
+  showCount.innerText = ` Total Products : ${data.length} `;
 
   //click on image
   let allProductId = document.querySelectorAll(".clickImage");
