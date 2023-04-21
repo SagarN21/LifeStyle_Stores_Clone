@@ -1,10 +1,11 @@
 // ?-------------------------------<Global Variables>----------------------------------------------
 let Container = document.querySelector(".container");
-let FetchSelect = document.getElementById("select");
+let FetchSelect = document.getElementsByClassName("select");
 let tophead1 = document.querySelector(".mainsect1");
 let loader = document.getElementById("loader");
 let allproducts = document.querySelector(".allproducts");
 let select = document.getElementById("select");
+let FetchValue = ""
 let LSdata = JSON.parse(localStorage.getItem("cart")) || [];
 let ManagePayment = document.getElementsByClassName("manage-payments");
 
@@ -119,12 +120,16 @@ ${newArray.join(" ")}
 
 // ?----------------------------------<All Products Functions>--------------------------------------------
 
-FetchSelect.addEventListener("change", function () {
-  loader.style.display = "block";
-  FetchWomenTopWear();
-});
+for (let i = 0; i < FetchSelect.length; i++) {
+  FetchSelect[i].addEventListener("change", () => {
+    loader.style.display = "block";
+    FetchValue = FetchSelect[i].value
+    FetchWomenTopWear();
+  })
+}
+
 async function FetchWomenTopWear() {
-  let Database = document.getElementById("select").value;
+  let Database = FetchValue
   if (Database == "") window.location.href = "Orders.html";
   try {
     let res = await fetch(Database);

@@ -6,6 +6,7 @@ UpdateTotal(CartItems);
 //? <!----------------------------------- <Updating Total Function> ----------------------------------------------->
 
 function UpdateTotal(data, minus = 0, plus = 0) {
+  console.log(data, minus, plus);
   let total = +JSON.parse(localStorage.getItem("TotalPrice")) || 0;
   if (total == 0) {
     for (let key of data) {
@@ -25,7 +26,7 @@ function UpdateTotal(data, minus = 0, plus = 0) {
 //? <!-------------------------------------<ShowData on Checkout Page> ----------------------------------------------->
 
 function showdata(data) {
-  console.log(data);
+
   let productList = document.querySelector(".showproducts");
   let newArray = data.map((item) => {
     return (item["quantity"] = 1);
@@ -95,9 +96,10 @@ function showdata(data) {
     minus.addEventListener(
       "click",
       (UpdateQuantity = (event) => {
-        if (event.path[1].children[9].value == 1) return;
-        event.path[1].children[9].value--;
-        let minus = event.path[1].children[1].children[0].innerText;
+        if (event.target.parentElement.children[9].value == 1) return;
+        event.target.parentElement.children[9].value--;
+        let minus = +event.target.parentElement.children[1].children[0].innerText
+        // let minus = +event.target.parentElement.children[9].value * price;
         UpdateTotal(CartItems, minus, 0);
       })
     );
@@ -109,8 +111,12 @@ function showdata(data) {
     plus.addEventListener(
       "click",
       (UpdateQuantity = (event) => {
-        event.path[1].children[9].value++;
-        let plus = event.path[1].children[1].children[0].innerText;
+        // console.log(event.target.parentElement.children);
+
+        event.target.parentElement.children[9].value++;
+        let plus = +event.target.parentElement.children[1].children[0].innerText
+        // console.log(price);
+        // let plus = +event.target.parentElement.children[9].value * price;
         UpdateTotal(CartItems, 0, plus);
       })
     );
