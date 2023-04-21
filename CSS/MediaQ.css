@@ -1,6 +1,12 @@
 .swal-modal * {
   filter: saturate(1.4) !important;
 }
+#login_head {
+  cursor: pointer;
+}
+#yellopatti {
+  cursor: pointer;
+}
 /*todo ----------------------------Medium Screen Sizes -------------------------------- */
 @media all and (min-width: 810px) and (max-width: 1079px) {
   * {
