@@ -10,7 +10,6 @@ async function getAllData() {
             let allMensClothesData = [...allData, ...secData]
             // console.log(allMensClothesData)
             showDataOnPage(allMensClothesData)
-            functionalityData = [...allMensClothesData]
             sortByPrice(allMensClothesData)
             discount(allMensClothesData)
             // console.log(allMensClothesData)
@@ -120,7 +119,7 @@ function showDataOnPage(allClothes) {
     for (let button of btn) {
         button.addEventListener("click", () => {
             let id = button.dataset.id
-            let data = allData.filter((item) => {
+            let data = allClothes.filter((item) => {
                 return item.id == id
             })
             let storeData = JSON.parse(localStorage.getItem("cart"))
@@ -138,13 +137,9 @@ function showDataOnPage(allClothes) {
                 if (flag == "no") {
                     let obj = data[0]
                     allArrData.push(obj)
-                    Swal.fire(
-                        'Good job!',
-                        'You clicked the button!',
-                        'success'
-                    )
+                    alert("product is add")
                 } else {
-                    swal("This Product is Allready in ")
+                    alert("this product already in cart")
                 }
             }
             localStorage.setItem("cart", JSON.stringify(allArrData))
